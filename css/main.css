@@ -60,11 +60,11 @@
 .arrow {
   margin-right: 4px;
 }
-.arrow {
+.arrow::before {
   content: "";
   position: absolute;
-  right: -12px;
-  top: 8px;
+  right: -3px;
+  top: 9px;
   width: 16px;
   height: 16px;
   background: url(../img/header/arrow.png) no-repeat;
@@ -89,12 +89,12 @@
   display: inline-block;
 }
 .dropdown {
-  margin-right: 4px;
+  position: absolute;
 }
 .dropdown::before {
   content: "";
   position: absolute;
-  right: -12px;
+  right: -14px;
   top: 8px;
   width: 16px;
   height: 16px;
@@ -103,4 +103,6 @@
 #header_top_right .mypage li {
   float: none;
   position: relative;
+}
+#header_top_right .mypage li a {
 }
