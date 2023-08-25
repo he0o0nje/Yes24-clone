@@ -100,3 +100,7 @@
   height: 16px;
   background: url(../img/header/dropdown.png) no-repeat;
 }
+#header_top_right .mypage li {
+  float: none;
+  position: relative;
+}
