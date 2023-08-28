@@ -100,9 +100,49 @@
   height: 16px;
   background: url(../img/header/dropdown.png) no-repeat;
 }
-#header_top_right .mypage li {
+.dropup {
+  position: absolute;
+}
+.dropup::before {
+  content: "";
+  position: absolute;
+  right: -14px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/header/dropdown.png) no-repeat;
+}
+#mypage {
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: 0;
+  padding: 5px 0;
+  width: 125%;
+  border: solid 1px #196ab3;
+  background-color: #fff;
+}
+#mypage dt {
+  height: 20px;
+}
+#mypage dt a {
+  display: block;
+  padding: 0 0 0 7px;
+  height: 20px;
+  line-height: 20px;
+  color: #333;
+  white-space: nowrap;
+}
+#mypage li {
   float: none;
   position: relative;
 }
-#header_top_right .mypage li a {
+#mypage li a {
+  float: none;
+  display: block;
+  padding: 0 0 0 7px;
+  height: 20px;
+  line-height: 20px;
+  color: #666;
+  white-space: nowrap;
 }

@@ -52,7 +52,7 @@
               <li><a href="#">회원가입</a></li>
               <li>
                 <a href="#">마이페이지<i class="dropdown"></i></a>
-                <dl id="mypage" style="display: none">
+                <dl id="mypage">
                   <dt>
                     <a href="#">마이페이지<i class="dropup"></i></a>
                   </dt>
@@ -452,5 +452,29 @@
       </div>
       <!-- header -->
     </div>
+    <script>
+      // Get the My Page element and its dropup menu
+      const myPageMenu = document.querySelector(
+        "#header_top_right li:nth-child(3) a"
+      );
+      const dropupMenu = document.querySelector("#mypage");
+
+      // Add event listeners for mouseenter and mouseleave events
+      myPageMenu.addEventListener("mouseenter", () => {
+        dropupMenu.style.display = "block";
+      });
+
+      myPageMenu.addEventListener("mouseleave", () => {
+        dropupMenu.style.display = "none";
+      });
+
+      dropupMenu.addEventListener("mouseenter", () => {
+        dropupMenu.style.display = "block";
+      });
+
+      dropupMenu.addEventListener("mouseleave", () => {
+        dropupMenu.style.display = "none";
+      });
+    </script>
   </body>
 </html>
