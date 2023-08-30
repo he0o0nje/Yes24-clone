@@ -52,7 +52,7 @@
               <li><a href="#">회원가입</a></li>
               <li>
                 <a href="#">마이페이지<i class="dropdown"></i></a>
-                <dl id="mypage">
+                <dl id="mypage" style="display: none">
                   <dt>
                     <a href="#">마이페이지<i class="dropup"></i></a>
                   </dt>
@@ -77,12 +77,13 @@
 
           <div id="header_middle">
             <div id="header_middle_logo">
-              <a href="#"><img src="" /></a>
+              <a href="./index.html"><img src="./img/header/logo.svg" /></a>
             </div>
             <div id="header_middle_search">
               <input
                 type="text"
                 placeholder="다 괜찮아! <그럴 수 있어> 양희은 에세이"
+                onfocus="this.placeholder = ''"
               /><i class="searchbox"></i>
             </div>
             <div id="header_middle_list">
@@ -102,8 +103,8 @@
                 <a href="#"><img src="" /></a>
               </div>
               <div id="header_top_button">
-                <span class="prev">이전 광고 보기</span>
-                <span class="next">다음 광고 보기</span>
+                <span class="prev"></span>
+                <span class="next"></span>
               </div>
             </div>
           </div>

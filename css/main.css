@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 * {
   font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic,
     "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
@@ -63,11 +64,11 @@
 .arrow::before {
   content: "";
   position: absolute;
-  right: -3px;
+  right: -34px;
   top: 9px;
-  width: 16px;
-  height: 16px;
-  background: url(../img/header/arrow.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  background: url(../img/header/up-right-arrow.png) no-repeat;
 }
 #header_top_right {
   position: absolute;
@@ -110,7 +111,7 @@
   top: 2px;
   width: 16px;
   height: 16px;
-  background: url(../img/header/dropdown.png) no-repeat;
+  background: url(../img/header/dropup.png) no-repeat;
 }
 #mypage {
   position: absolute;
@@ -145,4 +146,49 @@
   line-height: 20px;
   color: #666;
   white-space: nowrap;
+}
+
+#header_middle {
+  height: 112px;
+  position: relative;
+  display: flex;
+}
+#header_middle_logo {
+  width: 265px;
+  height: 103px;
+  position: absolute;
+  top: 4px;
+}
+#header_middle_logo img {
+  width: 100%;
+  height: 100%;
+}
+#header_middle_search {
+  position: absolute;
+  top: 30px;
+  left: 265px;
+  z-index: 4;
+  width: 516px;
+  height: 48px;
+  border: solid 2px #0080ff;
+  border-radius: 3px;
+  background-color: #fff;
+}
+#header_middle_search input {
+  font-size: 17px;
+  font-weight: 400;
+  color: #000;
+  width: 430px;
+  border: none;
+  height: 45px;
+  margin-left: 17px;
+  padding: 0;
+  outline: none;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", helvetica,
+    sans-serif;
+}
+#header_middle_search input::placeholder {
+  color: #000;
+  font-weight: bold;
 }
