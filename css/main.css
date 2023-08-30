@@ -192,3 +192,61 @@
   color: #000;
   font-weight: bold;
 }
+.searchbox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 48px;
+}
+.searchbtn {
+  width: 60px;
+  height: 48px;
+  border: 0;
+  vertical-align: top;
+  cursor: pointer;
+  background: url(../img/header/search.png) no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+#header_middle_list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+#ad {
+  position: relative;
+  width: 180px;
+  height: 112px;
+}
+#ad img {
+  width: 100%;
+  height: 100%;
+}
+#ad .listbox:not(:first-child) {
+  display: none;
+}
+#header_middle_button {
+  position: absolute;
+  top: 74px;
+  right: -5px;
+  width: 38px;
+  height: 20px;
+  display: flex;
+  cursor: pointer;
+}
+#header_middle_button .prev {
+  background: url(../img/header/prev.png) no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 20px;
+  margin-right: -2.1px;
+}
+#header_middle_button .next {
+  background: url(../img/header/next.png) no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 20px;
+  margin-left: -2.1px;
+}
