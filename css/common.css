@@ -302,7 +302,7 @@ body {
   float: left;
 }
 .qtit {
-  width: 104px;
+  width: 106px;
   height: 36px;
   line-height: 36px;
   font-size: 14px;
@@ -379,18 +379,6 @@ body {
 .bnimg img {
   width: auto;
   height: 396px;
-}
-.qtit:hover::before,
-.qtit_hover {
-  display: block;
-  content: "";
-  position: absolute;
-  right: -2px;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  width: 4px;
-  background-color: #0080ff;
 }
 #header_Bottom_Left {
   position: absolute;
