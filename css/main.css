@@ -313,6 +313,7 @@ body {
   color: #666;
 }
 .quick_cate_tb {
+  display: none;
   position: absolute;
   top: 0;
   left: 106px;
@@ -379,11 +380,9 @@ body {
   width: auto;
   height: 396px;
 }
-.quick_cate_li:not(:nth-child(1)) {
-  display: none;
-}
-.qtit::before {
-  display: none;
+.qtit:hover::before,
+.qtit_hover {
+  display: block;
   content: "";
   position: absolute;
   right: -2px;
