@@ -20,13 +20,35 @@ dropupMenu.addEventListener("mouseleave", () => {
   dropupMenu.style.display = "none";
 });
 
+// 광고리스트
+let currentIndex = 0;
+const images = $(".listbox img");
+const totalImages = images.length;
+
+function showImage(index) {
+  images.hide();
+  images.eq(index).show();
+}
+
+$(".prev").click(function () {
+  currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+  showImage(currentIndex);
+});
+
+$(".next").click(function () {
+  currentIndex = (currentIndex + 1) % totalImages;
+  showImage(currentIndex);
+});
+
+showImage(currentIndex);
+
 // 빠른분야찾기 메뉴
 const quickCateBtn = document.querySelector("#quick_cate_btn h2");
 const quickCateWrap = document.querySelector(".quick_cate_wrap");
 
 quickCateBtn.addEventListener("mouseenter", () => {
   quickCateWrap.style.display = "block";
-  $(".quick_cate_tb").css("display", "none");
+  $(".quick_cate_tb").css({ display: "none" });
 });
 
 quickCateBtn.addEventListener("mouseleave", () => {
