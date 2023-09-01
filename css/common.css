@@ -452,3 +452,126 @@ body {
 }
 
 /* 푸터 */
+#footer {
+  position: relative;
+  clear: both;
+  margin-top: 20px;
+  min-width: 960px;
+  min-height: 304px;
+  border-top: solid 1px #cbcbcb;
+  background-color: #dfdfdf;
+}
+#footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  height: 42px;
+  border-bottom: solid 1px #cbcbcb;
+  background-color: #dfdfdf;
+}
+#footer_wrap {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  width: 960px;
+  text-align: left;
+}
+.footer_top {
+  height: 44px;
+}
+#menu_li {
+  float: left;
+}
+#menu_li li {
+  position: relative;
+  float: left;
+  height: 44px;
+}
+#menu_li li + li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18px;
+  height: 10px;
+  border-left: solid 1px #ccc;
+}
+#menu_li li:first-child a {
+  padding-left: 0;
+}
+#menu_li li a {
+  display: block;
+  padding: 0 8px;
+  height: 44px;
+  line-height: 44px;
+  overflow: hidden;
+  letter-spacing: -1px;
+  font-size: 12px;
+  color: #666;
+}
+#sns_li {
+  position: absolute;
+  top: 12px;
+  right: 126px;
+}
+#sns_li li {
+  float: left;
+  margin-right: 4px;
+}
+#fam_dl {
+  float: right;
+  margin-top: 9px;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}
+/* #fam_dl dt {
+  width: 120px;
+  height: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  text-indent: -999em;
+}
+#fam_dl dt a {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 24px;
+} */
+#fam_dl dd {
+  position: absolute;
+  left: 0;
+  top: 24px;
+  padding: 5px 0;
+  width: 118px;
+  border: solid 1px #c1c1c1;
+  border-top: none;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #eaeaea;
+}
+#fam_dl dd ul li a {
+  display: block;
+  width: 120px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 11px;
+  color: #666;
+  text-indent: 13px;
+}
+.footer_content {
+  position: relative;
+  z-index: 1;
+  min-height: 148px;
+}
+.footer_glory {
+  height: 88px;
+}
+.footer_safe {
+  padding: 20px 0;
+}
