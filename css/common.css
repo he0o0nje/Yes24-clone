@@ -336,6 +336,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   display: inline-block;
+  color: #333;
 }
 .qcate1 {
   position: absolute;
@@ -378,6 +379,13 @@ body {
 .bnimg img {
   width: auto;
   height: 396px;
+}
+.more {
+  position: absolute;
+  background: url(../img/header/right-arrow.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  margin: 3px 0 0 -1px;
 }
 #header_Bottom_Left {
   position: absolute;
