@@ -157,7 +157,7 @@ body {
   display: flex;
 }
 #header_middle_logo {
-  width: 265px;
+  width: 264px;
   height: 103px;
   position: absolute;
   top: 4px;
@@ -446,3 +446,5 @@ body {
   line-height: 42px;
   letter-spacing: -0.5px;
 }
+
+/* 푸터 */
