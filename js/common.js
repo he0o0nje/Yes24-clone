@@ -26,6 +26,7 @@ const quickCateWrap = document.querySelector(".quick_cate_wrap");
 
 quickCateBtn.addEventListener("mouseenter", () => {
   quickCateWrap.style.display = "block";
+  $(".quick_cate_tb").css("display", "none");
 });
 
 quickCateBtn.addEventListener("mouseleave", () => {
@@ -61,7 +62,6 @@ $(".qtit, .quick_cate_tb").mouseleave(function () {
       color: "",
       "background-color": "",
     });
-    $(this).siblings(".quick_cate_tb").css("display", "none");
   }
 });
 
