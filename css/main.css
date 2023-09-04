@@ -1,1 +1,106 @@
 @charset "UTF-8";
+
+#main1 {
+  background-color: #fff;
+  width: 1198px;
+  height: 421px;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+  border: solid 1px #d8d8d8;
+}
+#main1::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  bottom: -1px;
+  z-index: 1;
+  width: 109px;
+  border-right: solid 1px #d8d8d8;
+}
+#mbnWrap {
+  width: 109px;
+  position: relative;
+  z-index: 2;
+  padding-top: 9px;
+  height: 412px;
+  display: block;
+}
+.mbn_dp1 {
+  width: 110px;
+  height: 40px;
+  float: left;
+}
+.mbn_dp1 h3 a {
+  display: block;
+  padding-left: 13px;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  font-size: 14px;
+  border-left: none;
+}
+.mbnSub {
+  position: absolute;
+  top: 0;
+  left: 109px;
+  width: 1089px;
+  height: 421px;
+  overflow: hidden;
+}
+.mbnCont {
+  position: relative;
+  z-index: 1;
+}
+.mbnRoll_yNow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1089px;
+}
+.mbnContImg {
+  overflow: hidden;
+}
+.mbnContImg img {
+  width: 1089px;
+  height: 421px;
+  margin-left: 0;
+}
+.pageNum1 {
+  position: absolute;
+  top: 381px;
+  left: 0;
+  width: 271px;
+  z-index: 10;
+}
+.tabs a {
+  background-color: #f8f8f8;
+  display: block;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  text-align: center;
+}
+.pageNum2 {
+  position: absolute;
+  top: 381px;
+  left: 272px;
+  width: 271px;
+  z-index: 10;
+}
+.pageNum3 {
+  position: absolute;
+  top: 381px;
+  left: 544px;
+  width: 271px;
+  z-index: 10;
+}
+.pageNum4 {
+  position: absolute;
+  top: 381px;
+  left: 816px;
+  width: 273px;
+  z-index: 10;
+}
