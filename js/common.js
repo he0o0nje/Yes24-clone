@@ -88,3 +88,20 @@ $(".qtit, .quick_cate_tb").mouseleave(function () {
 });
 
 // 푸터 가족회사 메뉴
+$("#fam_dl dd").hide();
+
+$("#fam_btn").click(function (e) {
+  e.preventDefault();
+
+  $("#fam_dl dt").toggleClass("c");
+  if ($("#fam_dl dt").hasClass("c")) {
+    $("#fam_dl dt").css({
+      "border-bottom-color": "#d5d5d5",
+      "border-radius": "3px 3px 0 0",
+    });
+  } else {
+    $("#fam_dl dt").css({ "border-bottom-color": "", "border-radius": "" });
+  }
+
+  $("#fam_dl dd").toggle();
+});
