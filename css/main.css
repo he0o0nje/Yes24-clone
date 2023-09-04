@@ -176,3 +176,24 @@
   left: 822px;
   width: 137px;
 }
+.mbnContImg li {
+  width: 319px;
+  text-align: center;
+  float: left;
+  border-left: solid 1px #f4f4f4;
+  overflow: hidden;
+}
+.mbnContImg li:first-child {
+  border-left: none;
+}
+.mbnContImg li:last-child {
+  width: 318px;
+}
+.mbnContImg li a {
+  width: 100%;
+}
+.mbnContImg li a img {
+  width: 100%;
+  object-fit: contain;
+  background-color: #fff;
+}
