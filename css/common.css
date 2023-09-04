@@ -576,8 +576,7 @@ body {
   width: 118px;
   border: solid 1px #c1c1c1;
   border-top: none;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-radius: 0 0 3px 3px;
   background-color: #eaeaea;
 }
 #fam_dl dd ul li a {

@@ -94,6 +94,7 @@ $("#fam_btn").click(function (e) {
   e.preventDefault();
 
   $("#fam_dl dt").toggleClass("c");
+
   if ($("#fam_dl dt").hasClass("c")) {
     $("#fam_dl dt").css({
       "border-bottom-color": "#d5d5d5",
