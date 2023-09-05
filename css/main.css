@@ -80,8 +80,11 @@
   font-size: 12px;
   height: 40px;
   line-height: 40px;
-  color: #666;
   text-align: center;
+}
+.tabs a em {
+  display: block;
+  color: #666;
 }
 .pageNum2 {
   position: absolute;
@@ -236,15 +239,24 @@
   left: 1056px;
 }
 .mbnCont .mbnBtn i {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.3);
   width: 34px;
   height: 38px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.mbnCont .mbnBtn i:hover {
+  background-color: #333;
+}
 .YNnot .prev {
   left: 129px;
+}
+.tabs a:hover {
+  background-color: #333;
+}
+.tabs a em:hover {
+  color: #fff;
 }
 .cateTxt h4 {
   padding: 0 0 0 15px;
