@@ -246,3 +246,46 @@
 .YNnot .prev {
   left: 129px;
 }
+.cateTxt h4 {
+  padding: 0 0 0 15px;
+  height: 20px;
+  line-height: 16px;
+  font-size: 12px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: #333;
+}
+.cateTxt h4 a {
+  color: #333;
+}
+.cateTxt h4 img {
+  margin: 3px 0 0 0;
+  width: 12px;
+  height: 12px;
+  vertical-align: top;
+}
+.mgt15 {
+  margin-top: 15px;
+}
+.mgt3 {
+  margin-top: 3px;
+}
+.mgt10 {
+  margin-top: 10px;
+}
+.cateTxt .tp2 {
+  padding-left: 12px;
+}
+.cateTxt .tp2 li {
+  width: 110px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+.cateTxt .tp2 li a {
+  color: #6699cc;
+}
+.cateTxt .tp2 li a:hover {
+  text-decoration: underline;
+}
