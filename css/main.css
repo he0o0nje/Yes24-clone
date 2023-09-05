@@ -130,6 +130,9 @@
 .cateTxt .tp1 li a {
   color: #666;
 }
+.cateTxt .tp1 li a:hover {
+  text-decoration: underline;
+}
 .cateTxt .tp1 li em {
   margin: 0 1px;
   color: #ccc;
@@ -200,25 +203,25 @@
   object-fit: contain;
   background-color: #fff;
 }
-.r2 .tabs {
+.r6 .tabs {
   width: 159px;
 }
-.r2 .pageNum1 {
+.r6 .pageNum1 {
   left: 0;
 }
-.r2 .pageNum2 {
+.r6 .pageNum2 {
   left: 160px;
 }
-.r2 .pageNum3 {
+.r6 .pageNum3 {
   left: 320px;
 }
-.r2 .pageNum4 {
+.r6 .pageNum4 {
   left: 480px;
 }
-.r2 .pageNum5 {
+.r6 .pageNum5 {
   left: 640px;
 }
-.r2 .pageNum6 {
+.r6 .pageNum6 {
   left: 800px;
   width: 159px;
 }
@@ -251,12 +254,6 @@
 }
 .YNnot .prev {
   left: 129px;
-}
-.tabs a:hover {
-  background-color: #333;
-}
-.tabs a em:hover {
-  color: #fff;
 }
 .cateTxt h4 {
   padding: 0 0 0 15px;
@@ -300,4 +297,22 @@
 }
 .cateTxt .tp2 li a:hover {
   text-decoration: underline;
+}
+.r5 .tabs {
+  width: 191px;
+}
+.r5 .pageNum1 {
+  left: 0;
+}
+.r5 .pageNum2 {
+  left: 192px;
+}
+.r5 .pageNum3 {
+  left: 384px;
+}
+.r5 .pageNum4 {
+  left: 576px;
+}
+.r5 .pageNum5 {
+  left: 768px;
 }

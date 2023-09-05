@@ -358,6 +358,9 @@ body {
   color: #666;
   text-overflow: ellipsis;
 }
+.quick_cate dl dd li a:hover {
+  text-decoration: underline;
+}
 .qcate2 {
   position: absolute;
   top: 45px;

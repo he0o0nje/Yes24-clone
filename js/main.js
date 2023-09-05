@@ -1,3 +1,4 @@
+// main1
 $(".mbnTit").mouseenter(function () {
   $(".mbnTit").css({
     color: "",
@@ -13,6 +14,26 @@ $(".mbnTit").mouseenter(function () {
 });
 
 $(".tabs").mouseenter(function () {
+  $(".tabs a em").css({
+    color: "",
+    "background-color": "",
+  });
+  $(this).find("a em").css({
+    color: "#fff",
+    "background-color": "#333",
+  });
   $(".mbnContImg").css("display", "none");
   $(this).siblings(".mbnContImg").css("display", "block");
 });
+
+// $(".mbnRollUnit").each(function () {
+//   const tabs = $(this).find(".tabs");
+//   const mbnContImg = $(this).find(".mbnContImg");
+
+//   if (mbnContImg.css("display") === "block") {
+//     tabs.find("a em").css({
+//       color: "#fff",
+//       "background-color": "#333",
+//     });
+//   }
+// });
