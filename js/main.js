@@ -9,4 +9,10 @@ $(".mbnTit").mouseenter(function () {
   });
   $(".mbnSub").css("display", "none");
   $(this).parents().siblings(".mbnSub").css("display", "block");
+  $(".mbnContImg").css("display", "block");
+});
+
+$(".tabs").mouseenter(function () {
+  $(".mbnContImg").css("display", "none");
+  $(this).siblings(".mbnContImg").css("display", "block");
 });
