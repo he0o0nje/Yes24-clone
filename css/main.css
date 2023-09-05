@@ -233,6 +233,7 @@
   width: 34px;
   height: 38px;
   cursor: pointer;
+  display: none;
 }
 .mbnCont .prev {
   top: 191px;
