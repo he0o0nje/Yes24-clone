@@ -18,7 +18,7 @@
       $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
-        data: { query: "미움받을 용기" },
+        data: { query: $("bookName") },
         headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
       }).done(function (msg) {
         console.log(msg);

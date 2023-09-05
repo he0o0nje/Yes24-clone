@@ -25,10 +25,10 @@ let currentIndex = 0;
 const images = $(".listbox img");
 const totalImages = images.length;
 
-function showImage(index) {
+const showImage = (index) => {
   images.hide();
   images.eq(index).show();
-}
+};
 
 $(".prev").click(function () {
   currentIndex = (currentIndex - 1 + totalImages) % totalImages;
