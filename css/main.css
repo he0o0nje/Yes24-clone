@@ -692,3 +692,11 @@
   color: #666;
   text-indent: 10px;
 }
+.popArea h2 a {
+  border-left: none;
+  border-right: solid 1px #d8d8d8;
+  border-bottom: solid 1px #d8d8d8;
+}
+.popArea h2 a em {
+  color: #999;
+}

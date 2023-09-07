@@ -62,6 +62,30 @@ $(".bestOpt").click(function (e) {
   e.preventDefault();
 
   $(".bestLi .optTit .bestOpt dt").toggleClass("c");
-
   $(".bestLi .optTit dd").toggle();
+});
+
+$("#popli").hide();
+$("#best").click(function (e) {
+  e.preventDefault();
+  $(".popArea h2 a").css({
+    "border-bottom": "solid 1px #d8d8d8",
+  });
+  $(".popArea h2 a em").css({ color: "#999" });
+  $(".bestArea h2 a").css({ "border-bottom": "none" });
+  $(".bestArea h2 a em").css({ color: "#333" });
+  $("#bestli").show();
+  $("#popli").hide();
+});
+
+$("#pop").click(function (e) {
+  e.preventDefault();
+  $(".bestArea h2 a:first-child").css({
+    "border-bottom": "solid 1px #d8d8d8",
+  });
+  $(".bestArea h2 a em:first-child").css({ color: "#999" });
+  $(".popArea h2 a").css({ "border-bottom": "none" });
+  $(".popArea h2 a em").css({ color: "#333" });
+  $("#popli").show();
+  $("#bestli").hide();
 });
