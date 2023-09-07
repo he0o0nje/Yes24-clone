@@ -56,3 +56,12 @@ $(".todayBook").hover(
     $(".btnTB").css({ display: "none" });
   }
 );
+
+$(".bestLi .optTit dd").hide();
+$(".bestOpt").click(function (e) {
+  e.preventDefault();
+
+  $(".bestLi .optTit .bestOpt dt").toggleClass("c");
+
+  $(".bestLi .optTit dd").toggle();
+});

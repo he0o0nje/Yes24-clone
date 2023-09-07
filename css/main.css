@@ -662,6 +662,15 @@
   right: 3px;
   cursor: pointer;
 }
+.bestLi .optTit .bestOpt dt.c::after {
+  content: "";
+  background: url(../img/main2/dropup.png);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  right: 3px;
+}
 .bestLi .optTit dd {
   position: absolute;
   top: 23px;
