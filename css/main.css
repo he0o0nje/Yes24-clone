@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* main1 */
 #main1 {
   background-color: #fff;
   width: 1198px;
@@ -316,4 +317,47 @@
 }
 .r5 .pageNum5 {
   left: 768px;
+}
+
+/* main2 */
+#main2 {
+  position: relative;
+  text-align: left;
+  width: 1200px;
+  height: auto;
+  margin: 20px auto 0;
+}
+.ADcont {
+  width: 238px;
+  text-align: center;
+  float: left;
+  overflow: hidden;
+  border: solid 1px #d8d8d8;
+  background-color: #fff;
+}
+.ADcont .ADBigBn {
+  position: relative;
+  overflow: hidden;
+  border-bottom: solid 1px #d8d8d8;
+}
+.ADcont .ADSmallBn {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+.ADcont .ADTag {
+  position: absolute;
+  top: 9px;
+  left: 216px;
+  width: 13px;
+  height: 9px;
+  color: #ccc;
+  font-size: 7px;
+}
+.ADcont a {
+  display: block;
+  padding: 10px 0;
+}
+.ADcont img {
+  width: 188px;
 }
