@@ -50,9 +50,9 @@ $(".mbnSub").hover(
 // main2
 $(".todayBook").hover(
   function () {
-    $(".todayBook .mbnBtn").css({ display: "block" });
+    $(".btnTB").css({ display: "block" });
   },
   function () {
-    $(".todayBook .mbnBtn").css({ display: "none" });
+    $(".btnTB").css({ display: "none" });
   }
 );

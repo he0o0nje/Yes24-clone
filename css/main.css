@@ -529,5 +529,38 @@
   height: 16px;
   position: absolute;
   top: 0;
-  left: -17px;
+  left: -18px;
+}
+.todayBook .btnTB {
+  position: absolute;
+  top: 155px;
+  z-index: 10;
+  width: 34px;
+  height: 38px;
+  cursor: pointer;
+  display: none;
+}
+.todayBook .prev {
+  left: -1px;
+}
+.todayBook .next {
+  right: -1px;
+}
+.btnTB i {
+  background-color: rgba(51, 51, 51, 0.2);
+  width: 34px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnTB i:hover {
+  background-color: #333;
+}
+.tBBar {
+  position: absolute;
+  top: 375px;
+  left: 0;
+  width: 720px;
+  height: 20px;
 }
