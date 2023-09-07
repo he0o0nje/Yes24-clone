@@ -619,3 +619,67 @@
   border: solid 1px #d8d8d8;
   border-top: none;
 }
+.bestLi .optTit {
+  position: relative;
+  z-index: 2;
+  margin: 0 15px;
+  padding: 0 0 14px 0;
+}
+.bestLi .optTit .bestOpt dt {
+  display: block;
+  height: 22px;
+  border: solid 1px #d8d8d8;
+  background: none;
+  background-color: #fff;
+}
+.bestLi .optTit .bestOpt dt a {
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 22px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  line-height: 22px;
+  cursor: pointer;
+}
+.bestLi .optTit .bestOpt dt a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 1px;
+  height: 22px;
+  border-right: 1px solid #ddd;
+}
+.bestLi .optTit .bestOpt dt::after {
+  content: "";
+  background: url(../img/main2/dropdown.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  cursor: pointer;
+}
+.bestLi .optTit dd {
+  position: absolute;
+  top: 23px;
+  left: 0;
+  right: 0;
+}
+.bestLi .optTit dd ul {
+  padding: 5px 0;
+  border: solid 1px #d8d8d8;
+  border-top: solid 1px #ebebeb;
+  background-image: none;
+  background-color: #fff;
+}
+.bestLi .optTit dd ul li a {
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #666;
+  text-indent: 10px;
+}
