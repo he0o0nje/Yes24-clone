@@ -564,3 +564,58 @@
   width: 720px;
   height: 20px;
 }
+#BestPopWrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  height: 389px;
+}
+#BestPopWrap::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 10;
+  height: 30px;
+  border-right: solid 1px #d8d8d8;
+}
+.bestArea {
+  float: left;
+  width: 50%;
+  height: 30px;
+  background-color: #fff;
+}
+.bestArea h2 {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+}
+.bestArea h2 a {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999;
+  border-top: solid 1px #d8d8d8;
+  border-left: solid 1px #d8d8d8;
+  border-bottom: solid 1px #d8d8d8;
+  white-space: nowrap;
+  border-bottom-color: #fff;
+}
+.bestArea h2 a em {
+  color: #333;
+}
+.bestLi {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px;
+  padding-top: 15px;
+  height: 343px;
+  background-color: #fff;
+  border: solid 1px #d8d8d8;
+  border-top: none;
+}

@@ -230,26 +230,27 @@ body {
 }
 #header_middle_button {
   position: absolute;
-  top: 74px;
-  right: -5px;
-  width: 38px;
-  height: 20px;
+  top: 76px;
+  right: 0px;
+  width: 30px;
+  height: 15px;
+  text-align: center;
   display: flex;
   cursor: pointer;
+  font-size: 12px;
 }
 #header_middle_button .prev {
-  background: url(../img/header/prev.png) no-repeat;
-  background-size: contain;
-  width: 19px;
-  height: 20px;
-  margin-right: -2.1px;
+  width: 16px;
+  height: 14px;
+  margin-right: -1px;
+  border: 1px solid #ddd;
+  color: #666;
 }
 #header_middle_button .next {
-  background: url(../img/header/next.png) no-repeat;
-  background-size: contain;
-  width: 19px;
-  height: 20px;
-  margin-left: -2.1px;
+  width: 16px;
+  height: 14px;
+  border: 1px solid #ddd;
+  color: #666;
 }
 #header_bottom {
   position: relative;
