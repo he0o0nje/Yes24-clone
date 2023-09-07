@@ -361,3 +361,173 @@
 .ADcont img {
   width: 188px;
 }
+.todayBook {
+  position: relative;
+  width: 720px;
+  height: 389px;
+  float: left;
+  z-index: 1;
+}
+.todayBook h2 {
+  position: absolute;
+  top: 0;
+  left: 295px;
+  z-index: 5;
+}
+.todayBook h2 a {
+  display: block;
+  height: 34px;
+  overflow: hidden;
+  line-height: 34px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.todayBook h2 a .arrow {
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  left: 72px;
+}
+.todayBArea {
+  padding: 287px 0 0 295px;
+}
+.todayBArea .todayBUnit {
+  display: inline-block;
+  margin: -1px;
+  margin-right: 16px;
+}
+.todayBArea .todayBUnit .tBThumb {
+  position: relative;
+  z-index: 2;
+  border: solid 1px #d8d8d8;
+  display: inline-block;
+}
+.todayBArea .todayBUnit .tBThumb img {
+  width: 60px;
+  max-height: 90px;
+}
+.todayBArea .todayBUnit .tBThumb:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 4px solid #0080ff;
+  z-index: 1;
+}
+.tBcont {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 338px;
+}
+.tBcont .tBImgArea {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  z-index: 1;
+}
+.tBcont .tBImgArea .tB_img {
+  width: 223px;
+  height: 336px;
+}
+.tBcont .tBImgArea .tB_img a {
+  border: solid 1px #d8d8d8;
+  display: inline-block;
+}
+.tBcont .tBImgArea .tB_img a img {
+  width: 225px;
+  max-height: 338px;
+  margin: -1px;
+}
+.tBcont .tBInfo {
+  padding: 40px 0 0 295px;
+}
+.tBcont .tBInfo .tB_readTit {
+  font-weight: bold;
+  width: 385px;
+  height: 23px;
+  line-height: 23px;
+  font-size: 16px;
+}
+.tBcont .tBInfo .tB_readTit a {
+  color: #6699cc;
+}
+.tBcont .tBInfo .tB_readTit a:hover {
+  text-decoration: underline;
+}
+.tBcont .tBInfo .tB_readCon {
+  margin-top: 7px;
+  width: 380px;
+  max-height: 110px;
+  line-height: 22px;
+  font-size: 14px;
+  word-break: break-all;
+  text-align: justify;
+  color: #999;
+}
+.tBcont .tBInfo .tB_readCon a {
+  color: #999;
+}
+.tBcont .tBInfo .tB_name {
+  width: 385px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 14px;
+  margin-top: 16px;
+  font-weight: bold;
+}
+.tBcont .tBInfo .tB_name a {
+  color: #333;
+}
+.tBcont .tBInfo .tB_name a:hover {
+  text-decoration: underline;
+}
+.tBcont .tBInfo .tB_pub {
+  width: 385px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+.tBcont .tBInfo .tB_pub .divi {
+  margin: 3px 4px 0 0;
+  width: 1px;
+  height: 12px;
+  text-indent: -999em;
+  border-right: solid 1px #ccc;
+  display: inline-block;
+}
+.tBcont .tBInfo .tB_price {
+  padding-top: 18px;
+  width: 300px;
+  font-size: 12px;
+}
+.tBcont .tBInfo .tB_price strong {
+  color: #333;
+  margin-right: -5px;
+}
+.tBcont .tBInfo .tB_price .txt_price {
+  margin-right: 5px;
+}
+.tBcont .tBInfo .tB_price .txt_price .yes_b {
+  font-size: 16px;
+  vertical-align: -1px;
+  color: #333;
+  margin-right: -4px;
+}
+.txt_point {
+  position: relative;
+  margin-left: 15px;
+}
+.txt_point .ico_point {
+  background: url(../img/main2/point.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: -17px;
+}

@@ -46,3 +46,13 @@ $(".mbnSub").hover(
 //     });
 //   }
 // });
+
+// main2
+$(".todayBook").hover(
+  function () {
+    $(".todayBook .mbnBtn").css({ display: "block" });
+  },
+  function () {
+    $(".todayBook .mbnBtn").css({ display: "none" });
+  }
+);
