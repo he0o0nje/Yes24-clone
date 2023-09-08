@@ -8,9 +8,9 @@ $(".mbnTit").mouseenter(function () {
     color: "#fff",
     "background-color": "#0080ff",
   });
-  $(".mbnSub").css("display", "none");
-  $(this).parents().siblings(".mbnSub").css("display", "block");
-  $(".mbnContImg").css("display", "block");
+  $(".mbnSub").hide();
+  $(this).parents().siblings(".mbnSub").show();
+  $(".mbnContImg").show();
 });
 
 $(".tabs").mouseenter(function () {
@@ -22,16 +22,16 @@ $(".tabs").mouseenter(function () {
     color: "#fff",
     "background-color": "#333",
   });
-  $(".mbnContImg").css("display", "none");
-  $(this).siblings(".mbnContImg").css("display", "block");
+  $(".mbnContImg").hide();
+  $(this).siblings(".mbnContImg").show();
 });
 
 $(".mbnSub").hover(
   function () {
-    $(".mbnBtn").css({ display: "block" });
+    $(".mbnBtn").show();
   },
   function () {
-    $(".mbnBtn").css({ display: "none" });
+    $(".mbnBtn").hide();
   }
 );
 

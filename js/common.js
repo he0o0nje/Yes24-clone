@@ -74,8 +74,8 @@ $(".qtit").mouseenter(function () {
     color: "#fff",
     "background-color": "#0080ff",
   });
-  $(".quick_cate_tb").css("display", "none");
-  $(this).siblings(".quick_cate_tb").css("display", "block");
+  $(".quick_cate_tb").hide();
+  $(this).siblings(".quick_cate_tb").show();
 });
 
 $(".qtit, .quick_cate_tb").mouseleave(function () {
