@@ -987,6 +987,73 @@
   max-height: 179px;
   vertical-align: top;
 }
+.goods_info {
+  margin: 16px 0 0 20px;
+}
+.goods_info .goods_tCmt {
+  width: 180px;
+  height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.goods_info .goods_tCmt em {
+  display: block;
+  width: 150px;
+  height: 16px;
+  overflow: hidden;
+  color: #6699cc;
+  line-height: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.goods_info .goods_name {
+  margin-top: 4px;
+  width: 180px;
+  min-height: 16px;
+  max-height: 32px;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.goods_info .goods_name a {
+  color: #333;
+}
+.goods_info .goods_name a:hover {
+  text-decoration: underline;
+}
+.goods_info .goods_pubGrp {
+  display: block;
+  margin-top: 6px;
+  width: 180px;
+  height: 15px;
+  line-height: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.goods_info .goods_pubGrp .goods_auth {
+  color: #999;
+}
+.goods_info .goods_pubGrp .goods_pub {
+  color: #999;
+}
+.goods_info .goods_pubGrp .divi {
+  color: #ccc;
+}
+.goods_info .goods_price {
+  margin-top: 8px;
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+}
+.goods_info .goods_price em {
+  font-size: 14px;
+}
 
 /* main4 */
 #main4 {
