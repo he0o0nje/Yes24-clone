@@ -121,3 +121,20 @@ $("#pop").click(function (e) {
   $("#bestli").hide();
   $(".bestLi .optTit dd").hide();
 });
+
+$("#bestSet02").hide();
+$("#b1").css({ color: "#333", "font-weight": "bold" });
+$("#b1").click(function (e) {
+  e.preventDefault();
+  $("#bestSet01").show();
+  $("#bestSet02").hide();
+  $("#b1").css({ color: "#333", "font-weight": "bold" });
+  $("#b2").css({ color: "", "font-weight": "" });
+});
+$("#b2").click(function (e) {
+  e.preventDefault();
+  $("#bestSet01").hide();
+  $("#bestSet02").show();
+  $("#b2").css({ color: "#333", "font-weight": "bold" });
+  $("#b1").css({ color: "", "font-weight": "" });
+});

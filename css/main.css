@@ -700,3 +700,149 @@
 .popArea h2 a em {
   color: #999;
 }
+.best01Grp {
+  position: relative;
+  z-index: 1;
+  padding-left: 14px;
+}
+.best01Grp h3 {
+  float: left;
+  font-size: 11px;
+  font-weight: normal;
+}
+.best01Grp h3 a {
+  color: #999;
+}
+.best01Grp h3 a:hover {
+  text-decoration: underline;
+}
+.best01Grp .divi {
+  margin: 0 6px 0 3px;
+  color: #ccc;
+  font-weight: normal;
+}
+.best01 {
+  position: absolute;
+  top: 24px;
+  right: 15px;
+  left: 15px;
+}
+.best01 ol {
+  padding-top: 1px;
+}
+.best01 .tp02 {
+  position: relative;
+  height: 55px;
+}
+.best01 .tp02 .icon {
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 0;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  font-size: 11px;
+  color: #666;
+  text-indent: -999em;
+}
+.best01 .tp02 .rnk_1 {
+  background: url(../img/main2/number-1.png) no-repeat;
+}
+.best01 .tp02 .rnk_2 {
+  background: url(../img/main2/number-2.png) no-repeat;
+}
+.best01 .tp02 .rnk_3 {
+  background: url(../img/main2/number-3.png) no-repeat;
+}
+.best01 .tp02 .rnk_4 {
+  background: url(../img/main2/number-4.png) no-repeat;
+}
+.best01 .tp02 .rnk_5 {
+  background: url(../img/main2/number-5.png) no-repeat;
+}
+.best01 .tp02 .rnk_6 {
+  background: url(../img/main2/number-6.png) no-repeat;
+}
+.best01 .tp02 .rnk_7 {
+  background: url(../img/main2/number-7.png) no-repeat;
+}
+.best01 .tp02 .rnk_8 {
+  background: url(../img/main2/number-8.png) no-repeat;
+}
+.best01 .tp02 .rnk_9 {
+  background: url(../img/main2/number-9.png) no-repeat;
+}
+.best01 .tp02 .rnk_10 {
+  background: url(../img/main2/number-10.png) no-repeat;
+}
+.best01 .tp02 .divi {
+  position: absolute;
+  top: 15px;
+  left: 2px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.best01 .tp02 .rnk_cng {
+  position: absolute;
+  top: 24px;
+  left: 9px;
+}
+.best01 .tp02 .rnk_img {
+  position: absolute;
+  top: 0;
+  left: 27px;
+  width: 43px;
+  height: 43px;
+  display: block;
+  border: solid 1px #d8d8d8;
+  overflow: hidden;
+}
+.best01 .tp02 .rnk_img img {
+  margin: -1px;
+  width: 45px;
+}
+.best01 .tp02 .rnk_info {
+  padding-left: 81px;
+  display: block;
+}
+.best01 .tp02 .rnk_info strong {
+  min-height: 16px;
+  height: auto;
+  max-height: 32px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-all;
+  text-overflow: clip;
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+  display: block;
+}
+.best01 .tp02 .rnk_info em {
+  margin-top: 2px;
+  display: block;
+  height: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+  font-size: 11px;
+}
+#bestli .more_btn {
+  position: absolute;
+  top: 48px;
+  right: 14px;
+  z-index: 1;
+  width: 40px;
+  height: 14px;
+}
+#bestli .more_btn a {
+  font-size: 11px;
+}
+#bestli .more {
+  zoom: 0.6;
+  top: 5px;
+}
