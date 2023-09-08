@@ -76,6 +76,7 @@ $("#best").click(function (e) {
   $("#best a em").css({ color: "#333" });
   $("#bestli").show();
   $("#popli").hide();
+  $(".bestLi .optTit dd").hide();
 });
 
 $("#pop").click(function (e) {
@@ -88,4 +89,5 @@ $("#pop").click(function (e) {
   $("#pop a em").css({ color: "#333" });
   $("#popli").show();
   $("#bestli").hide();
+  $(".bestLi .optTit dd").hide();
 });
