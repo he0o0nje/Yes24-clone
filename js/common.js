@@ -30,12 +30,12 @@ const showImage = (index) => {
   images.eq(index).show();
 };
 
-$(".prev").click(function () {
+$("#header_middle_button .prev").click(function () {
   currentIndex = (currentIndex - 1 + totalImages) % totalImages;
   showImage(currentIndex);
 });
 
-$(".next").click(function () {
+$("#header_middle_button .next").click(function () {
   currentIndex = (currentIndex + 1) % totalImages;
   showImage(currentIndex);
 });

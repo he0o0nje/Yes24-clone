@@ -35,6 +35,7 @@ $(".mbnSub").hover(
   }
 );
 
+// 이미지 보여질때 해당 제목 css변경
 // $(".mbnRollUnit").each(function () {
 //   const tabs = $(this).find(".tabs");
 //   const mbnContImg = $(this).find(".mbnContImg");
@@ -45,6 +46,35 @@ $(".mbnSub").hover(
 //       "background-color": "#333",
 //     });
 //   }
+// });
+
+// 슬라이더
+// const mbnCurrentIndex = [];
+
+// const totalSliders = $(".mbnContImg").length;
+
+// for (let i = 0; i < totalSliders; i++) {
+//   mbnCurrentIndex[i] = 0;
+//   mbnShowImage(i, mbnCurrentIndex[i]);
+// }
+
+// function mbnShowImage(sliderIndex, imageIndex) {
+//   $(".mbnContImg").eq(sliderIndex).find(".mbnContImg").hide();
+//   $(".mbnContImg").eq(sliderIndex).find(".mbnContImg").eq(imageIndex).show();
+// }
+
+// $(".mbnBtn.next").click(function () {
+//   const sliderIndex = $(this).parent().index();
+//   mbnCurrentIndex[sliderIndex] =
+//     (mbnCurrentIndex[sliderIndex] + 1) % totalImages;
+//   mbnShowImage(sliderIndex, mbnCurrentIndex[sliderIndex]);
+// });
+
+// $(".mbnBtn.prev").click(function () {
+//   const sliderIndex = $(this).parent().index();
+//   mbnCurrentIndex[sliderIndex] =
+//     (mbnCurrentIndex[sliderIndex] - 1 + totalImages) % totalImages;
+//   mbnShowImage(sliderIndex, mbnCurrentIndex[sliderIndex]);
 // });
 
 // main2
