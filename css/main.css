@@ -1048,11 +1048,100 @@
 .goods_info .goods_price {
   margin-top: 8px;
   color: #333;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 12px;
 }
 .goods_info .goods_price em {
   font-size: 14px;
+}
+.nowBook .pageNum {
+  position: absolute;
+  top: 20px;
+  right: 19px;
+  font-size: 11px;
+  color: #999;
+}
+.nowBook .pageNum strong {
+  color: #333;
+}
+.nowBook .btnNB {
+  position: absolute;
+  top: 160px;
+  z-index: 10;
+  width: 34px;
+  height: 38px;
+  cursor: pointer;
+}
+.nowBook .prev {
+  left: -1px;
+}
+.nowBook .next {
+  right: -1px;
+}
+.nowBook .btnNB i {
+  background-color: rgba(51, 51, 51, 0.2);
+  width: 34px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nowBook .btnNB i:hover {
+  background-color: #333;
+}
+.pubBook {
+  display: table-cell;
+  width: 238px;
+  height: 356px;
+  border: none;
+  position: relative;
+  float: right;
+  padding-top: 27px;
+  background-color: #ecf5fe;
+}
+.pubBook h2 {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  right: 0;
+}
+.pubBook h2 strong {
+  display: block;
+  color: #333;
+  letter-spacing: -0.5px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 16px;
+}
+.pubBook h2 .ADTag {
+  position: absolute;
+  top: -1px;
+  right: 9px;
+  width: 13px;
+  height: 9px;
+  font-size: 7px;
+  font-weight: normal;
+  color: #ccc;
+}
+.pubBookUl {
+  margin: 0 15px;
+}
+.pubBookUl li {
+  padding: 27px 0 30px 0;
+  text-align: center;
+}
+.pubBookUl li:first-child {
+  padding: 43px 0 30px 0;
+  height: 100px;
+  border-bottom: 1px solid #d5e4f3;
+}
+.pubBookUl li img {
+  width: 158px;
+  height: 100px;
+  vertical-align: top;
+}
+.pubBookUl li:last-child {
+  padding: 30px 0;
 }
 
 /* main4 */
