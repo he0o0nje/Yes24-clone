@@ -407,6 +407,13 @@
 .todayBArea .todayBUnit .tBThumb img {
   width: 60px;
   max-height: 90px;
+  vertical-align: bottom;
+}
+.todayBArea .todayBUnit:nth-child(3) .tBThumb img {
+  max-height: 86px;
+}
+.todayBArea .todayBUnit:last-child .tBThumb img {
+  max-height: 81px;
 }
 .todayBArea .todayBUnit .tBThumb:hover::before {
   content: "";
