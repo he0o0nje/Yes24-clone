@@ -931,6 +931,62 @@
   height: 363px;
   background-color: #fff;
 }
+.nowBook h2 {
+  position: absolute;
+  top: 20px;
+  left: 29px;
+}
+.nowBook h2 a {
+  display: block;
+  height: 34px;
+  overflow: hidden;
+  line-height: 34px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.nowBook h2 a .arrow {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  font-size: 12px;
+}
+.nowBookArea .nowBookSet {
+  padding: 54px 0 0 70px;
+}
+.nowBookSet ul {
+  display: table;
+  table-layout: fixed;
+}
+.nowBookSet ul li {
+  display: table-cell;
+  position: relative;
+  width: 218px;
+}
+.goods_img {
+  display: table-cell;
+  position: relative;
+  margin: 0;
+  padding-left: 20px;
+  width: 158px;
+  height: 179px;
+  vertical-align: bottom;
+}
+.goods_img .imgbox {
+  position: relative;
+  display: inline-block;
+}
+.goods_img .imgbox a {
+  display: inline-block;
+  border: 1px solid #ebebeb;
+}
+.goods_img .imgbox a img {
+  margin: -1px;
+  width: 125px;
+  max-height: 179px;
+  vertical-align: top;
+}
 
 /* main4 */
 #main4 {
