@@ -138,3 +138,13 @@ $("#b2").click(function (e) {
   $("#b2").css({ color: "#333", "font-weight": "bold" });
   $("#b1").css({ color: "", "font-weight": "" });
 });
+
+// main3
+$(".nowBookArea").hover(
+  function () {
+    $(".btnNB").css({ display: "block" });
+  },
+  function () {
+    $(".btnNB").css({ display: "none" });
+  }
+);
