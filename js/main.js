@@ -166,3 +166,13 @@ $(".bookClubRgt").hover(
     $(".btnBCR").hide();
   }
 );
+
+// main9
+$("#main9").hover(
+  function () {
+    $(".btnBn").show();
+  },
+  function () {
+    $(".btnBn").hide();
+  }
+);

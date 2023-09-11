@@ -1061,7 +1061,8 @@
 }
 .nowBook .pageNum,
 .bookClub .pageNum,
-.bookClubRgt .pageNum {
+.bookClubRgt .pageNum,
+#main9 .pageNum {
   position: absolute;
   top: 20px;
   right: 19px;
@@ -1074,7 +1075,8 @@
 }
 .nowBook .btnNB,
 .bookClub .btnBC,
-.bookClubRgt .btnBCR {
+.bookClubRgt .btnBCR,
+#main9 .btnBn {
   position: absolute;
   top: 160px;
   z-index: 10;
@@ -1095,7 +1097,8 @@
 }
 .nowBook .btnNB i,
 .bookClub .btnBC i,
-.bookClubRgt .btnBCR i {
+.bookClubRgt .btnBCR i,
+#main9 .btnBn i {
   background-color: rgba(51, 51, 51, 0.2);
   width: 34px;
   height: 38px;
@@ -1105,7 +1108,8 @@
 }
 .nowBook .btnNB i:hover,
 .bookClub .btnBC i:hover,
-.bookClubRgt .btnBCR i:hover {
+.bookClubRgt .btnBCR i:hover,
+#main9 .btnBn i:hover {
   background-color: #333;
 }
 .pubBook {
@@ -1232,3 +1236,60 @@
 }
 
 /* main6 */
+#main6 {
+  position: relative;
+  width: 1200px;
+  height: 691px;
+  margin: 20px auto 0;
+  text-align: left;
+  font-size: 12px;
+  color: #555;
+}
+.multiSecArea {
+  display: block;
+  clear: both;
+}
+.multiSecArea::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.multiSecUnit {
+  width: 150px;
+  height: 62px;
+  float: left;
+}
+
+/* main9 */
+#main9 {
+  position: relative;
+  width: 1200px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+#main9 .bnImgSet a {
+  margin: 0 auto;
+  padding: 10px 0;
+  height: 60px;
+  background-color: #2bbca9;
+  display: block;
+}
+#main9 .bnImgSet a img {
+  height: 100%;
+}
+#main9 .pageNum {
+  top: 16px;
+  right: 19px;
+}
+#main9 .btnBn {
+  top: 50%;
+  margin-top: -17px;
+}
+#main9 .prev {
+  left: 0;
+}
+#main9 .next {
+  right: 0;
+}
