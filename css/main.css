@@ -1135,7 +1135,7 @@
 .pubBook h2 .ADTag {
   position: absolute;
   top: -1px;
-  right: 9px;
+  right: 10px;
   width: 13px;
   height: 9px;
   font-size: 7px;
@@ -1230,3 +1230,5 @@
   height: 369px;
   margin: 0;
 }
+
+/* main6 */
