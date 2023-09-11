@@ -259,6 +259,11 @@ body {
   top: 0;
   left: 0;
 }
+#quick_cate_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 #quick_cate_btn h2 {
   width: 110px;
   height: 40px;

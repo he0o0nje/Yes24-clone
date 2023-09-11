@@ -1294,6 +1294,64 @@
   right: 0;
 }
 
+/* main11 */
+#main11 {
+  width: 1198px;
+  padding: 23px 0;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+}
+#main11::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#main11 h2 {
+  width: 90px;
+  float: left;
+}
+#main11 h2 em {
+  display: block;
+  height: 34px;
+  overflow: hidden;
+  line-height: 34px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: -0.5px;
+  padding-left: 19px;
+}
+.notiLi {
+  margin: 0 40px 0 97px;
+}
+.notiLi li {
+  float: left;
+  margin-right: 25px;
+  line-height: 34px;
+}
+.notiLi li em.bl {
+  /* font-size: 22px; */
+}
+.notiLi li a {
+  font-size: 12px;
+  color: #666;
+}
+.notiLi li em.notDate {
+  color: #999;
+}
+#main11 .moreNoti {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  margin-top: -7px;
+  font-size: 11px;
+}
+#main11 .moreNoti .more {
+  zoom: 0.6;
+  top: 0;
+}
+
 /* main12 */
 #main12 {
   width: 1198px;
