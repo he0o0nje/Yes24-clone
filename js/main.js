@@ -80,10 +80,10 @@ $(".mbnSub").hover(
 // main2
 $(".todayBook").hover(
   function () {
-    $(".btnTB").css({ display: "block" });
+    $(".btnTB").show();
   },
   function () {
-    $(".btnTB").css({ display: "none" });
+    $(".btnTB").hide();
   }
 );
 
@@ -142,9 +142,27 @@ $("#b2").click(function (e) {
 // main3
 $(".nowBookArea").hover(
   function () {
-    $(".btnNB").css({ display: "block" });
+    $(".btnNB").show();
   },
   function () {
-    $(".btnNB").css({ display: "none" });
+    $(".btnNB").hide();
+  }
+);
+
+// main5
+$(".bookClubArea").hover(
+  function () {
+    $(".btnBC").show();
+  },
+  function () {
+    $(".btnBC").hide();
+  }
+);
+$(".bookClubRgt").hover(
+  function () {
+    $(".btnBCR").show();
+  },
+  function () {
+    $(".btnBCR").hide();
   }
 );

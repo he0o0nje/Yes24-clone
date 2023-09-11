@@ -931,12 +931,14 @@
   height: 363px;
   background-color: #fff;
 }
-.nowBook h2 {
+.nowBook h2,
+.bookClub h2 {
   position: absolute;
   top: 20px;
   left: 29px;
 }
-.nowBook h2 a {
+.nowBook h2 a,
+.bookClub h2 a {
   display: block;
   height: 34px;
   overflow: hidden;
@@ -952,14 +954,17 @@
   left: 80px;
   font-size: 12px;
 }
-.nowBookArea .nowBookSet {
+.nowBookArea .nowBookSet,
+.bookClubArea .bookClubSet {
   padding: 54px 0 0 70px;
 }
-.nowBookSet ul {
+.nowBookSet ul,
+.bookClubSet ul {
   display: table;
   table-layout: fixed;
 }
-.nowBookSet ul li {
+.nowBookSet ul li,
+.bookClubSet ul li {
   display: table-cell;
   position: relative;
   width: 218px;
@@ -1051,34 +1056,46 @@
   font-weight: bolder;
   font-size: 12px;
 }
-.goods_info .goods_price em {
+.goods_info .goods_price .yes_b {
   font-size: 14px;
 }
-.nowBook .pageNum {
+.nowBook .pageNum,
+.bookClub .pageNum,
+.bookClubRgt .pageNum {
   position: absolute;
   top: 20px;
   right: 19px;
   font-size: 11px;
   color: #999;
 }
-.nowBook .pageNum strong {
+.nowBook .pageNum strong,
+.bookClub .pageNum strong {
   color: #333;
 }
-.nowBook .btnNB {
+.nowBook .btnNB,
+.bookClub .btnBC,
+.bookClubRgt .btnBCR {
   position: absolute;
   top: 160px;
   z-index: 10;
   width: 34px;
   height: 38px;
   cursor: pointer;
+  display: none;
 }
-.nowBook .prev {
+.nowBook .prev,
+.bookClub .prev,
+.bookClubRgt .prev {
   left: -1px;
 }
-.nowBook .next {
+.nowBook .next,
+.bookClub .next,
+.bookClubRgt .next {
   right: -1px;
 }
-.nowBook .btnNB i {
+.nowBook .btnNB i,
+.bookClub .btnBC i,
+.bookClubRgt .btnBCR i {
   background-color: rgba(51, 51, 51, 0.2);
   width: 34px;
   height: 38px;
@@ -1086,7 +1103,9 @@
   justify-content: center;
   align-items: center;
 }
-.nowBook .btnNB i:hover {
+.nowBook .btnNB i:hover,
+.bookClub .btnBC i:hover,
+.bookClubRgt .btnBCR i:hover {
   background-color: #333;
 }
 .pubBook {
@@ -1170,6 +1189,11 @@
   margin: 20px auto 0;
   text-align: left;
 }
+#main5::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 .bookClub {
   display: table-cell;
   padding: 10px 0;
@@ -1179,4 +1203,30 @@
   float: left;
   height: 347px;
   background-color: #fff;
+}
+.txt_BC {
+  color: #425ca9;
+}
+.bookClub h2 a .arrow {
+  position: absolute;
+  top: 0;
+  left: 138px;
+  font-size: 12px;
+}
+.bookClubRgt {
+  position: relative;
+  width: 240px;
+  height: 369px;
+  display: table-cell;
+  float: right;
+  overflow: hidden;
+}
+.bookClubRgt a {
+  padding-top: 0;
+  display: block;
+}
+.bookClubRgt a img {
+  width: 240px;
+  height: 369px;
+  margin: 0;
 }
