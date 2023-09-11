@@ -1293,3 +1293,28 @@
 #main9 .next {
   right: 0;
 }
+
+/* main12 */
+#main12 {
+  width: 1198px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #d8d8d8;
+}
+#main12::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.botBn li {
+  float: left;
+  width: 50%;
+}
+.botBn li a {
+  display: block;
+  padding: 10px 0;
+}
+.botBn li a img {
+  width: 479px;
+  height: 58px;
+}
