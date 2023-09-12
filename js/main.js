@@ -1,3 +1,22 @@
+// 다음 리스트 있는 컨테이너 호버 시 prev, next 버튼 보여주기
+function addHoverEffect(selectorToShow, selectorToHide) {
+  $(selectorToShow).hover(
+    function () {
+      $(selectorToHide).show();
+    },
+    function () {
+      $(selectorToHide).hide();
+    }
+  );
+}
+addHoverEffect(".mbnSub", ".mbnBtn");
+addHoverEffect(".todayBook", ".btnTB");
+addHoverEffect(".nowBookArea", ".btnNB");
+addHoverEffect(".bookClubArea", ".btnBC");
+addHoverEffect(".bookClubRgt", ".btnBCR");
+addHoverEffect("#main7", ".btnTv");
+addHoverEffect("#main9", ".btnBn");
+
 // main1
 $(".mbnTit").mouseenter(function () {
   $(".mbnTit").css({
@@ -25,15 +44,6 @@ $(".tabs").mouseenter(function () {
   $(".mbnContImg").hide();
   $(this).siblings(".mbnContImg").show();
 });
-
-$(".mbnSub").hover(
-  function () {
-    $(".mbnBtn").show();
-  },
-  function () {
-    $(".mbnBtn").hide();
-  }
-);
 
 // 이미지 보여질때 해당 제목 css변경
 // $(".mbnRollUnit").each(function () {
@@ -78,15 +88,6 @@ $(".mbnSub").hover(
 // });
 
 // main2
-$(".todayBook").hover(
-  function () {
-    $(".btnTB").show();
-  },
-  function () {
-    $(".btnTB").hide();
-  }
-);
-
 $(".bestLi .optTit dd").hide();
 $(".bestOpt").click(function (e) {
   e.preventDefault();
@@ -138,51 +139,3 @@ $("#b2").click(function (e) {
   $("#b2").css({ color: "#333", "font-weight": "bold" });
   $("#b1").css({ color: "", "font-weight": "" });
 });
-
-// main3
-$(".nowBookArea").hover(
-  function () {
-    $(".btnNB").show();
-  },
-  function () {
-    $(".btnNB").hide();
-  }
-);
-
-// main5
-$(".bookClubArea").hover(
-  function () {
-    $(".btnBC").show();
-  },
-  function () {
-    $(".btnBC").hide();
-  }
-);
-$(".bookClubRgt").hover(
-  function () {
-    $(".btnBCR").show();
-  },
-  function () {
-    $(".btnBCR").hide();
-  }
-);
-
-// main7
-$("#main7").hover(
-  function () {
-    $(".btnTv").show();
-  },
-  function () {
-    $(".btnTv").hide();
-  }
-);
-
-// main9
-$("#main9").hover(
-  function () {
-    $(".btnBn").show();
-  },
-  function () {
-    $(".btnBn").hide();
-  }
-);
