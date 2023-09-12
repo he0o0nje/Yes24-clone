@@ -1,4 +1,4 @@
-// 다음 리스트 있는 컨테이너 호버 시 prev, next 버튼 보여주기
+// 슬라이드 컨테이너 호버 시 prev, next 버튼 보여주기
 function addHoverEffect(selectorToShow, selectorToHide) {
   $(selectorToShow).hover(
     function () {
@@ -15,6 +15,7 @@ addHoverEffect(".nowBookArea", ".btnNB");
 addHoverEffect(".bookClubArea", ".btnBC");
 addHoverEffect(".bookClubRgt", ".btnBCR");
 addHoverEffect("#main7", ".btnTv");
+addHoverEffect(".cLTop", ".btnCg");
 addHoverEffect("#main9", ".btnBn");
 
 // main1
