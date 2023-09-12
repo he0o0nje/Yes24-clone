@@ -1262,6 +1262,174 @@
   float: left;
 }
 
+/* main7 */
+#main7 {
+  width: 1198px;
+  padding: 10px 0 32px;
+  margin: 20px auto 0;
+  position: relative;
+  border: 1px solid #d8d8d8;
+  background-color: #fff;
+}
+.yesTvTit {
+  margin: 0 29px;
+  padding: 10px 0 21px 0;
+}
+.yesTvTit a {
+  color: #333;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 34px;
+}
+.yesTvTit a .arrow {
+  position: absolute;
+  top: 19px;
+  left: 133px;
+  font-size: 12px;
+}
+.yesTvGrp {
+  position: relative;
+  margin-left: 30px;
+}
+.yesTvSet {
+}
+.TvArea {
+  width: 640px;
+  height: 360px;
+}
+.TvArea iframe {
+  display: block;
+}
+.TvArea h3 {
+  display: block;
+  margin-top: 16px;
+  height: 20px;
+  overflow: hidden;
+  line-height: 20px;
+  font-weight: bold;
+  color: #333;
+  font-size: 15px;
+}
+.TvSub {
+  position: absolute;
+  top: -2px;
+  left: 670px;
+}
+.TvSub .TvSubTit {
+  height: 17px;
+  line-height: 17px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+}
+.TvSub .TvSubGrp {
+  width: 136px;
+  height: 200px;
+  margin-top: 15px;
+}
+.TvSub .TvSubGrp .imgbox img {
+  border: 1px solid #ebebeb;
+  margin: -1px;
+  width: 136px;
+  max-height: 204px;
+}
+.TvSubExp {
+  position: absolute;
+  top: 33px;
+  left: 150px;
+  width: 328px;
+}
+.TvSubGrp .subCmt {
+  display: block;
+  margin: 0 auto;
+  min-height: 17px;
+  max-height: 34px;
+  line-height: 17px;
+  font-size: 12px;
+  overflow: hidden;
+  color: #6699cc;
+}
+.TvSubGrp .subTit {
+  display: block;
+  margin: 14px auto 0;
+  min-height: 17px;
+  max-height: 34px;
+  line-height: 17px;
+  font-size: 13px;
+  overflow: hidden;
+}
+.TvSubGrp .subTit a {
+  color: #333;
+  font-weight: bold;
+}
+.TvSubGrp .subTit a:hover {
+  text-decoration: underline;
+}
+.TvSubGrp .subPub {
+  display: block;
+  margin: 6px 0 0 0;
+}
+.TvSubGrp .subPub .auth {
+  display: block;
+  height: 16px;
+  overflow: hidden;
+  line-height: 16px;
+  font-size: 12px;
+  color: #999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.TvSubGrp .subPub .pub {
+  display: block;
+  margin: 3px 0 0 0;
+  height: 16px;
+  overflow: hidden;
+  line-height: 16px;
+  font-size: 12px;
+  color: #999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.movGrp {
+  position: absolute;
+  bottom: 0;
+  left: 670px;
+  max-width: 498px;
+  max-height: 76px;
+}
+.movGrp li {
+  width: 136px;
+  height: 76px;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+}
+.movGrp li img {
+  width: 136px;
+  height: 76px;
+}
+.movGrp li:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 4px solid #196ab3;
+  z-index: 1;
+}
+.movGrp li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -16px 0 0 -16px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/main7/play.png) no-repeat left top;
+}
+
 /* main8 */
 #main8 {
   width: 1198px;
