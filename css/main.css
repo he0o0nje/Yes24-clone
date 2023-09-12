@@ -1456,7 +1456,7 @@
   height: 203px;
   width: 100%;
 }
-.cLTop:hover::after {
+.cLTop:hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1545,7 +1545,7 @@
   color: #999;
 }
 #main8 .pageNum {
-  top: 16px;
+  top: 18px;
   right: 19px;
 }
 .cLTop .btnCT {
@@ -1581,16 +1581,78 @@
 .cardRight {
   display: table-cell;
 }
+.cardRight h2 {
+  position: relative;
+  z-index: 11;
+  display: block;
+  height: 44px;
+}
+.cardRight h2 a {
+  height: 34px;
+  overflow: hidden;
+  line-height: 34px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.cardRight h2 a .arrow {
+  position: absolute;
+  top: 0;
+  left: 65px;
+  font-size: 12px;
+}
 .cardRight .cRTop {
   position: relative;
   min-height: 265px;
   padding: 20px 0 20px 29px;
   border-bottom: 1px solid #d8d8d8;
 }
+.rowGrp ul li {
+  float: left;
+  margin-right: 20px;
+  width: 220px;
+  height: 191px;
+}
+.rowGrp ul li a {
+  display: block;
+  position: relative;
+  width: 160px;
+  height: 180px;
+  margin-left: 40px;
+}
+.rowGrp .titles_thumb img {
+  width: 160px;
+  height: 113px;
+}
+.rowGrp .titles_info {
+  padding: 8px 0 0;
+  height: 45px;
+  font-size: 12px;
+}
+.rowGrp .titles_tit {
+  display: block;
+  min-height: 16px;
+  max-height: 32px;
+  overflow: hidden;
+  line-height: 16px;
+  font-size: 12px;
+  color: #333;
+}
+.rowGrp .titles_des {
+  display: block;
+  margin-top: 5px;
+  height: 16px;
+  line-height: 16px;
+  color: #999;
+}
 .cardRight .cRBot {
   position: relative;
   min-height: 265px;
   padding: 20px 0 20px 29px;
+}
+.cRBot h2 a .arrow {
+  left: 75px;
 }
 
 /* main9 */
