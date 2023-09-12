@@ -1076,7 +1076,8 @@
 .nowBook .btnNB,
 .bookClub .btnBC,
 .bookClubRgt .btnBCR,
-#main9 .btnBn {
+#main9 .btnBn,
+#main7 .btnTv {
   position: absolute;
   top: 160px;
   z-index: 10;
@@ -1098,7 +1099,8 @@
 .nowBook .btnNB i,
 .bookClub .btnBC i,
 .bookClubRgt .btnBCR i,
-#main9 .btnBn i {
+#main9 .btnBn i,
+#main7 .btnTv i {
   background-color: rgba(51, 51, 51, 0.2);
   width: 34px;
   height: 38px;
@@ -1109,7 +1111,8 @@
 .nowBook .btnNB i:hover,
 .bookClub .btnBC i:hover,
 .bookClubRgt .btnBCR i:hover,
-#main9 .btnBn i:hover {
+#main9 .btnBn i:hover,
+#main7 .btnTv i:hover {
   background-color: #333;
 }
 .pubBook {
@@ -1265,7 +1268,7 @@
 /* main7 */
 #main7 {
   width: 1198px;
-  padding: 10px 0 32px;
+  padding: 10px 0 64px;
   margin: 20px auto 0;
   position: relative;
   border: 1px solid #d8d8d8;
@@ -1428,6 +1431,19 @@
   width: 32px;
   height: 32px;
   background: url(../img/main7/play.png) no-repeat left top;
+}
+.movGrp li:hover::after {
+  opacity: 0;
+}
+#main7 .btnTv {
+  top: 50%;
+  margin-top: -19px;
+}
+#main7 .prev {
+  left: -1px;
+}
+#main7 .next {
+  right: -1px;
 }
 
 /* main8 */
