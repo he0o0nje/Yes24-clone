@@ -14,6 +14,7 @@ addHoverEffect(".todayBook", ".btnTB");
 addHoverEffect(".nowBookArea", ".btnNB");
 addHoverEffect(".bookClubArea", ".btnBC");
 addHoverEffect(".bookClubRgt", ".btnBCR");
+addHoverEffect(".multiconTopSet", ".btnMC");
 addHoverEffect("#main7", ".btnTv");
 addHoverEffect(".cLTop", ".btnCT");
 addHoverEffect(".cLBot", ".btnCN");

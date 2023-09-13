@@ -231,6 +231,7 @@
 .nowBook .btnNB,
 .bookClub .btnBC,
 .bookClubRgt .btnBCR,
+#main6 .btnMC,
 #main7 .btnTv,
 .cLTop .btnCT,
 .cLBot .btnCN,
@@ -278,6 +279,7 @@
 .btnNB i,
 .btnBC i,
 .btnBCR i,
+.btnMC i,
 .btnBn i,
 .btnTv i,
 .btnCT i,
@@ -295,6 +297,7 @@
 .btnNB i:hover,
 .btnBC i:hover,
 .btnBCR i:hover,
+.btnMC i:hover,
 .btnBn i:hover,
 .btnTv i:hover,
 .btnCT i:hover,
@@ -1399,6 +1402,116 @@
   vertical-align: -1px;
   font-weight: bold;
   color: #333;
+}
+.book_price .ico_sale {
+  background: url(../img/main6/discount.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  margin: 0 -4px 0 -7px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+.book_price .ico_point {
+  background: url(../img/main6/point.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  margin: 0 -4px 0 -7px;
+  display: inline-block;
+  text-indent: -9999px;
+  zoom: 1.2;
+}
+#main6 .prev {
+  top: 204px;
+  left: -1;
+}
+#main6 .next {
+  top: 204px;
+  right: 0;
+}
+.multiConBotSet {
+  position: relative;
+  height: 198px;
+}
+.multiConBotSet .bookCornerTit {
+  position: absolute;
+  top: 3px;
+  left: 21px;
+  width: 320px;
+  height: 138px;
+  padding: 36px 5px 0 18px;
+}
+.multiConBotSet .bookCornerTit h4 {
+  max-height: 44px;
+  line-height: 16px;
+  font-size: 16px;
+  overflow: hidden;
+}
+.multiConBotSet .bookCornerTit h4 a {
+  color: #333;
+}
+.multiConBotSet .bookCornerTit h4 a:hover {
+  text-decoration: underline;
+}
+.multiConBotSet .bookCornerTit p {
+  margin-top: 16px;
+  max-height: 80px;
+  line-height: 20px;
+  font-size: 13px;
+  overflow: hidden;
+  color: #999;
+}
+.multiConBotSet .bookCornerTit p a {
+  color: #999;
+}
+.multiConBotSet .bookCornerTit p a:hover {
+  text-decoration: underline;
+}
+.multiConBotSet .bookCornerCon {
+  position: absolute;
+  top: 30px;
+  left: 428px;
+}
+.multiConBotSet .bookCornerCon li {
+  position: relative;
+  float: left;
+  text-align: center;
+  width: 186px;
+  /* overflow-x: hidden; */
+}
+.bookCornerCon li .book_img {
+  width: 140px;
+  height: 120px;
+  text-align: center;
+  margin: 0 auto;
+}
+.bookCornerCon li .book_img a {
+  display: inline-block;
+  margin: 0 auto;
+}
+.bookCornerCon li .book_img a img {
+  max-width: 140px;
+  height: 120px;
+  margin: -1px;
+}
+.bookCornerCon li .book_info {
+  margin-top: 8px;
+  padding: 0 15px;
+  text-align: center;
+}
+.bookCornerCon li .book_name {
+  width: 140px;
+  height: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  overflow: hidden;
+  line-height: 16px;
+}
+.bookCornerCon li .book_name a {
+  color: #333;
+}
+.bookCornerCon li .book_name a:hover {
+  text-decoration: underline;
 }
 
 /* main7 */
