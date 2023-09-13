@@ -17,6 +17,7 @@ addHoverEffect(".bookClubRgt", ".btnBCR");
 addHoverEffect("#main7", ".btnTv");
 addHoverEffect(".cLTop", ".btnCT");
 addHoverEffect(".cLBot", ".btnCN");
+addHoverEffect(".cardRight", ".btnCR");
 addHoverEffect("#main9", ".btnBn");
 
 // main1
