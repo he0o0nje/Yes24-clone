@@ -1081,20 +1081,14 @@
 .goods_info .goods_price .yes_b {
   font-size: 14px;
 }
-.nowBook .pageNum,
-.bookClub .pageNum,
-.bookClubRgt .pageNum,
-#main9 .pageNum,
-#main8 .pageNum {
+#wrap .pageNum {
   position: absolute;
   top: 20px;
   right: 19px;
   font-size: 11px;
   color: #999;
 }
-.nowBook .pageNum strong,
-.bookClub .pageNum strong,
-#main8 .pageNum strong {
+#wrap .pageNum strong {
   color: #333;
 }
 .pubBook {
@@ -1245,6 +1239,95 @@
   width: 150px;
   height: 62px;
   float: left;
+}
+.multiSecUnit h2 {
+  display: block;
+  position: relative;
+  z-index: 10;
+  height: 62px;
+  background-color: #fff;
+}
+.multiSecUnit h2 a {
+  position: relative;
+  display: block;
+  height: 61px;
+  text-align: center;
+  border: solid 1px #d8d8d8;
+  border-right: none;
+  border-bottom: none;
+}
+.multiSecUnit h2 a img {
+  display: block;
+  margin: 4px auto 0;
+}
+.multiSecUnit .txt_mSec {
+  display: block;
+  line-height: 8px;
+  font-weight: normal;
+}
+.multiConArea {
+  width: 1198px;
+  height: 627px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  position: absolute;
+  top: 62px;
+  left: 0;
+  background: url(../img/main6/bg.gif) no-repeat left top;
+}
+.multiconTopSet {
+  position: relative;
+  height: 428px;
+  overflow: hidden;
+}
+.multiconTopSet .secTit {
+  position: relative;
+  display: block;
+}
+.multiconTopSet .secTit em {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  line-height: 34px;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: -0.5px;
+  display: block;
+}
+.multiconTopSet .bookBigTit {
+  padding-top: 26px;
+  height: 44px;
+  text-align: center;
+}
+.multiconTopSet .bookBigTit li {
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  position: relative;
+}
+.multiconTopSet .bookBigTit li a {
+  display: inline-block;
+  color: #999;
+  line-height: 20px;
+  margin: 0 11.5px;
+}
+.multiconTopSet .bookBigTit li a:hover {
+  text-decoration: underline;
+}
+.multiconTopSet .bookBigTit .divi:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -5px;
+  border-right: 1px solid #ccc;
+  width: 1px;
+  height: 12px;
+}
+#main6 .pageNum,
+#main8 .pageNum,
+#main9 .pageNum {
+  top: 18px;
 }
 
 /* main7 */
@@ -1539,10 +1622,6 @@
 .cardBookUnit .bookInfo .bookPub .pub {
   color: #999;
 }
-#main8 .pageNum {
-  top: 18px;
-  right: 19px;
-}
 .cLTop .btnCT {
   top: 97px;
 }
@@ -1699,10 +1778,6 @@
 }
 #main9 .bnImgSet a img {
   height: 100%;
-}
-#main9 .pageNum {
-  top: 16px;
-  right: 19px;
 }
 #main9 .btnBn {
   top: 50%;
