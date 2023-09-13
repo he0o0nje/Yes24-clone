@@ -1644,6 +1644,36 @@
   line-height: 16px;
   color: #999;
 }
+.rowGrp .titlesDl {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px 0;
+  background-color: #f8f8f8;
+  font-size: 12px;
+}
+.rowGrp .titlesDl dl {
+  margin: 0 9px 0 19px;
+  height: 16px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.rowGrp .titlesDl dl dt {
+  color: #333;
+  font-weight: bold;
+  display: inline;
+  margin-right: 29px;
+}
+.rowGrp .titlesDl dl dd {
+  display: inline;
+}
+.rowGrp .titlesDl dl dd a {
+  margin-right: 20px;
+  color: #666;
+}
 .cardRight .cRBot {
   position: relative;
   min-height: 265px;
