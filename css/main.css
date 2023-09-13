@@ -1257,7 +1257,6 @@
   text-align: center;
   border: solid 1px #d8d8d8;
   border-right: none;
-  border-bottom: none;
 }
 .multiSecUnit h2 a img {
   display: block;
@@ -1273,6 +1272,7 @@
   height: 627px;
   background-color: #fff;
   border: 1px solid #d8d8d8;
+  border-top: none;
   position: absolute;
   top: 62px;
   left: 0;
@@ -1512,6 +1512,75 @@
 }
 .bookCornerCon li .book_name a:hover {
   text-decoration: underline;
+}
+
+.sector01 {
+  width: 599px;
+  height: 195px;
+  float: left;
+  position: relative;
+}
+.usedCornerCon {
+  position: absolute;
+  top: 40px;
+  left: 260px;
+}
+.usedCornerCon ul {
+  padding-left: 8px;
+}
+.usedCornerCon ul li {
+  position: relative;
+  float: left;
+  width: 140px;
+  height: 135px;
+  text-align: center;
+}
+.usedCornerCon .book_img {
+  width: 140px;
+  height: 100px;
+}
+.usedCornerCon .book_img a {
+  display: inline-block;
+  margin: 0 auto;
+}
+.usedCornerCon .book_img img {
+  max-width: 100px;
+  height: 100px;
+  margin: -1px;
+  display: inline;
+}
+.usedCornerCon .book_info {
+  padding: 0 15px;
+}
+.usedCornerCon .book_name {
+  margin-top: 8px;
+  width: 110px;
+  height: 16px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.sector02 {
+  width: 199px;
+  height: 199px;
+  float: left;
+  position: relative;
+  border-left: 1px solid #eee;
+}
+.usedBn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 19px;
+  text-align: center;
+}
+.sector03 {
+  position: relative;
+  float: right;
+  width: 398px;
+  height: 199px;
+  border-left: 1px solid #eee;
 }
 
 /* main7 */
