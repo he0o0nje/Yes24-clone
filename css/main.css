@@ -1329,6 +1329,77 @@
 #main9 .pageNum {
   top: 18px;
 }
+.bookBigCon ul {
+  padding-left: 55px;
+}
+.bookBigCon ul li {
+  width: 362px;
+  text-align: center;
+  float: left;
+}
+.bookBigCon .book_img {
+  position: relative;
+  display: inline-block;
+}
+.bookBigCon .book_img img {
+  margin: -1px;
+  max-width: 290px;
+  height: 250px;
+}
+.bookBigCon .book_info {
+  margin-top: 14px;
+}
+.bookBigCon .book_cmt {
+  margin: 0 auto;
+  color: #6699cc;
+  width: 250px;
+  height: 16px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bookBigCon .book_name {
+  margin: 4px auto;
+  width: 250px;
+  height: 17px;
+  line-height: 17px;
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bookBigCon .book_name a {
+  color: #333;
+  font-weight: bold;
+}
+.bookBigCon .book_name a:hover {
+  text-decoration: underline;
+}
+.bookBigCon .book_pubGrp {
+  margin: 3px auto 0;
+  width: 250px;
+  height: 16px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bookBigCon .goods_auth,
+.bookBigCon .goods_pub {
+  color: #999;
+}
+.book_price {
+  margin-top: 3px;
+  line-height: 16px;
+  color: #333;
+}
+.book_price .yes_b {
+  font-size: 14px;
+  vertical-align: -1px;
+  font-weight: bold;
+  color: #333;
+}
 
 /* main7 */
 #main7 {
