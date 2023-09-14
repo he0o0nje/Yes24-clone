@@ -144,3 +144,21 @@ $("#b2").click(function (e) {
   $("#b2").css({ color: "#333", "font-weight": "bold" });
   $("#b1").css({ color: "", "font-weight": "" });
 });
+
+//main6
+$(".multiSecUnit h2").click(function () {
+  $(".multiSecUnit h2").css({
+    "background-color": "",
+  });
+  $(".multiSecUnit h2 a").css({
+    "border-bottom": "",
+  });
+  $(this).css({
+    "background-color": "#fff",
+  });
+  $(this).find("a").css({
+    "border-bottom": "none",
+  });
+  $(".multiConArea").hide();
+  $(this).siblings(".multiConArea").show();
+});

@@ -458,10 +458,12 @@
   position: relative;
   z-index: 2;
   border: solid 1px #d8d8d8;
+  overflow: hidden;
   display: inline-block;
 }
 .todayBArea .todayBUnit .tBThumb img {
   width: 60px;
+  margin: -1px;
   max-height: 90px;
   vertical-align: bottom;
 }
@@ -500,6 +502,7 @@
 }
 .tBcont .tBImgArea .tB_img a {
   border: solid 1px #d8d8d8;
+  overflow: hidden;
   display: inline-block;
 }
 .tBcont .tBImgArea .tB_img a img {
@@ -1010,6 +1013,7 @@
 .goods_img .imgbox a {
   display: inline-block;
   border: 1px solid #ebebeb;
+  overflow: hidden;
 }
 .goods_img .imgbox a img {
   margin: -1px;
@@ -1343,6 +1347,8 @@
 .bookBigCon .book_img {
   position: relative;
   display: inline-block;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
 }
 .bookBigCon .book_img img {
   margin: -1px;
@@ -1487,6 +1493,8 @@
 .bookCornerCon li .book_img a {
   display: inline-block;
   margin: 0 auto;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
 }
 .bookCornerCon li .book_img a img {
   max-width: 140px;
@@ -1514,45 +1522,47 @@
   text-decoration: underline;
 }
 
-.sector01 {
+.sec1 .sector01 {
   width: 599px;
   height: 195px;
   float: left;
   position: relative;
 }
-.usedCornerCon {
+.sec1 .usedCornerCon {
   position: absolute;
   top: 40px;
   left: 260px;
 }
-.usedCornerCon ul {
+.sec1 .usedCornerCon ul {
   padding-left: 8px;
 }
-.usedCornerCon ul li {
+.sec1 .usedCornerCon ul li {
   position: relative;
   float: left;
   width: 140px;
   height: 135px;
   text-align: center;
 }
-.usedCornerCon .book_img {
+.sec1 .usedCornerCon .book_img {
   width: 140px;
   height: 100px;
 }
-.usedCornerCon .book_img a {
+.sec1 .usedCornerCon .book_img a {
   display: inline-block;
   margin: 0 auto;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
 }
-.usedCornerCon .book_img img {
+.sec1 .usedCornerCon .book_img img {
   max-width: 100px;
   height: 100px;
   margin: -1px;
   display: inline;
 }
-.usedCornerCon .book_info {
+.sec1 .usedCornerCon .book_info {
   padding: 0 15px;
 }
-.usedCornerCon .book_name {
+.sec1 .usedCornerCon .book_name {
   margin-top: 8px;
   width: 110px;
   height: 16px;
@@ -1561,14 +1571,14 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.sector02 {
+.sec1 .sector02 {
   width: 199px;
   height: 199px;
   float: left;
   position: relative;
   border-left: 1px solid #eee;
 }
-.usedBn {
+.sec1 .usedBn {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -1581,6 +1591,151 @@
   width: 398px;
   height: 199px;
   border-left: 1px solid #eee;
+}
+
+.sec2 .book_price {
+  margin-top: 4px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  color: #333;
+}
+.sec2 .book_cmt {
+  margin: 1px auto 0;
+  color: #999;
+}
+.sec2 .sector02 {
+  position: relative;
+  float: left;
+  width: 799px;
+  height: 195px;
+  overflow: hidden;
+}
+.sector02Con {
+  padding: 20px 0 0 19px;
+}
+.sector02Con .clipBn {
+  position: relative;
+  width: 220px;
+}
+.sector02Con .clipBn .bnTxt {
+  height: 51px;
+  line-height: 51px;
+  border: 1px solid #e4e4e4;
+  background-color: #f8f8f8;
+  margin-top: -1px;
+  position: relative;
+}
+/* .sector02Con .clipBn .bnTxt:first-child {
+  background-color: #fff;
+  margin-top: 0;
+} */
+.sector02Con .clipBn .bnTxt a {
+  height: 51px;
+  display: block;
+}
+.sector02Con .clipBn .bnTxt a em {
+  display: block;
+  margin: 0 15px 0 13px;
+  white-space: nowrap;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: #333;
+}
+.sector02Con .clipBn .bnTxt a em.arrow {
+  position: absolute;
+  right: -15px;
+  top: 1px;
+}
+.sector02Con .clipBn .bnCon {
+  position: absolute;
+  top: 0;
+  left: 221px;
+  width: 558px;
+}
+.sector02Con .clipBn .bnCon ul {
+  padding-left: 25px;
+}
+.sector02Con .clipBn .bnCon ul li {
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 160px;
+  height: 165px;
+}
+.sector02Con .clipBn .bnCon ul li .book_img {
+  margin: 0 auto;
+  width: 140px;
+  height: 100px;
+  text-align: center;
+}
+.sector02Con .clipBn .bnCon ul li .book_img a {
+  margin: 0 auto;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+  display: inline-block;
+}
+.sector02Con .clipBn .bnCon ul li .book_img a img {
+  margin: -1px;
+  max-width: 100px;
+  height: 100px;
+}
+.sector02Con .clipBn .bnCon ul li .book_info {
+  padding: 0 25px;
+  text-align: center;
+}
+.sector02Con .clipBn .bnCon ul li .book_info .book_name {
+  margin-top: 8px;
+  max-height: 32px;
+  word-break: break-all;
+  line-height: 16px;
+}
+.sector02Con .clipBn .bnCon ul li .book_info .book_name a {
+  color: #333;
+  font-weight: 100;
+}
+.sector02Con .clipBn .bnCon ul li .book_info .book_price {
+  margin-top: 4px;
+  color: #333;
+  font-weight: normal;
+}
+.sector02Con .clipBn .bnCon ul li .book_info .book_price em {
+  font-size: 14px;
+  vertical-align: -1px;
+  font-weight: bold;
+}
+.sector03 .secTit {
+  padding: 10px 0 0 21px;
+  display: block;
+}
+.sector03 .secTit em {
+  display: block;
+  height: 34px;
+  overflow: hidden;
+  line-height: 34px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.sector03 .sector03Con {
+  padding-left: 21px;
+}
+.sector03 .sector03Con .book_img {
+  float: left;
+  width: 86px;
+  height: 128px;
+  overflow: hidden;
+  border: solid 1px #ebebeb;
+}
+.sector03 .sector03Con .book_img img {
+  width: 88px;
+  margin: -1px;
 }
 
 /* main7 */
@@ -1648,11 +1803,16 @@
   width: 136px;
   height: 200px;
   margin-top: 15px;
+  line-height: normal;
+}
+.TvSub .TvSubGrp .imgbox {
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+  float: left;
 }
 .TvSub .TvSubGrp .imgbox img {
-  border: 1px solid #ebebeb;
+  width: 138px;
   margin: -1px;
-  width: 136px;
   max-height: 204px;
 }
 .TvSubExp {
@@ -1720,15 +1880,17 @@
   max-height: 76px;
 }
 .movGrp li {
-  width: 136px;
+  width: 134px;
   height: 76px;
   float: left;
   margin-right: 30px;
   position: relative;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
 }
 .movGrp li img {
   width: 136px;
-  height: 76px;
+  margin: -1px;
 }
 .movGrp li:hover::before {
   content: "";
@@ -1821,12 +1983,13 @@
 }
 .cardBookUnit .bookImg {
   float: left;
-  height: 140px;
+  width: 98px;
   border: 1px solid #ececec;
+  overflow: hidden;
 }
 .cardBookUnit .bookImg img {
   margin: -1px;
-  width: 98px;
+  width: 100px;
   height: 140px;
 }
 .cardBookUnit .bookCmt {
@@ -1951,6 +2114,7 @@
 .rowGrp .titles_thumb img {
   width: 160px;
   height: 113px;
+  border: 1px solid #ebebeb;
 }
 .rowGrp .titles_info {
   padding: 8px 0 0;

@@ -46,10 +46,10 @@ body {
 #header_top_left li .eng {
   letter-spacing: 0;
 }
-.new {
+#header .new {
   margin-right: 4px;
 }
-.new::before {
+#header .new::before {
   content: "";
   position: absolute;
   right: -2px;
@@ -60,10 +60,10 @@ body {
   border-radius: 10px;
   background: url(../img/header/new.svg) no-repeat;
 }
-.arrow {
+#header .arrow {
   margin-right: 4px;
 }
-.arrow::before {
+#header .arrow::before {
   content: "";
   position: absolute;
   right: -34px;
@@ -91,10 +91,10 @@ body {
   letter-spacing: -1px;
   display: inline-block;
 }
-.dropdown {
+#header .dropdown {
   position: absolute;
 }
-.dropdown::before {
+#header .dropdown::before {
   content: "";
   position: absolute;
   right: -14px;
@@ -103,10 +103,10 @@ body {
   height: 16px;
   background: url(../img/header/dropdown.png) no-repeat;
 }
-.dropup {
+#header .dropup {
   position: absolute;
 }
-.dropup::before {
+#header .dropup::before {
   content: "";
   position: absolute;
   right: -14px;
@@ -194,14 +194,14 @@ body {
   color: #000;
   font-weight: bold;
 }
-.searchbox {
+#header .searchbox {
   position: absolute;
   top: 0;
   right: 0;
   width: 60px;
   height: 48px;
 }
-.searchbtn {
+#header .searchbtn {
   width: 60px;
   height: 48px;
   border: 0;
@@ -280,7 +280,7 @@ body {
   background-color: #0080ff;
   display: block;
 }
-.quick_cate_wrap {
+#header .quick_cate_wrap {
   height: 396px;
   position: absolute;
   top: 43px;
@@ -288,22 +288,22 @@ body {
   border: solid 3px #0080ff;
   background-color: #fff;
 }
-.quick_cate_li_wrap {
+#header .quick_cate_li_wrap {
   width: auto;
   overflow: visible;
   position: relative;
 }
-.quick_cate_header {
+#header .quick_cate_header {
   width: 104px;
   height: 382px;
   padding: 6px 0 8px 0;
 }
-.quick_cate_li {
+#header .quick_cate_li {
   width: 104px;
   height: 36px;
   float: left;
 }
-.qtit {
+#header .qtit {
   width: 106px;
   height: 36px;
   line-height: 36px;
@@ -314,24 +314,24 @@ body {
   font-weight: bold;
   color: #666;
 }
-.quick_cate_tb {
+#header .quick_cate_tb {
   position: absolute;
   top: 0;
   left: 106px;
 }
-.quick_cate {
+#header .quick_cate {
   width: 497px;
   height: 396px;
   position: relative;
   border-left: solid 1px #0080ff;
 }
-.quick_cate dl dt {
+#header .quick_cate dl dt {
   position: absolute;
   top: 13px;
   left: 20px;
   z-index: 1;
 }
-.quick_cate dl dt a {
+#header .quick_cate dl dt a {
   height: 21px;
   line-height: 21px;
   white-space: nowrap;
@@ -340,7 +340,7 @@ body {
   display: inline-block;
   color: #333;
 }
-.qcate1 {
+#header .qcate1 {
   position: absolute;
   top: 45px;
   left: 20px;
@@ -348,11 +348,11 @@ body {
   z-index: 2;
   border-right: solid 1px #e5e5e5;
 }
-.quick_cate dl dd li {
+#header .quick_cate dl dd li {
   padding: 1px 0 0;
   height: 20px;
 }
-.quick_cate dl dd li a {
+#header .quick_cate dl dd li a {
   height: 20px;
   line-height: 20px;
   font-size: 13px;
@@ -363,17 +363,17 @@ body {
   color: #666;
   text-overflow: ellipsis;
 }
-.quick_cate dl dd li a:hover {
+#header .quick_cate dl dd li a:hover {
   text-decoration: underline;
 }
-.qcate2 {
+#header .qcate2 {
   position: absolute;
   top: 45px;
   left: 156px;
   z-index: 3;
   width: 118px;
 }
-.bnimg {
+#header .bnimg {
   position: absolute;
   right: -124px;
   bottom: 0;
@@ -381,7 +381,7 @@ body {
   z-index: 0;
   overflow: hidden;
 }
-.bnimg img {
+#header .bnimg img {
   width: auto;
   height: 396px;
 }
@@ -398,14 +398,14 @@ body {
   left: 116px;
   height: 42px;
 }
-.Bottom_left_blue {
+#header .Bottom_left_blue {
   float: left;
 }
-.Bottom_left_blue li {
+#header .Bottom_left_blue li {
   float: left;
   height: 42px;
 }
-.Bottom_left_blue li a {
+#header .Bottom_left_blue li a {
   color: #0080ff;
   font-size: 13px;
   font-weight: bold;
@@ -415,7 +415,7 @@ body {
   line-height: 42px;
   letter-spacing: -0.5px;
 }
-.Bottom_left_blue::after {
+#header .Bottom_left_blue::after {
   content: "";
   width: 1px;
   height: 10px;
@@ -423,14 +423,14 @@ body {
   margin: 16px 6px 0 4px;
   float: left;
 }
-.Bottom_left_black {
+#header .Bottom_left_black {
   float: left;
 }
-.Bottom_left_black li {
+#header .Bottom_left_black li {
   float: left;
   height: 42px;
 }
-.Bottom_left_black li a {
+#header .Bottom_left_black li a {
   color: #000;
   font-size: 13px;
   font-weight: bold;
