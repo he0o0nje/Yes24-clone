@@ -1737,6 +1737,39 @@
   width: 88px;
   margin: -1px;
 }
+.sector03 .sector03Con .book_info {
+  width: 240px;
+  margin-left: 102px;
+}
+.sector03 .sector03Con .book_info .book_name {
+  max-height: 32px;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 16px;
+  font-weight: bold;
+}
+.sector03 .sector03Con .book_info .book_name a {
+  color: #333;
+}
+.sector03 .sector03Con .book_info .book_price .benefit {
+  font-weight: normal;
+}
+.sector03 .sector03Con .book_info .book_price .benefit .ico_sale {
+  display: inline-flex;
+  align-items: center;
+}
+.sector03 .sector03Con .book_info .book_price .benefit .ico_point {
+  display: inline-flex;
+  align-items: end;
+}
+.sector03 .sector03Con .book_info .book_cmt {
+  margin: 8px 0 0 0;
+  height: 64px;
+  overflow: hidden;
+  color: #999;
+  word-break: break-all;
+  line-height: 16px;
+}
 
 /* main7 */
 #main7 {
