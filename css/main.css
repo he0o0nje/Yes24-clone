@@ -1674,47 +1674,47 @@
   width: 160px;
   height: 165px;
 }
-.sector02Con .clipBn .bnCon ul li .book_img {
+.sector02Con .clipBn .bnCon .book_img {
   margin: 0 auto;
   width: 140px;
   height: 100px;
   text-align: center;
 }
-.sector02Con .clipBn .bnCon ul li .book_img a {
+.sector02Con .clipBn .bnCon .book_img a {
   margin: 0 auto;
   border: 1px solid #ebebeb;
   overflow: hidden;
   display: inline-block;
 }
-.sector02Con .clipBn .bnCon ul li .book_img a img {
+.sector02Con .clipBn .bnCon .book_img a img {
   margin: -1px;
   max-width: 100px;
   height: 100px;
 }
-.sector02Con .clipBn .bnCon ul li .book_info {
+.sector02Con .clipBn .bnCon .book_info {
   padding: 0 25px;
   text-align: center;
 }
-.sector02Con .clipBn .bnCon ul li .book_info .book_name {
+.sector02Con .clipBn .bnCon .book_info .book_name {
   margin-top: 8px;
   max-height: 32px;
   word-break: break-all;
   line-height: 16px;
   overflow: hidden;
 }
-.sector02Con .clipBn .bnCon ul li .book_info .book_name a {
+.sector02Con .clipBn .bnCon .book_info .book_name a {
   color: #333;
   font-weight: 100;
 }
-.sector02Con .clipBn .bnCon ul li .book_info .book_name a:hover {
+.sector02Con .clipBn .bnCon .book_info .book_name a:hover {
   text-decoration: underline;
 }
-.sector02Con .clipBn .bnCon ul li .book_info .book_price {
+.sector02Con .clipBn .bnCon .book_info .book_price {
   margin-top: 4px;
   color: #333;
   font-weight: normal;
 }
-.sector02Con .clipBn .bnCon ul li .book_info .book_price em {
+.sector02Con .clipBn .bnCon .book_info .book_price em {
   font-size: 14px;
   vertical-align: -1px;
   font-weight: bold;
@@ -2080,6 +2080,22 @@
   width: 280px;
   height: 16px;
   color: #999;
+}
+.sec6 .multiConBotSet .bnCon {
+  width: 959px;
+}
+.sec6 .multiConBotSet .bnCon ul {
+  padding-left: 29px;
+}
+.sec6 .multiConBotSet .bnCon ul li {
+  width: 180px;
+}
+.sec6 .multiConBotSet .bnCon .book_img {
+  width: 100px;
+  text-align: left;
+}
+.sec6 .multiConBotSet .bnCon .book_info .book_price {
+  font-weight: bold;
 }
 
 /* main7 */
