@@ -2056,6 +2056,31 @@
   word-break: break-all;
   white-space: normal;
 }
+.sec6 .bookBigCon {
+  padding-top: 59px;
+}
+.sec6 .bookBigCon li {
+  margin-right: 10px;
+}
+.sec6 .bookBigCon .book_img img {
+  max-width: 300px;
+}
+.sec6 .bookBigCon .book_info {
+  margin-top: 19px;
+}
+.sec6 .bookBigCon .book_info .book_name {
+  margin: 0 auto;
+  width: 280px;
+}
+.sec6 .bookBigCon .book_info .book_name a {
+  color: #6699cc;
+}
+.sec6 .bookBigCon .book_info .book_cmt {
+  margin: 6px auto 0;
+  width: 280px;
+  height: 16px;
+  color: #999;
+}
 
 /* main7 */
 #main7 {
