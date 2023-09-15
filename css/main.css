@@ -2099,6 +2099,11 @@
 .sec7 h2 a {
   border-right: 1px solid #d8d8d8;
 }
+.sec7 .secTit .arrow {
+  top: 19px;
+  left: 80px;
+  font-size: 12px;
+}
 .sec7 .sector03 {
   margin-top: -72px;
 }
