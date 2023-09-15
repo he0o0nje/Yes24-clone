@@ -14,7 +14,6 @@ addHoverEffect(".todayBook", ".btnTB");
 addHoverEffect(".nowBookArea", ".btnNB");
 addHoverEffect(".bookClubArea", ".btnBC");
 addHoverEffect(".bookClubRgt", ".btnBCR");
-addHoverEffect(".multiconTopSet", ".btnMC");
 addHoverEffect("#main7", ".btnTv");
 addHoverEffect(".cLTop", ".btnCT");
 addHoverEffect(".cLBot", ".btnCN");
@@ -162,3 +161,21 @@ $(".multiSecUnit h2").click(function () {
   $(".multiConArea").hide();
   $(this).siblings(".multiConArea").show();
 });
+
+// main6
+function M6addHoverEffect(M6selectorToShow) {
+  $(M6selectorToShow).hover(
+    function () {
+      $(this).find(".btnMC").show();
+    },
+    function () {
+      $(this).find(".btnMC").hide();
+    }
+  );
+}
+M6addHoverEffect("#MTS1");
+M6addHoverEffect("#MTS2");
+M6addHoverEffect("#MTS3");
+M6addHoverEffect("#MTS4");
+M6addHoverEffect("#MTS401");
+M6addHoverEffect(".sector04");

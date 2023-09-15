@@ -1485,29 +1485,29 @@
   width: 186px;
   /* overflow-x: hidden; */
 }
-.bookCornerCon li .book_img {
+.bookCornerCon .book_img {
   width: 140px;
   height: 120px;
   text-align: center;
   margin: 0 auto;
 }
-.bookCornerCon li .book_img a {
+.bookCornerCon .book_img a {
   display: inline-block;
   margin: 0 auto;
   border: 1px solid #ebebeb;
   overflow: hidden;
 }
-.bookCornerCon li .book_img a img {
+.bookCornerCon .book_img a img {
   max-width: 140px;
   height: 120px;
   margin: -1px;
 }
-.bookCornerCon li .book_info {
+.bookCornerCon .book_info {
   margin-top: 8px;
   padding: 0 15px;
   text-align: center;
 }
-.bookCornerCon li .book_name {
+.bookCornerCon .book_name {
   width: 140px;
   height: 16px;
   white-space: nowrap;
@@ -1516,10 +1516,10 @@
   overflow: hidden;
   line-height: 16px;
 }
-.bookCornerCon li .book_name a {
+.bookCornerCon .book_name a {
   color: #333;
 }
-.bookCornerCon li .book_name a:hover {
+.bookCornerCon .book_name a:hover {
   text-decoration: underline;
 }
 
@@ -1875,6 +1875,88 @@
 .m3sector03 ul li {
   padding: 10px 0;
   text-align: center;
+}
+.sector04 {
+  position: relative;
+  width: 1198px;
+  height: 195px;
+  overflow: hidden;
+}
+.sector04 .secTit {
+  position: absolute;
+  left: 19px;
+  top: 20px;
+  padding: 56px 0 0 0;
+  width: 218px;
+  height: 99px;
+  border: solid 1px #ebebeb;
+  text-align: center;
+}
+.sector04 .secTit em {
+  display: block;
+  height: 44px;
+  overflow: hidden;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.secCon04 {
+  position: absolute;
+  top: 20px;
+  left: 239px;
+  width: 959px;
+}
+.secCon04 ul {
+  padding-left: 29px;
+}
+.secCon04 ul li {
+  position: relative;
+  width: 180px;
+  height: 165px;
+  float: left;
+  text-align: center;
+}
+.secCon04 .book_img {
+  position: relative;
+  width: 65px;
+  height: 100px;
+  display: inline-block;
+}
+.secCon04 .book_img a {
+  margin: 0 auto;
+  display: inline-block;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+}
+.secCon04 .book_img a img {
+  width: 67px;
+  margin: -1px;
+}
+.secCon04 .book_info {
+  padding: 0 25px;
+}
+.secCon04 .book_name {
+  margin-top: 8px;
+  max-height: 32px;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 16px;
+}
+.secCon04 .book_name a {
+  color: #333;
+}
+.secCon04 .book_price {
+  font-weight: bold;
+}
+.sector04 .prev {
+  top: 79px !important;
+  left: -1;
+}
+.sector04 .next {
+  top: 79px !important;
+  right: 0;
 }
 
 /* main7 */
