@@ -1393,6 +1393,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  color: #999;
 }
 .bookBigCon .goods_auth,
 .bookBigCon .goods_pub {
@@ -1769,6 +1770,111 @@
   color: #999;
   word-break: break-all;
   line-height: 16px;
+}
+.m3sector01 {
+  position: relative;
+  width: 400px;
+  height: 428px;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #ebebeb;
+}
+.m3sector01 .secTit,
+.m3sector02 .secTit {
+  height: 69px;
+}
+.m3sector01 .secTit .bookBigCon {
+  margin: 0 auto;
+  width: 319px;
+}
+.m3sector01 .book_img {
+  width: 135px;
+  height: 200px;
+}
+.m3sector01 .book_img a {
+}
+.m3sector01 .book_img a img {
+  margin: -1px;
+  width: 137px;
+  height: auto;
+}
+.bookBigCon .book_readTit {
+  margin-top: 12px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  color: #6699cc;
+}
+.bookBigCon .book_readCon {
+  margin: 0 auto;
+  width: 240px;
+  height: 48px;
+  overflow: hidden;
+  line-height: 12px;
+  color: #999;
+}
+.m3sector02 {
+  width: 398px;
+  height: 428px;
+  position: relative;
+  float: left;
+  border-right: 1px solid #ebebeb;
+}
+.m3sector02 .bookBigCon {
+  margin-left: -35px;
+}
+.m3sector02 li {
+  clear: both;
+  padding: 0;
+  width: 360px;
+  height: 155px;
+  margin-bottom: 20px;
+}
+.m3sector02 .book_img {
+  float: left;
+  width: 90px;
+}
+.m3sector02 .book_img img {
+  margin: -1px;
+  width: 92px;
+  height: auto;
+  max-height: 140px;
+}
+.m3sector02 .book_info {
+  margin-top: 0;
+  margin-left: 105px;
+  text-align: left;
+}
+.m3sector02 .book_name {
+  margin: 0;
+}
+.m3sector02 .book_auth,
+.m3sector02 .book_pub {
+  margin-top: 7px;
+  width: 160px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+}
+.m3sector02 .book_readCon {
+  margin: 0;
+}
+.m3sector03 {
+  position: relative;
+  float: right;
+  overflow: hidden;
+  width: 398px;
+  height: 409px;
+}
+.m3sector03 ul {
+  padding: 19px 20px 0 20px;
+}
+.m3sector03 ul li {
+  padding: 10px 0;
+  text-align: center;
 }
 
 /* main7 */
