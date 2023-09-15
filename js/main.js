@@ -180,4 +180,5 @@ M6addHoverEffect("#MTS4");
 M6addHoverEffect("#MTS401");
 M6addHoverEffect("#MTS5");
 M6addHoverEffect("#MTS6");
+M6addHoverEffect("#MTS8");
 M6addHoverEffect(".sector04");
