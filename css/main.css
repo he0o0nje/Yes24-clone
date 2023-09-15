@@ -1336,6 +1336,8 @@
 #main9 .pageNum {
   top: 18px;
 }
+.bookBigCon {
+}
 .bookBigCon ul {
   padding-left: 55px;
 }
@@ -1572,6 +1574,9 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.sec1 .usedCornerCon .book_name a:hover {
+  text-decoration: underline;
+}
 .sec1 .sector02 {
   width: 199px;
   height: 199px;
@@ -1695,10 +1700,14 @@
   max-height: 32px;
   word-break: break-all;
   line-height: 16px;
+  overflow: hidden;
 }
 .sector02Con .clipBn .bnCon ul li .book_info .book_name a {
   color: #333;
   font-weight: 100;
+}
+.sector02Con .clipBn .bnCon ul li .book_info .book_name a:hover {
+  text-decoration: underline;
 }
 .sector02Con .clipBn .bnCon ul li .book_info .book_price {
   margin-top: 4px;
@@ -1783,7 +1792,7 @@
 .m3sector02 .secTit {
   height: 69px;
 }
-.m3sector01 .secTit .bookBigCon {
+.m3sector01 .bookBigCon {
   margin: 0 auto;
   width: 319px;
 }
@@ -1947,6 +1956,9 @@
 .secCon04 .book_name a {
   color: #333;
 }
+.secCon04 .book_name a:hover {
+  text-decoration: underline;
+}
 .secCon04 .book_price {
   font-weight: bold;
 }
@@ -1957,6 +1969,29 @@
 .sector04 .next {
   top: 79px !important;
   right: 0;
+}
+.sec05Big {
+  margin-top: 70px;
+}
+.sec05Big .book_name {
+  width: 280px;
+}
+.sec05Big .book_cmt {
+  margin: 2px auto 0;
+  color: #999;
+}
+.sector02Con .tab4 .bnTxt {
+  height: 38px;
+  line-height: 38px;
+}
+.sector02Con .tab4 .bnTxt a {
+  height: 38px;
+}
+.sector02Con .tab4 .bnCon {
+  width: 959px;
+}
+.sector02Con .tab4 .bnCon ul li {
+  width: 180px;
 }
 
 /* main7 */
