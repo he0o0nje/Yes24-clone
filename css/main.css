@@ -1993,6 +1993,69 @@
 .sector02Con .tab4 .bnCon ul li {
   width: 180px;
 }
+.m6s1 .bookBigCon {
+  margin: 0;
+  padding-top: 62px;
+  width: auto;
+}
+.m6s1 .book_img {
+  border: none;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  max-width: 220px;
+}
+.m6s1 .book_img a img {
+  width: auto;
+}
+.m6s1 .book_name {
+  margin: 0 auto;
+  width: 240px;
+  white-space: normal;
+  overflow: visible;
+  max-height: 34px;
+}
+.m6s1 .book_price {
+  margin-top: 20px;
+}
+.m6s1 .book_dim {
+  color: #999;
+}
+.m6s1 .book_cmt {
+  margin-top: 10px;
+  width: 278px;
+  height: 48px;
+  color: #999;
+}
+.m6s2 em.arrow {
+  top: 19px;
+  left: 130px;
+  font-size: 12px;
+}
+.m6s2 .bookBigCon ul li {
+  width: 361px;
+}
+.m6s2 .book_img {
+  width: 115px;
+}
+.m6s2 .book_img img {
+  width: 117px;
+}
+.m6s2 .book_info {
+  margin-left: 130px;
+}
+.m6s2 .book_info .book_etc {
+  line-height: 16px;
+  color: #6699cc;
+}
+.m6s2 .book_info .book_name {
+  margin-top: 5px;
+  width: auto;
+  height: 34px;
+  max-height: 34px;
+  word-break: break-all;
+  white-space: normal;
+}
 
 /* main7 */
 #main7 {
