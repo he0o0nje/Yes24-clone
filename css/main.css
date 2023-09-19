@@ -2104,9 +2104,6 @@
   left: 80px;
   font-size: 12px;
 }
-.sec7 .sector03 {
-  margin-top: -72px;
-}
 .bookBigCon .ticket_mov {
   position: absolute;
   top: 70px;
@@ -2122,7 +2119,7 @@
 }
 .bookBigCon .mov_info {
   position: absolute;
-  top: 256px;
+  top: 258px;
   left: 65px;
   width: 260px;
   text-align: center;
@@ -2149,7 +2146,7 @@
   text-overflow: ellipsis;
 }
 .bookBigCon .mov_info .mov_cmt {
-  margin-top: 15px;
+  margin-top: 13px;
   padding: 0 5px;
   height: 48px;
   overflow: hidden;
@@ -2157,6 +2154,7 @@
   color: #999;
 }
 .weekTicket {
+  margin-top: 1px;
   margin-right: 20px;
   padding-left: 55px;
   text-align: center;
@@ -2177,7 +2175,7 @@
 }
 .weekTicket .weekBar {
   position: absolute;
-  top: 350px;
+  top: 351px;
   left: 59px;
   padding: 8px 0 0 15px;
   width: 265px;
@@ -2236,7 +2234,6 @@
   color: #fff;
   cursor: pointer;
 }
-
 .magazineLi .magaPos2 {
   position: absolute;
   top: 235px;
@@ -2254,6 +2251,65 @@
 .magazineLi .magaPos2 a img {
   width: 280px;
   height: 154px;
+}
+#main6 .prev.mov {
+  top: 290px;
+}
+#main6 .next.mov {
+  top: 290px;
+}
+.tic_info {
+  padding: 10px 10px 0;
+  text-align: center;
+}
+.tic_info .tic_name {
+  height: 32px;
+  overflow: hidden;
+  word-break: break-all;
+  font-weight: bold;
+  line-height: 16px;
+}
+.tic_info .tic_name a {
+  color: #333;
+}
+.tic_info .tic_des {
+  margin-top: 7px;
+  height: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #666;
+}
+.sec7 .sector03 {
+  margin-top: -176px;
+}
+.sec7 .sector03 .secTit a {
+  display: block;
+  color: #333;
+}
+.sec7 .sector03 .notLi {
+  position: absolute;
+  top: 42px;
+  left: 20px;
+}
+.sec7 .sector03 .notLi li {
+  float: left;
+  width: 356px;
+  height: 18px;
+  margin-bottom: 6px;
+}
+.sec7 .sector03 .notLi li a {
+  display: block;
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 18px;
+  font-size: 11px;
+  color: #999;
+}
+.sec7 .sector03 .notLi li a img {
+  margin-right: 6px;
 }
 
 /* main7 */
