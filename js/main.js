@@ -22,6 +22,7 @@ addHoverEffect(".cRBot", ".CRB");
 addHoverEffect("#main9", ".btnBn");
 
 // main1
+// 메인배너 리스트 호버시 css변경
 $(".mbnTit").mouseenter(function () {
   $(".mbnTit").css({
     color: "",
@@ -49,49 +50,9 @@ $(".tabs").mouseenter(function () {
   $(this).siblings(".mbnContImg").show();
 });
 
-// 이미지 보여질때 해당 제목 css변경
-// $(".mbnRollUnit").each(function () {
-//   const tabs = $(this).find(".tabs");
-//   const mbnContImg = $(this).find(".mbnContImg");
-
-//   if (mbnContImg.css("display") === "block") {
-//     tabs.find("a em").css({
-//       color: "#fff",
-//       "background-color": "#333",
-//     });
-//   }
-// });
-
-// 슬라이더
-// const mbnCurrentIndex = [];
-
-// const totalSliders = $(".mbnContImg").length;
-
-// for (let i = 0; i < totalSliders; i++) {
-//   mbnCurrentIndex[i] = 0;
-//   mbnShowImage(i, mbnCurrentIndex[i]);
-// }
-
-// function mbnShowImage(sliderIndex, imageIndex) {
-//   $(".mbnContImg").eq(sliderIndex).find(".mbnContImg").hide();
-//   $(".mbnContImg").eq(sliderIndex).find(".mbnContImg").eq(imageIndex).show();
-// }
-
-// $(".mbnBtn.next").click(function () {
-//   const sliderIndex = $(this).parent().index();
-//   mbnCurrentIndex[sliderIndex] =
-//     (mbnCurrentIndex[sliderIndex] + 1) % totalImages;
-//   mbnShowImage(sliderIndex, mbnCurrentIndex[sliderIndex]);
-// });
-
-// $(".mbnBtn.prev").click(function () {
-//   const sliderIndex = $(this).parent().index();
-//   mbnCurrentIndex[sliderIndex] =
-//     (mbnCurrentIndex[sliderIndex] - 1 + totalImages) % totalImages;
-//   mbnShowImage(sliderIndex, mbnCurrentIndex[sliderIndex]);
-// });
-
 // main2
+
+//베스트설러, 인기검색어 드롭다운 토글
 $(".bestLi .optTit dd").hide();
 $(".bestOpt").click(function (e) {
   e.preventDefault();
@@ -99,7 +60,7 @@ $(".bestOpt").click(function (e) {
   $(".bestLi .optTit .bestOpt dt").toggleClass("c");
   $(".bestLi .optTit dd").toggle();
 });
-
+//베스트셀러, 인기검색어 클릭 시 해당 리스트 보이기
 $("#popli").hide();
 $("#best").click(function (e) {
   e.preventDefault();
@@ -126,7 +87,7 @@ $("#pop").click(function (e) {
   $("#bestli").hide();
   $(".bestLi .optTit dd").hide();
 });
-
+//베스트셀러 1~5위, 6~10위 클릭 시 해당 리스트 보이기
 $("#bestSet02").hide();
 $("#b1").css({ color: "#333", "font-weight": "bold" });
 $("#b1").click(function (e) {
@@ -145,6 +106,7 @@ $("#b2").click(function (e) {
 });
 
 //main6
+//멀티페이지 리스트 클릭 시 css변경, 해당 내용 보이기
 $(".multiSecUnit h2").click(function () {
   $(".multiSecUnit h2").css({
     "background-color": "",
@@ -161,8 +123,7 @@ $(".multiSecUnit h2").click(function () {
   $(".multiConArea").hide();
   $(this).siblings(".multiConArea").show();
 });
-
-// main6
+// 슬라이드 컨테이너 호버 시 prev, next 버튼 보여주기
 function M6addHoverEffect(M6selectorToShow) {
   $(M6selectorToShow).hover(
     function () {

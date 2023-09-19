@@ -532,9 +532,15 @@
   max-height: 110px;
   line-height: 22px;
   font-size: 14px;
-  word-break: break-all;
   text-align: justify;
   color: #999;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-break: keep-all;
 }
 .tBcont .tBInfo .tB_readCon a {
   color: #999;
