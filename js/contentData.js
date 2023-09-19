@@ -103,6 +103,22 @@ $.ajax({
     $(".bookBigCon .book_info .book_pubGrp .goods_auth")
       .eq(i)
       .text(MultiData.authors);
+    $(".bookBigCon .book_info .book_pubGrp .goods_pub")
+      .eq(i)
+      .text(MultiData.publisher);
     $(".bookBigCon .book_info .yes_b").eq(i).text(MultiData.price);
+  });
+});
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "편지" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".M1BotBook").each(function (i) {
+    const M1BotData = data.documents[i];
+    let imageUrl = M1BotData.thumbnail;
+    $(".bookCornerCon .book_img a img").eq(i).attr("src", imageUrl);
+    $(".bookCornerCon .book_info .book_name a").eq(i).text(M1BotData.title);
   });
 });
