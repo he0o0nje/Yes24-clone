@@ -2272,6 +2272,9 @@
 .tic_info .tic_name a {
   color: #333;
 }
+.tic_info .tic_name a:hover {
+  text-decoration: underline;
+}
 .tic_info .tic_des {
   margin-top: 7px;
   height: 15px;
@@ -2308,8 +2311,11 @@
   font-size: 11px;
   color: #999;
 }
+.sec7 .sector03 .notLi li a:hover {
+  text-decoration: underline;
+}
 .sec7 .sector03 .notLi li a img {
-  margin-right: 6px;
+  margin-right: 5px;
 }
 
 /* main7 */
