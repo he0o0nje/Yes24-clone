@@ -87,3 +87,22 @@ $.ajax({
     }
   });
 });
+
+// main6
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "웹개발" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".bookLi").each(function (i) {
+    const MultiData = data.documents[i];
+    let imageUrl = MultiData.thumbnail;
+    $(".bookBigCon .book_img a img").eq(i).attr("src", imageUrl);
+    $(".bookBigCon .book_info .book_name a").eq(i).text(MultiData.title);
+    $(".bookBigCon .book_info .book_pubGrp .goods_auth")
+      .eq(i)
+      .text(MultiData.authors);
+    $(".bookBigCon .book_info .yes_b").eq(i).text(MultiData.price);
+  });
+});
