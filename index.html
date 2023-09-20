@@ -5376,7 +5376,7 @@
         </h2>
         <div class="yesTvGrp">
           <div class="yesTvSet">
-            <div class="TvArea">
+            <div class="TvArea active">
               <iframe
                 width="640"
                 height="360"
@@ -5389,6 +5389,34 @@
               <h3>
                 "적중률 100%?" 점쟁이 문어도 놀라 미끄러질 트렌드 예측의 실체 |
                 서탐대실
+              </h3>
+            </div>
+            <div class="TvArea">
+              <iframe
+                width="640"
+                height="360"
+                src="https://www.youtube.com/embed/iJtFlUXYP_4"
+                title=""
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <h3>
+                10CM 권정열 피셜 '한국을 뒤흔들 위인전' 등장? 그리고 소란 새 앨범 단독(?) 스포 | 고영배 
+              </h3>
+            </div>
+            <div class="TvArea">
+              <iframe
+                width="640"
+                height="360"
+                src="https://www.youtube.com/embed/sYGTyFzos9o"
+                title=""
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <h3>
+                유재석도 혀를 내두른 투머치토커의 등장! 한국 괴물 전문가 | 곽재식 | YES meets
               </h3>
             </div>
             <div class="TvSub">
@@ -5442,25 +5470,25 @@
           </div>
           <div class="movGrp">
             <ul>
-              <li>
+              <li id="TV1" class="TvThumb">
                 <a href="#"><img src="./img/main7/ssum1.jpg" alt="" /></a>
               </li>
-              <li>
-                <a href="#"><img src="./img/main7/ssum2.jpg" alt="" /></a>
+              <li class="TvThumb">
+                <a href="#"><img src="./img/main7/ssum2.png" alt="" /></a>
               </li>
-              <li>
+              <li class="TvThumb">
                 <a href="#"><img src="./img/main7/ssum3.jpg" alt="" /></a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="btnTv prev" onclick="TVprevSlide()">
+        <div class="btnTv prev" onclick="TVprevSlide(); TVRprevSlide()">
           <i
             class="fa-sharp fa-solid fa-chevron-left"
             style="color: #ffffff"
           ></i>
         </div>
-        <div class="btnTv next" onclick="TVnextSlide()">
+        <div class="btnTv next" onclick="TVnextSlide(); TVRnextSlide()">
           <i
             class="fa-sharp fa-solid fa-chevron-right"
             style="color: #ffffff"

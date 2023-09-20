@@ -2472,7 +2472,7 @@
   max-width: 498px;
   max-height: 76px;
 }
-.movGrp li {
+.movGrp .TvThumb {
   width: 134px;
   height: 76px;
   float: left;
@@ -2481,11 +2481,11 @@
   border: 1px solid #ebebeb;
   overflow: hidden;
 }
-.movGrp li img {
+.movGrp .TvThumb img {
   width: 136px;
   margin: -1px;
 }
-.movGrp li:hover::before {
+.movGrp .TvThumb.hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2495,7 +2495,7 @@
   border: 4px solid #196ab3;
   z-index: 1;
 }
-.movGrp li::after {
+.movGrp .TvThumb::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -2505,7 +2505,7 @@
   height: 32px;
   background: url(../img/main7/play.png) no-repeat left top;
 }
-.movGrp li:hover::after {
+.movGrp .TvThumb:hover::after {
   opacity: 0;
 }
 #main7 .btnTv,

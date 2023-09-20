@@ -4,6 +4,7 @@ $(document).ready(function () {
   $("#tabs01").trigger("mouseenter");
   $("#todayBook01").trigger("mouseenter");
   $("#Multi01").trigger("click");
+  $("#TV1").trigger("mouseenter");
 });
 
 // 슬라이드 컨테이너 호버 시 prev, next 버튼 보여주기
@@ -61,7 +62,7 @@ $(".tabs").mouseenter(function () {
 
 // Main2
 
-// 오늘의 책 목록
+// 썸네일 호버 시 해당 컨텐츠 보이기
 $(".tBThumb").mouseenter(function () {
   $(".tBcont").hide();
   $(this).siblings(".tBcont").show();
@@ -69,6 +70,7 @@ $(".tBThumb").mouseenter(function () {
   $(this).addClass("hover");
 });
 
+// 이전, 다음 버튼 클릭 시 해당 컨텐츠 보이고, 해당 썸네일 호버CSS 변경
 $(".tBcont").not(".active").hide();
 
 function TBprevSlide() {
@@ -93,6 +95,9 @@ function TBprevSlide() {
   $(".tBcont").removeClass("active");
   $(".tBcont").eq(newIndex).addClass("active");
   $(".tBcont").eq(newIndex).show();
+
+  $(".tBThumb").removeClass("hover");
+  $(".tBThumb:eq(" + newIndex + ")").addClass("hover");
 }
 
 function TBnextSlide() {
@@ -117,6 +122,9 @@ function TBnextSlide() {
   $(".tBcont").removeClass("active");
   $(".tBcont").eq(newIndex).addClass("active");
   $(".tBcont").eq(newIndex).show();
+
+  $(".tBThumb").removeClass("hover");
+  $(".tBThumb:eq(" + newIndex + ")").addClass("hover");
 }
 
 // 베스트설러, 인기검색어 드롭다운 토글
@@ -185,6 +193,8 @@ $("#b2").click(function (e) {
 });
 
 // Main3
+
+// 이전, 다음 버튼 클릭 시 해당 컨텐츠 보이기
 $(".nowBookSet").not(".active").hide();
 
 function NBprevSlide() {
@@ -238,6 +248,8 @@ function NBnextSlide() {
 }
 
 // Main5
+
+// 이전, 다음 버튼 클릭 시 해당 왼쪽 컨텐츠 보이기
 $(".bookClub .bookClubSet").not(".active").hide();
 
 function BCprevSlide() {
@@ -290,6 +302,7 @@ function BCnextSlide() {
   $(".bookClub .pageNum strong").text(newIndex + 1);
 }
 
+// 이전, 다음 버튼 클릭 시 해당 오른쪽 컨텐츠 보이기
 $(".bookClubRgt .bookClubSet").not(".active").hide();
 
 function BCRprevSlide() {
@@ -384,9 +397,62 @@ M6addHoverEffect("#MTS8");
 M6addHoverEffect(".sector04");
 
 // Main7
-$(".TvSubGrp").not(".active").hide();
+
+// 이전, 다음 버튼 클릭 시 해당 유튜브 컨텐츠 보이기
+$(".TvArea").not(".active").hide();
 
 function TVprevSlide() {
+  $(".TvArea").hide();
+  let allSlide = $(".TvArea");
+  let currentIndex = 0;
+
+  $(".TvArea").each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  $(".TvArea").removeClass("active");
+  $(".TvArea").eq(newIndex).addClass("active");
+  $(".TvArea").eq(newIndex).show();
+}
+
+function TVnextSlide() {
+  $(".TvArea").hide();
+  let allSlide = $(".TvArea");
+  let currentIndex = 0;
+
+  $(".TvArea").each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  $(".TvArea").removeClass("active");
+  $(".TvArea").eq(newIndex).addClass("active");
+  $(".TvArea").eq(newIndex).show();
+}
+
+// 이전, 다음 버튼 클릭 시 해당 관련상품 컨텐츠 보이고, 해당 썸네일 호버CSS 변경
+$(".TvSubGrp").not(".active").hide();
+
+function TVRprevSlide() {
   $(".TvSubGrp").hide();
   let allSlide = $(".TvSubGrp");
   let currentIndex = 0;
@@ -408,9 +474,12 @@ function TVprevSlide() {
   $(".TvSubGrp").removeClass("active");
   $(".TvSubGrp").eq(newIndex).addClass("active");
   $(".TvSubGrp").eq(newIndex).show();
+
+  $(".TvThumb").removeClass("hover");
+  $(".TvThumb:eq(" + newIndex + ")").addClass("hover");
 }
 
-function TVnextSlide() {
+function TVRnextSlide() {
   $(".TvSubGrp").hide();
   let allSlide = $(".TvSubGrp");
   let currentIndex = 0;
@@ -432,5 +501,20 @@ function TVnextSlide() {
   $(".TvSubGrp").removeClass("active");
   $(".TvSubGrp").eq(newIndex).addClass("active");
   $(".TvSubGrp").eq(newIndex).show();
-  $(".bookClubRgt .pageNum strong").text(newIndex + 1);
+
+  $(".TvThumb").removeClass("hover");
+  $(".TvThumb:eq(" + newIndex + ")").addClass("hover");
 }
+
+// 썸네일 호버 시 해당 인덱스의 컨텐츠 보이기
+$(".TvThumb").mouseenter(function () {
+  let index = $(this).index();
+  $(".TvArea, .TvSubGrp").hide();
+  $(".TvArea:eq(" + index + ")").show();
+  $(".TvSubGrp:eq(" + index + ")").show();
+
+  $(".TvThumb").removeClass("hover");
+  $(this).addClass("hover");
+});
+
+// Main8

@@ -397,7 +397,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "트렌드" },
+  data: { query: "주식" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
   $(".TvSubGrp").each(function (i) {
