@@ -43,46 +43,22 @@ $("#header_middle_button .next").click(function () {
 showImage(currentIndex);
 
 // 빠른분야찾기 메뉴
-// const quickCateBtn = document.querySelector("#quick_cate_btn");
-// const quickCateWrap = document.querySelector(".quick_cate_wrap");
+$("#quick_cate_btn")
+  .mouseenter(function () {
+    $(".quick_cate_wrap").show();
+    $(".quick_cate_tb").hide();
+  })
+  .mouseleave(function () {
+    $(".quick_cate_wrap").hide();
+  });
 
-// quickCateBtn.addEventListener("mouseenter", () => {
-//   quickCateWrap.style.display = "block";
-//   $(".quick_cate_tb").hide();
-// });
-
-// quickCateBtn.addEventListener("mouseleave", () => {
-//   quickCateWrap.style.display = "none";
-// });
-
-// quickCateWrap.addEventListener("mouseenter", () => {
-//   quickCateWrap.style.display = "block";
-//   $(".quick_cate_wrap").stop().animate({ width: "664px" }, 200);
-// });
-
-// quickCateWrap.addEventListener("mouseleave", () => {
-//   quickCateWrap.style.display = "none";
-//   $(".quick_cate_wrap").css({ width: "auto" });
-// });
-
-$("#quick_cate_btn").mouseenter(function () {
-  $(".quick_cate_wrap").show();
-  $(".quick_cate_tb").hide();
-});
-
-$("#quick_cate_btn").mouseleave(function () {
-  $(".quick_cate_wrap").hide();
-});
-
-$(".quick_cate_wrap").mouseenter(function () {
-  $(".quick_cate_wrap").show();
-  $(".quick_cate_wrap").stop().animate({ width: "664px" }, 200);
-});
-
-$(".quick_cate_wrap").mouseleave(function () {
-  $(".quick_cate_wrap").hide();
-  $(".quick_cate_wrap").css("width", "auto");
-});
+$(".quick_cate_header")
+  .mouseenter(function () {
+    $(".quick_cate_wrap").show().stop().animate({ width: "664px" }, 200);
+  })
+  .mouseleave(function () {
+    $(".quick_cate_wrap").hide().css("width", "auto");
+  });
 
 $(".qtit").mouseenter(function () {
   $(".qtit").css({
