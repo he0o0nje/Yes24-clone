@@ -184,7 +184,7 @@ $.ajax({
   data: { query: "오디오" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
-  $(".M3BotBook").each(function (i) {
+  $(".M3BotBook li").each(function (i) {
     const MultiData = data.documents[i];
     let imageUrl = MultiData.thumbnail;
 
@@ -262,7 +262,7 @@ $.ajax({
   data: { query: "코믹" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
-  $(".M4BotBook").each(function (i) {
+  $(".M4BotBook li").each(function (i) {
     const MultiData = data.documents[i];
     let imageUrl = MultiData.thumbnail;
 
@@ -296,7 +296,7 @@ $.ajax({
   data: { query: "time" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
-  $(".M5BotBook").each(function (i) {
+  $(".M5BotBook li").each(function (i) {
     const MultiData = data.documents[i];
     let imageUrl = MultiData.thumbnail;
 
@@ -316,6 +316,7 @@ $.ajax({
   $(".m6s1").each(function (i) {
     const MultiData = data.documents[i];
     let imageUrl = MultiData.thumbnail;
+
     $(this).find(".book_img a img").attr("src", imageUrl);
     $(this).find(".book_info .book_name a").text(MultiData.title);
     $(this)
@@ -349,12 +350,29 @@ $.ajax({
   data: { query: "태양" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
-  $(".M6BotBook").each(function (i) {
+  $(".M6BotBook li").each(function (i) {
     const MultiData = data.documents[i];
     let imageUrl = MultiData.thumbnail;
 
     $(this).find(".book_img a img").attr("src", imageUrl);
     $(this).find(".book_info .book_name a").text(MultiData.title);
     $(this).find(".book_info .book_price em").text(MultiData.sale_price);
+  });
+});
+
+// Multi07
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "휴식" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".M7BotBook li").each(function (i) {
+    const MultiData = data.documents[i];
+    let imageUrl = MultiData.thumbnail;
+
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".book_info .book_name a").text(MultiData.title);
+    $(this).find(".book_info .book_price em").text(MultiData.price);
   });
 });
