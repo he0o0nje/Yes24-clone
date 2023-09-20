@@ -1784,6 +1784,8 @@
   color: #999;
   word-break: break-all;
   line-height: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .m3sector01 {
   position: relative;
@@ -1828,6 +1830,8 @@
   overflow: hidden;
   line-height: 12px;
   color: #999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .m3sector02 {
   width: 398px;
