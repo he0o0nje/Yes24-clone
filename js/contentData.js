@@ -43,7 +43,7 @@ $.ajax({
   });
 });
 
-//main3
+// main3
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -106,7 +106,7 @@ $.ajax({
     $(this).find(".book_info .book_name a").text(MultiData.title);
     $(this).find(".book_info .goods_auth").text(MultiData.authors);
     $(this).find(".book_info .goods_pub").text(MultiData.publisher);
-    $(this).find(".book_info .yes_b").text(MultiData.price);
+    $(this).find(".book_info .yes_b").text(MultiData.sale_price);
   });
 });
 
@@ -138,7 +138,7 @@ $.ajax({
 
     $(this).find(".book_img a img").attr("src", imageUrl);
     $(this).find(".book_info .book_name a").text(MultiData.title);
-    $(this).find(".book_info .yes_b").text(MultiData.price);
+    $(this).find(".book_info .yes_b").text(MultiData.sale_price);
   });
 });
 
@@ -154,5 +154,55 @@ $.ajax({
 
     $(this).find(".book_img a img").attr("src", imageUrl);
     $(this).find(".book_info .book_name a").text(M2BotData.title);
+  });
+});
+
+// Multi03
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "시장" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $("#MTS3 .bookLi").each(function (i) {
+    const MultiData = data.documents[i];
+    let imageUrl = MultiData.thumbnail;
+
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".book_info .book_name a").text(MultiData.title);
+    $(this).find(".book_info .yes_b").text(MultiData.sale_price);
+  });
+});
+
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "오디오" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".M3BotBook").each(function (i) {
+    const M3BotData = data.documents[i];
+    let imageUrl = M3BotData.thumbnail;
+
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".book_info .book_name a").text(M3BotData.title);
+    $(this).find(".book_info .yes_b").text(M3BotData.price);
+  });
+});
+
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "사치코" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $("#M3BotRight").each(function (i) {
+    console.log(data);
+    const M3BotData = data.documents[i];
+    let imageUrl = M3BotData.thumbnail;
+
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".book_info .book_name a").text(M3BotData.title);
+    $(this).find(".book_info .yes_b").text(M3BotData.sale_price);
   });
 });
