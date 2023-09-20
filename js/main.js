@@ -1,9 +1,9 @@
 // 로딩 시 각 컴포넌트에 보여질 컨텐츠
 $(document).ready(function () {
-  $("#Multi01").trigger("click");
   $("#mbn01").trigger("mouseenter");
-  $("#todayBook01").trigger("mouseenter");
   $("#tabs01").trigger("mouseenter");
+  $("#todayBook01").trigger("mouseenter");
+  $("#Multi01").trigger("click");
 });
 
 // 슬라이드 컨테이너 호버 시 prev, next 버튼 보여주기
@@ -29,7 +29,7 @@ addHoverEffect(".cRTop", ".CRT");
 addHoverEffect(".cRBot", ".CRB");
 addHoverEffect("#main9", ".btnBn");
 
-// main1
+// Main1
 
 // 메인배너 리스트 호버 시 css변경
 $(".mbnTit").mouseenter(function () {
@@ -59,7 +59,7 @@ $(".tabs").mouseenter(function () {
   $(this).siblings(".mbnContImg").show();
 });
 
-// main2
+// Main2
 
 // 오늘의 책 목록
 $(".tBThumb").mouseenter(function () {
@@ -69,7 +69,58 @@ $(".tBThumb").mouseenter(function () {
   $(this).addClass("hover");
 });
 
-//베스트설러, 인기검색어 드롭다운 토글
+$(".tBcont").not(".active").hide();
+
+function TBprevSlide() {
+  $(".tBcont").hide();
+  let allSlide = $(".tBcont");
+  let currentIndex = 0;
+
+  $(".tBcont").each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  $(".tBcont").removeClass("active");
+
+  $(".tBcont").eq(newIndex).addClass("active");
+  $(".tBcont").eq(newIndex).show();
+}
+
+function TBnextSlide() {
+  $(".tBcont").hide();
+  let allSlide = $(".tBcont");
+  let currentIndex = 0;
+
+  $(".tBcont").each(function (index, item) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  $(".tBcont").removeClass("active");
+  $(".tBcont").eq(newIndex).addClass("active");
+  $(".tBcont").eq(newIndex).show();
+}
+
+// 베스트설러, 인기검색어 드롭다운 토글
 $(".bestLi .optTit dd").hide();
 
 $(".bestOpt").click(function (e) {
@@ -78,7 +129,7 @@ $(".bestOpt").click(function (e) {
   $(".bestLi .optTit dd").toggle();
 });
 
-//베스트셀러, 인기검색어 클릭 시 해당 리스트 보이기
+// 베스트셀러, 인기검색어 클릭 시 해당 리스트 보이기
 $("#popli").hide();
 
 $("#best").click(function (e) {
@@ -129,9 +180,113 @@ $("#b2").click(function (e) {
   $("#b1").css({ color: "", "font-weight": "" });
 });
 
-//main6
+// Main3
+$(".nowBookSet").not(".active").hide();
 
-//멀티페이지 리스트 클릭 시 css변경, 해당 내용 보이기
+function NBprevSlide() {
+  $(".nowBookSet").hide();
+  let allSlide = $(".nowBookSet");
+  let currentIndex = 0;
+
+  $(".nowBookSet").each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  $(".nowBookSet").removeClass("active");
+
+  $(".nowBookSet").eq(newIndex).addClass("active");
+  $(".nowBookSet").eq(newIndex).show();
+}
+
+function NBnextSlide() {
+  $(".nowBookSet").hide();
+  let allSlide = $(".nowBookSet");
+  let currentIndex = 0;
+
+  $(".nowBookSet").each(function (index, item) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  $(".nowBookSet").removeClass("active");
+  $(".nowBookSet").eq(newIndex).addClass("active");
+  $(".nowBookSet").eq(newIndex).show();
+}
+
+// Main5
+$(".bookClubArea .bookClubSet").not(".active").hide();
+
+function BCprevSlide() {
+  $(".bookClubArea .bookClubSet").hide();
+  let allSlide = $(".bookClubArea .bookClubSet");
+  let currentIndex = 0;
+
+  $(".bookClubArea .bookClubSet").each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  $(".bookClubArea .bookClubSet").removeClass("active");
+
+  $(".bookClubArea .bookClubSet").eq(newIndex).addClass("active");
+  $(".bookClubArea .bookClubSet").eq(newIndex).show();
+}
+
+function BCnextSlide() {
+  $(".bookClubArea .bookClubSet").hide();
+  let allSlide = $(".bookClubArea .bookClubSet");
+  let currentIndex = 0;
+
+  $(".bookClubArea .bookClubSet").each(function (index, item) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  $(".bookClubArea .bookClubSet").removeClass("active");
+  $(".bookClubArea .bookClubSet").eq(newIndex).addClass("active");
+  $(".bookClubArea .bookClubSet").eq(newIndex).show();
+}
+
+// Main6
+
+// 멀티페이지 리스트 클릭 시 css변경, 해당 내용 보이기
 $(".multiSecUnit h2").click(function () {
   $(".multiSecUnit h2").css({
     "background-color": "",
