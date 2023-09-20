@@ -305,3 +305,56 @@ $.ajax({
     $(this).find(".book_info .book_price em").text(MultiData.price);
   });
 });
+
+// Multi06
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "하루하루" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".m6s1").each(function (i) {
+    const MultiData = data.documents[i];
+    let imageUrl = MultiData.thumbnail;
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".book_info .book_name a").text(MultiData.title);
+    $(this)
+      .find(".book_info .price_dim")
+      .text(MultiData.price + " →");
+    $(this).find(".book_info .yes_b").text(MultiData.sale_price);
+    $(this).find(".book_info .book_cmt").text(MultiData.contents);
+  });
+});
+
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "카메라" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".m6s2 li").each(function (i) {
+    const MultiData = data.documents[i];
+    let imageUrl = MultiData.thumbnail;
+
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".book_info .book_etc").text(MultiData.status);
+    $(this).find(".book_info .book_name a").text(MultiData.title);
+    $(this).find(".book_info .book_cmt").text(MultiData.contents);
+  });
+});
+
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "태양" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".M6BotBook").each(function (i) {
+    const MultiData = data.documents[i];
+    let imageUrl = MultiData.thumbnail;
+
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".book_info .book_name a").text(MultiData.title);
+    $(this).find(".book_info .book_price em").text(MultiData.sale_price);
+  });
+});
