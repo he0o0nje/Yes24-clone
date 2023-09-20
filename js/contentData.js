@@ -101,17 +101,12 @@ $.ajax({
   $("#MTS1 .bookLi").each(function (i) {
     const MultiData = data.documents[i];
     let imageUrl = MultiData.thumbnail;
-    $("#MTS1 .bookBigCon .book_img a img").eq(i).attr("src", imageUrl);
-    $("#MTS1 .bookBigCon .book_info .book_name a").eq(i).text(MultiData.title);
-    $("#MTS1 .bookBigCon .book_info .book_pubGrp .goods_auth")
-      .eq(i)
-      .text(MultiData.authors);
-    $("#MTS1 .bookBigCon .book_info .book_pubGrp .goods_pub")
-      .eq(i)
-      .text(MultiData.publisher);
-    $("#MTS1 .bookBigCon .book_info .book_price .yes_b")
-      .eq(i)
-      .text(MultiData.price);
+
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".book_info .book_name a").text(MultiData.title);
+    $(this).find(".book_info .goods_auth").text(MultiData.authors);
+    $(this).find(".book_info .goods_pub").text(MultiData.publisher);
+    $(this).find(".book_info .yes_b").text(MultiData.price);
   });
 });
 
@@ -124,8 +119,9 @@ $.ajax({
   $(".M1BotBook").each(function (i) {
     const M1BotData = data.documents[i];
     let imageUrl = M1BotData.thumbnail;
-    $(".M1BotBook .book_img a img").eq(i).attr("src", imageUrl);
-    $(".M1BotBook .book_info .book_name a").eq(i).text(M1BotData.title);
+
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".book_info .book_name a").text(M1BotData.title);
   });
 });
 
@@ -139,11 +135,10 @@ $.ajax({
   $("#MTS2 .bookLi").each(function (i) {
     const MultiData = data.documents[i];
     let imageUrl = MultiData.thumbnail;
-    $("#MTS2 .bookBigCon .book_img a img").eq(i).attr("src", imageUrl);
-    $("#MTS2 .bookBigCon .book_info .book_name a").eq(i).text(MultiData.title);
-    $("#MTS2 .bookBigCon .book_info .book_price .yes_b")
-      .eq(i)
-      .text(MultiData.price);
+
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".book_info .book_name a").text(MultiData.title);
+    $(this).find(".book_info .yes_b").text(MultiData.price);
   });
 });
 
@@ -156,7 +151,8 @@ $.ajax({
   $(".M2BotBook").each(function (i) {
     const M2BotData = data.documents[i];
     let imageUrl = M2BotData.thumbnail;
-    $(".M2BotBook .book_img a img").eq(i).attr("src", imageUrl);
-    $(".M2BotBook .book_info .book_name a").eq(i).text(M2BotData.title);
+
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".book_info .book_name a").text(M2BotData.title);
   });
 });
