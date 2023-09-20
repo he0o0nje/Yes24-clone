@@ -4,7 +4,7 @@
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "미래의 책" },
+  data: { query: "삶" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
   $(".todayBUnit").each(function (i) {

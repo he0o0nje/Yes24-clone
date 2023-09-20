@@ -2,6 +2,7 @@
 $(document).ready(function () {
   $("#Multi01").trigger("click");
   $("#mbn01").trigger("mouseenter");
+  $("#todayBook01").trigger("mouseenter");
   $("#tabs01").trigger("mouseenter");
 });
 
@@ -61,6 +62,10 @@ $(".tabs").mouseenter(function () {
 // main2
 
 // 오늘의 책 목록
+$(".tBThumb").mouseenter(function () {
+  $(".tBcont").hide();
+  $(this).siblings(".tBcont").show();
+});
 
 //베스트설러, 인기검색어 드롭다운 토글
 $(".bestLi .optTit dd").hide();
