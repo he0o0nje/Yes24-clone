@@ -1,4 +1,4 @@
-// main2
+// Main2
 
 // 가운데
 $.ajax({
@@ -44,7 +44,7 @@ $.ajax({
   });
 });
 
-// main3
+// Main3
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -68,7 +68,7 @@ $.ajax({
   });
 });
 
-/// main5
+/// Main5
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -91,7 +91,7 @@ $.ajax({
   });
 });
 
-// main6
+// Main6
 
 // Multi01
 $.ajax({
@@ -374,5 +374,22 @@ $.ajax({
     $(this).find(".book_img a img").attr("src", imageUrl);
     $(this).find(".book_info .book_name a").text(MultiData.title);
     $(this).find(".book_info .book_price em").text(MultiData.price);
+  });
+});
+
+// Multi08
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "콘서트" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".M8BotBook li").each(function (i) {
+    const MultiData = data.documents[i];
+    let imageUrl = MultiData.thumbnail;
+
+    $(this).find(".book_img a img").attr("src", imageUrl);
+    $(this).find(".tic_info .tic_name a").text(MultiData.title);
+    $(this).find(".tic_info .tic_des").text(MultiData.publisher);
   });
 });
