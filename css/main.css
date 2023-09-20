@@ -473,7 +473,7 @@
 .todayBArea .todayBUnit:last-child .tBThumb img {
   max-height: 81px;
 }
-.todayBArea .todayBUnit .tBThumb:hover::before {
+.todayBArea .todayBUnit .tBThumb.hover::before {
   content: "";
   position: absolute;
   top: 0;

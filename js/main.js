@@ -65,6 +65,8 @@ $(".tabs").mouseenter(function () {
 $(".tBThumb").mouseenter(function () {
   $(".tBcont").hide();
   $(this).siblings(".tBcont").show();
+  $(".tBThumb").removeClass("hover");
+  $(this).addClass("hover");
 });
 
 //베스트설러, 인기검색어 드롭다운 토글
