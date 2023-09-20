@@ -1,7 +1,8 @@
-// 로딩 시 보여질 각 컴포넌트에 보여질 컨텐츠
+// 로딩 시 각 컴포넌트에 보여질 컨텐츠
 $(document).ready(function () {
-  $("#Multi01").bind("click", function () {});
   $("#Multi01").trigger("click");
+  $("#mbn01").trigger("mouseenter");
+  $("#tabs01").trigger("mouseenter");
 });
 
 // 슬라이드 컨테이너 호버 시 prev, next 버튼 보여주기
