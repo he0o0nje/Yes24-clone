@@ -412,3 +412,54 @@ $.ajax({
     $(this).find(".subPub .pub").text(TVData.publisher);
   });
 });
+
+// Main8
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "나를" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".cardBookUnit").each(function (i) {
+    const CardData = data.documents[i];
+    let imageUrl = CardData.thumbnail;
+
+    $(this).find(".bookImg img").attr("src", imageUrl);
+    $(this).find(".bookCmt").text(CardData.contents);
+    $(this).find(".bookInfo .bookName").text(CardData.title);
+    $(this).find(".bookPub .auth").text(CardData.authors);
+    $(this).find(".bookPub .pub").text(CardData.publisher);
+  });
+});
+
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "아파트" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".cRTop .rowGrp li").each(function (i) {
+    const CardData = data.documents[i];
+    let imageUrl = CardData.thumbnail;
+
+    $(this).find(".titles_thumb img").attr("src", imageUrl);
+    $(this).find(".titles_info .titles_tit").text(CardData.title);
+    $(this).find(".titles_info .titles_des").text(CardData.contents);
+  });
+});
+
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "블로그" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".cRBot .rowGrp li").each(function (i) {
+    const CardData = data.documents[i];
+    let imageUrl = CardData.thumbnail;
+
+    $(this).find(".titles_thumb img").attr("src", imageUrl);
+    $(this).find(".titles_info .titles_tit").text(CardData.title);
+    $(this).find(".titles_info .titles_des").text(CardData.contents);
+  });
+});
