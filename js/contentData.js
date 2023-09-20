@@ -1,5 +1,6 @@
 // main2
-// main2 가운데
+
+// 가운데
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -23,7 +24,7 @@ $.ajax({
   });
 });
 
-//main2 오른쪽
+// 오른쪽
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -89,36 +90,73 @@ $.ajax({
 });
 
 // main6
+
+// Multi01
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
   data: { query: "웹개발" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
-  $(".bookLi").each(function (i) {
+  $("#MTS1 .bookLi").each(function (i) {
     const MultiData = data.documents[i];
     let imageUrl = MultiData.thumbnail;
-    $(".bookBigCon .book_img a img").eq(i).attr("src", imageUrl);
-    $(".bookBigCon .book_info .book_name a").eq(i).text(MultiData.title);
-    $(".bookBigCon .book_info .book_pubGrp .goods_auth")
+    $("#MTS1 .bookBigCon .book_img a img").eq(i).attr("src", imageUrl);
+    $("#MTS1 .bookBigCon .book_info .book_name a").eq(i).text(MultiData.title);
+    $("#MTS1 .bookBigCon .book_info .book_pubGrp .goods_auth")
       .eq(i)
       .text(MultiData.authors);
-    $(".bookBigCon .book_info .book_pubGrp .goods_pub")
+    $("#MTS1 .bookBigCon .book_info .book_pubGrp .goods_pub")
       .eq(i)
       .text(MultiData.publisher);
-    $(".bookBigCon .book_info .yes_b").eq(i).text(MultiData.price);
+    $("#MTS1 .bookBigCon .book_info .book_price .yes_b")
+      .eq(i)
+      .text(MultiData.price);
   });
 });
+
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "편지" },
+  data: { query: "한국 근대" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
   $(".M1BotBook").each(function (i) {
     const M1BotData = data.documents[i];
     let imageUrl = M1BotData.thumbnail;
-    $(".bookCornerCon .book_img a img").eq(i).attr("src", imageUrl);
-    $(".bookCornerCon .book_info .book_name a").eq(i).text(M1BotData.title);
+    $(".M1BotBook .book_img a img").eq(i).attr("src", imageUrl);
+    $(".M1BotBook .book_info .book_name a").eq(i).text(M1BotData.title);
+  });
+});
+
+// Multi02
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "GPT" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $("#MTS2 .bookLi").each(function (i) {
+    const MultiData = data.documents[i];
+    let imageUrl = MultiData.thumbnail;
+    $("#MTS2 .bookBigCon .book_img a img").eq(i).attr("src", imageUrl);
+    $("#MTS2 .bookBigCon .book_info .book_name a").eq(i).text(MultiData.title);
+    $("#MTS2 .bookBigCon .book_info .book_price .yes_b")
+      .eq(i)
+      .text(MultiData.price);
+  });
+});
+
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "라이브러리" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".M2BotBook").each(function (i) {
+    const M2BotData = data.documents[i];
+    let imageUrl = M2BotData.thumbnail;
+    $(".M2BotBook .book_img a img").eq(i).attr("src", imageUrl);
+    $(".M2BotBook .book_info .book_name a").eq(i).text(M2BotData.title);
   });
 });
