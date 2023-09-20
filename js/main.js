@@ -20,7 +20,7 @@ function addHoverEffect(selectorToShow, selectorToHide) {
 addHoverEffect(".mbnSub", ".mbnBtn");
 addHoverEffect(".todayBook", ".btnTB");
 addHoverEffect(".nowBookArea", ".btnNB");
-addHoverEffect(".bookClubArea", ".btnBC");
+addHoverEffect(".bookClub", ".btnBC");
 addHoverEffect(".bookClubRgt", ".btnBCR");
 addHoverEffect("#main7", ".btnTv");
 addHoverEffect(".cLTop", ".btnCT");
@@ -238,14 +238,14 @@ function NBnextSlide() {
 }
 
 // Main5
-$(".bookClubArea .bookClubSet").not(".active").hide();
+$(".bookClub .bookClubSet").not(".active").hide();
 
 function BCprevSlide() {
-  $(".bookClubArea .bookClubSet").hide();
-  let allSlide = $(".bookClubArea .bookClubSet");
+  $(".bookClub .bookClubSet").hide();
+  let allSlide = $(".bookClub .bookClubSet");
   let currentIndex = 0;
 
-  $(".bookClubArea .bookClubSet").each(function (index) {
+  $(".bookClub .bookClubSet").each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -259,18 +259,18 @@ function BCprevSlide() {
     newIndex = currentIndex - 1;
   }
 
-  $(".bookClubArea .bookClubSet").removeClass("active");
-  $(".bookClubArea .bookClubSet").eq(newIndex).addClass("active");
-  $(".bookClubArea .bookClubSet").eq(newIndex).show();
-  $(".bookClubArea .pageNum strong").text(newIndex + 1);
+  $(".bookClub .bookClubSet").removeClass("active");
+  $(".bookClub .bookClubSet").eq(newIndex).addClass("active");
+  $(".bookClub .bookClubSet").eq(newIndex).show();
+  $(".bookClub .pageNum strong").text(newIndex + 1);
 }
 
 function BCnextSlide() {
-  $(".bookClubArea .bookClubSet").hide();
-  let allSlide = $(".bookClubArea .bookClubSet");
+  $(".bookClub .bookClubSet").hide();
+  let allSlide = $(".bookClub .bookClubSet");
   let currentIndex = 0;
 
-  $(".bookClubArea .bookClubSet").each(function (index) {
+  $(".bookClub .bookClubSet").each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -284,10 +284,62 @@ function BCnextSlide() {
     newIndex = currentIndex + 1;
   }
 
-  $(".bookClubArea .bookClubSet").removeClass("active");
-  $(".bookClubArea .bookClubSet").eq(newIndex).addClass("active");
-  $(".bookClubArea .bookClubSet").eq(newIndex).show();
-  $(".bookClubArea .pageNum strong").text(newIndex + 1);
+  $(".bookClub .bookClubSet").removeClass("active");
+  $(".bookClub .bookClubSet").eq(newIndex).addClass("active");
+  $(".bookClub .bookClubSet").eq(newIndex).show();
+  $(".bookClub .pageNum strong").text(newIndex + 1);
+}
+
+$(".bookClubRgt .bookClubSet").not(".active").hide();
+
+function BCRprevSlide() {
+  $(".bookClubRgt .bookClubSet").hide();
+  let allSlide = $(".bookClubRgt .bookClubSet");
+  let currentIndex = 0;
+
+  $(".bookClubRgt .bookClubSet").each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  $(".bookClubRgt .bookClubSet").removeClass("active");
+  $(".bookClubRgt .bookClubSet").eq(newIndex).addClass("active");
+  $(".bookClubRgt .bookClubSet").eq(newIndex).show();
+  $(".bookClubRgt .pageNum strong").text(newIndex + 1);
+}
+
+function BCRnextSlide() {
+  $(".bookClubRgt .bookClubSet").hide();
+  let allSlide = $(".bookClub .bookClubSet");
+  let currentIndex = 0;
+
+  $(".bookClubRgt .bookClubSet").each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  $(".bookClubRgt .bookClubSet").removeClass("active");
+  $(".bookClubRgt .bookClubSet").eq(newIndex).addClass("active");
+  $(".bookClubRgt .bookClubSet").eq(newIndex).show();
+  $(".bookClubRgt .pageNum strong").text(newIndex + 1);
 }
 
 // Main6
