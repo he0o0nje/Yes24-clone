@@ -91,7 +91,6 @@ function TBprevSlide() {
   }
 
   $(".tBcont").removeClass("active");
-
   $(".tBcont").eq(newIndex).addClass("active");
   $(".tBcont").eq(newIndex).show();
 }
@@ -101,7 +100,7 @@ function TBnextSlide() {
   let allSlide = $(".tBcont");
   let currentIndex = 0;
 
-  $(".tBcont").each(function (index, item) {
+  $(".tBcont").each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -125,6 +124,7 @@ $(".bestLi .optTit dd").hide();
 
 $(".bestOpt").click(function (e) {
   e.preventDefault();
+
   $(".bestLi .optTit .bestOpt dt").toggleClass("c");
   $(".bestLi .optTit dd").toggle();
 });
@@ -134,6 +134,7 @@ $("#popli").hide();
 
 $("#best").click(function (e) {
   e.preventDefault();
+
   $(".bestLi .optTit .bestOpt dt").removeClass("c");
   $("#pop a").css({
     "border-bottom": "solid 1px #d8d8d8",
@@ -148,6 +149,7 @@ $("#best").click(function (e) {
 
 $("#pop").click(function (e) {
   e.preventDefault();
+
   $(".bestLi .optTit .bestOpt dt").removeClass("c");
   $("#best a").css({
     "border-bottom": "solid 1px #d8d8d8",
@@ -166,6 +168,7 @@ $("#bestSet02").hide();
 $("#b1").css({ color: "#333", "font-weight": "bold" });
 $("#b1").click(function (e) {
   e.preventDefault();
+
   $("#bestSet01").show();
   $("#bestSet02").hide();
   $("#b1").css({ color: "#333", "font-weight": "bold" });
@@ -174,6 +177,7 @@ $("#b1").click(function (e) {
 
 $("#b2").click(function (e) {
   e.preventDefault();
+
   $("#bestSet01").hide();
   $("#bestSet02").show();
   $("#b2").css({ color: "#333", "font-weight": "bold" });
@@ -203,9 +207,9 @@ function NBprevSlide() {
   }
 
   $(".nowBookSet").removeClass("active");
-
   $(".nowBookSet").eq(newIndex).addClass("active");
   $(".nowBookSet").eq(newIndex).show();
+  $(".nowBookArea .pageNum strong").text(newIndex + 1);
 }
 
 function NBnextSlide() {
@@ -213,7 +217,7 @@ function NBnextSlide() {
   let allSlide = $(".nowBookSet");
   let currentIndex = 0;
 
-  $(".nowBookSet").each(function (index, item) {
+  $(".nowBookSet").each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -230,6 +234,7 @@ function NBnextSlide() {
   $(".nowBookSet").removeClass("active");
   $(".nowBookSet").eq(newIndex).addClass("active");
   $(".nowBookSet").eq(newIndex).show();
+  $(".nowBookArea .pageNum strong").text(newIndex + 1);
 }
 
 // Main5
@@ -255,9 +260,9 @@ function BCprevSlide() {
   }
 
   $(".bookClubArea .bookClubSet").removeClass("active");
-
   $(".bookClubArea .bookClubSet").eq(newIndex).addClass("active");
   $(".bookClubArea .bookClubSet").eq(newIndex).show();
+  $(".bookClubArea .pageNum strong").text(newIndex + 1);
 }
 
 function BCnextSlide() {
@@ -265,7 +270,7 @@ function BCnextSlide() {
   let allSlide = $(".bookClubArea .bookClubSet");
   let currentIndex = 0;
 
-  $(".bookClubArea .bookClubSet").each(function (index, item) {
+  $(".bookClubArea .bookClubSet").each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -282,6 +287,7 @@ function BCnextSlide() {
   $(".bookClubArea .bookClubSet").removeClass("active");
   $(".bookClubArea .bookClubSet").eq(newIndex).addClass("active");
   $(".bookClubArea .bookClubSet").eq(newIndex).show();
+  $(".bookClubArea .pageNum strong").text(newIndex + 1);
 }
 
 // Main6
