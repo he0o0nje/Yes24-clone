@@ -400,11 +400,11 @@ $.ajax({
   data: { query: "트렌드" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
-  $(".TvSub").each(function (i) {
+  $(".TvSubGrp").each(function (i) {
     const TVData = data.documents[i];
     let imageUrl = TVData.thumbnail;
 
-    $(this).find(".TvSubGrp a img").attr("src", imageUrl);
+    $(this).find(".imgbox img").attr("src", imageUrl);
     $(this).find(".TvSubExp .subCmt").text(TVData.contents);
     $(this).find(".TvSubExp .subTit a").text(TVData.title);
     $(this).find(".subPub .auth").text(TVData.authors);

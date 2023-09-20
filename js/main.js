@@ -382,3 +382,55 @@ M6addHoverEffect("#MTS5");
 M6addHoverEffect("#MTS6");
 M6addHoverEffect("#MTS8");
 M6addHoverEffect(".sector04");
+
+// Main7
+$(".TvSubGrp").not(".active").hide();
+
+function TVprevSlide() {
+  $(".TvSubGrp").hide();
+  let allSlide = $(".TvSubGrp");
+  let currentIndex = 0;
+
+  $(".TvSubGrp").each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  $(".TvSubGrp").removeClass("active");
+  $(".TvSubGrp").eq(newIndex).addClass("active");
+  $(".TvSubGrp").eq(newIndex).show();
+}
+
+function TVnextSlide() {
+  $(".TvSubGrp").hide();
+  let allSlide = $(".TvSubGrp");
+  let currentIndex = 0;
+
+  $(".TvSubGrp").each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  $(".TvSubGrp").removeClass("active");
+  $(".TvSubGrp").eq(newIndex).addClass("active");
+  $(".TvSubGrp").eq(newIndex).show();
+  $(".bookClubRgt .pageNum strong").text(newIndex + 1);
+}
