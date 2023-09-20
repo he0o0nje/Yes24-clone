@@ -60,12 +60,13 @@ $(".tabs").mouseenter(function () {
 
 // main2
 
+// 오늘의 책 목록
+
 //베스트설러, 인기검색어 드롭다운 토글
 $(".bestLi .optTit dd").hide();
 
 $(".bestOpt").click(function (e) {
   e.preventDefault();
-
   $(".bestLi .optTit .bestOpt dt").toggleClass("c");
   $(".bestLi .optTit dd").toggle();
 });
@@ -75,6 +76,7 @@ $("#popli").hide();
 
 $("#best").click(function (e) {
   e.preventDefault();
+  $(".bestLi .optTit .bestOpt dt").removeClass("c");
   $("#pop a").css({
     "border-bottom": "solid 1px #d8d8d8",
   });
@@ -88,6 +90,7 @@ $("#best").click(function (e) {
 
 $("#pop").click(function (e) {
   e.preventDefault();
+  $(".bestLi .optTit .bestOpt dt").removeClass("c");
   $("#best a").css({
     "border-bottom": "solid 1px #d8d8d8",
   });

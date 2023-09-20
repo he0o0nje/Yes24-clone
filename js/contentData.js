@@ -7,7 +7,6 @@ $.ajax({
   data: { query: "미래의 책" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
-  console.log(data);
   $(".todayBUnit").each(function (i) {
     const bookData = data.documents[i];
     let imageUrl = bookData.thumbnail;
