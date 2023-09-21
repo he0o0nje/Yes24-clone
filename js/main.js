@@ -5,6 +5,9 @@ $(document).ready(function () {
   $("#todayBook01").trigger("mouseenter");
   $("#Multi01").trigger("click");
   $("#TV1").trigger("mouseenter");
+  $(".mbnBtn").css("display", "none");
+  $(".btnTB").css("display", "none");
+  $(".btnTv").css("display", "none");
 });
 
 // 슬라이드 컨테이너 호버 시 prev, next 버튼 보여주기
