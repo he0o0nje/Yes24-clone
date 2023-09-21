@@ -219,6 +219,7 @@ function NBprevSlide() {
   $(".nowBookSet").removeClass("active");
   $(".nowBookSet").eq(newIndex).addClass("active");
   $(".nowBookSet").eq(newIndex).show();
+
   $(".nowBookArea .pageNum strong").text(newIndex + 1);
 }
 
@@ -244,6 +245,7 @@ function NBnextSlide() {
   $(".nowBookSet").removeClass("active");
   $(".nowBookSet").eq(newIndex).addClass("active");
   $(".nowBookSet").eq(newIndex).show();
+
   $(".nowBookArea .pageNum strong").text(newIndex + 1);
 }
 
@@ -274,6 +276,7 @@ function BCprevSlide() {
   $(".bookClub .bookClubSet").removeClass("active");
   $(".bookClub .bookClubSet").eq(newIndex).addClass("active");
   $(".bookClub .bookClubSet").eq(newIndex).show();
+
   $(".bookClub .pageNum strong").text(newIndex + 1);
 }
 
@@ -299,6 +302,7 @@ function BCnextSlide() {
   $(".bookClub .bookClubSet").removeClass("active");
   $(".bookClub .bookClubSet").eq(newIndex).addClass("active");
   $(".bookClub .bookClubSet").eq(newIndex).show();
+
   $(".bookClub .pageNum strong").text(newIndex + 1);
 }
 
@@ -327,6 +331,7 @@ function BCRprevSlide() {
   $(".bookClubRgt .bookClubSet").removeClass("active");
   $(".bookClubRgt .bookClubSet").eq(newIndex).addClass("active");
   $(".bookClubRgt .bookClubSet").eq(newIndex).show();
+
   $(".bookClubRgt .pageNum strong").text(newIndex + 1);
 }
 
@@ -352,6 +357,7 @@ function BCRnextSlide() {
   $(".bookClubRgt .bookClubSet").removeClass("active");
   $(".bookClubRgt .bookClubSet").eq(newIndex).addClass("active");
   $(".bookClubRgt .bookClubSet").eq(newIndex).show();
+
   $(".bookClubRgt .pageNum strong").text(newIndex + 1);
 }
 
@@ -499,7 +505,9 @@ function CBLTprevSlide() {
   $(".cardBookUnit").removeClass("active");
   $(".cardBookUnit").eq(newIndex).addClass("active");
   $(".cardBookUnit").eq(newIndex).show();
+
   $(".cLTop .pageNum strong").text(newIndex + 1);
+
   $(".cardNews").hide();
   $(".cardNews:eq(" + newIndex + ")").show();
 }
@@ -526,7 +534,9 @@ function CBLTnextSlide() {
   $(".cardBookUnit").removeClass("active");
   $(".cardBookUnit").eq(newIndex).addClass("active");
   $(".cardBookUnit").eq(newIndex).show();
+
   $(".cLTop .pageNum strong").text(newIndex + 1);
+
   $(".cardNews").hide();
   $(".cardNews:eq(" + newIndex + ")").show();
 }
@@ -580,4 +590,171 @@ function CBLBnextSlide() {
   $(".cardNews img").removeClass("active");
   $(".cardNews img").eq(newIndex).addClass("active");
   $(".cardNews img").eq(newIndex).show();
+}
+
+// 이전, 다음 버튼 클릭 시 해당 컨텐츠 보이기 (CardBookRightTop)
+$(".cRTop .rowGrp").not(".active").hide();
+
+function CBRTprevSlide() {
+  $(".cRTop .rowGrp").hide();
+  let allSlide = $(".cRTop .rowGrp");
+  let currentIndex = 0;
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  $(".cRTop .rowGrp").removeClass("active");
+  $(".cRTop .rowGrp").eq(newIndex).addClass("active");
+  $(".cRTop .rowGrp").eq(newIndex).show();
+
+  $(".cRTop .pageNum strong").text(newIndex + 1);
+}
+
+function CBRTnextSlide() {
+  $(".cRTop .rowGrp").hide();
+  let allSlide = $(".cRTop .rowGrp");
+  let currentIndex = 0;
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  $(".cRTop .rowGrp").removeClass("active");
+  $(".cRTop .rowGrp").eq(newIndex).addClass("active");
+  $(".cRTop .rowGrp").eq(newIndex).show();
+
+  $(".cRTop .pageNum strong").text(newIndex + 1);
+}
+
+// 이전, 다음 버튼 클릭 시 해당 컨텐츠 보이기 (CardBookRightBottom)
+$(".cRBot .rowGrp").not(".active").hide();
+
+function CBRBprevSlide() {
+  $(".cRBot .rowGrp").hide();
+  let allSlide = $(".cRBot .rowGrp");
+  let currentIndex = 0;
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  $(".cRBot .rowGrp").removeClass("active");
+  $(".cRBot .rowGrp").eq(newIndex).addClass("active");
+  $(".cRBot .rowGrp").eq(newIndex).show();
+
+  $(".cRBot .pageNum strong").text(newIndex + 1);
+}
+
+function CBRBnextSlide() {
+  $(".cRBot .rowGrp").hide();
+  let allSlide = $(".cRBot .rowGrp");
+  let currentIndex = 0;
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  $(".cRBot .rowGrp").removeClass("active");
+  $(".cRBot .rowGrp").eq(newIndex).addClass("active");
+  $(".cRBot .rowGrp").eq(newIndex).show();
+
+  $(".cRBot .pageNum strong").text(newIndex + 1);
+}
+
+// Main9
+
+// 이전, 다음 버튼 클릭 시 해당 컨텐츠 보이기 (LAST)
+$(".bnImgSet").not(".active").hide();
+
+function LAprevSlide() {
+  $(".bnImgSet").hide();
+  let allSlide = $(".bnImgSet");
+  let currentIndex = 0;
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  $(".bnImgSet").removeClass("active");
+  $(".bnImgSet").eq(newIndex).addClass("active");
+  $(".bnImgSet").eq(newIndex).show();
+
+  $("#main9 .pageNum strong").text(newIndex + 1);
+}
+
+function LAnextSlide() {
+  $(".bnImgSet").hide();
+  let allSlide = $(".bnImgSet");
+  let currentIndex = 0;
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  $(".bnImgSet").removeClass("active");
+  $(".bnImgSet").eq(newIndex).addClass("active");
+  $(".bnImgSet").eq(newIndex).show();
+
+  $("#main9 .pageNum strong").text(newIndex + 1);
 }
