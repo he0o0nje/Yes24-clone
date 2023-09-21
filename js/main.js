@@ -62,14 +62,6 @@ $(".tabs").mouseenter(function () {
 
 // Main2
 
-// 썸네일 호버 시 해당 컨텐츠 보이기
-$(".tBThumb").mouseenter(function () {
-  $(".tBcont").hide();
-  $(this).siblings(".tBcont").show();
-  $(".tBThumb").removeClass("hover");
-  $(this).addClass("hover");
-});
-
 // 이전, 다음 버튼 클릭 시 해당 컨텐츠 보이고, 해당 썸네일 호버CSS 변경
 $(".tBcont").not(".active").hide();
 
@@ -78,7 +70,7 @@ function TBprevSlide() {
   let allSlide = $(".tBcont");
   let currentIndex = 0;
 
-  $(".tBcont").each(function (index) {
+  allSlide.each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -105,7 +97,7 @@ function TBnextSlide() {
   let allSlide = $(".tBcont");
   let currentIndex = 0;
 
-  $(".tBcont").each(function (index) {
+  allSlide.each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -126,6 +118,14 @@ function TBnextSlide() {
   $(".tBThumb").removeClass("hover");
   $(".tBThumb:eq(" + newIndex + ")").addClass("hover");
 }
+
+// 썸네일 호버 시 해당 컨텐츠 보이기
+$(".tBThumb").mouseenter(function () {
+  $(".tBcont").hide();
+  $(this).siblings(".tBcont").show();
+  $(".tBThumb").removeClass("hover");
+  $(this).addClass("hover");
+});
 
 // 베스트설러, 인기검색어 드롭다운 토글
 $(".bestLi .optTit dd").hide();
@@ -202,7 +202,7 @@ function NBprevSlide() {
   let allSlide = $(".nowBookSet");
   let currentIndex = 0;
 
-  $(".nowBookSet").each(function (index) {
+  allSlide.each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -227,7 +227,7 @@ function NBnextSlide() {
   let allSlide = $(".nowBookSet");
   let currentIndex = 0;
 
-  $(".nowBookSet").each(function (index) {
+  allSlide.each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -249,7 +249,7 @@ function NBnextSlide() {
 
 // Main5
 
-// 이전, 다음 버튼 클릭 시 해당 왼쪽 컨텐츠 보이기
+// 이전, 다음 버튼 클릭 시 해당 왼쪽 컨텐츠 보이기 (BookClub)
 $(".bookClub .bookClubSet").not(".active").hide();
 
 function BCprevSlide() {
@@ -257,7 +257,7 @@ function BCprevSlide() {
   let allSlide = $(".bookClub .bookClubSet");
   let currentIndex = 0;
 
-  $(".bookClub .bookClubSet").each(function (index) {
+  allSlide.each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -282,7 +282,7 @@ function BCnextSlide() {
   let allSlide = $(".bookClub .bookClubSet");
   let currentIndex = 0;
 
-  $(".bookClub .bookClubSet").each(function (index) {
+  allSlide.each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -302,7 +302,7 @@ function BCnextSlide() {
   $(".bookClub .pageNum strong").text(newIndex + 1);
 }
 
-// 이전, 다음 버튼 클릭 시 해당 오른쪽 컨텐츠 보이기
+// 이전, 다음 버튼 클릭 시 해당 오른쪽 컨텐츠 보이기 (BookClubRight)
 $(".bookClubRgt .bookClubSet").not(".active").hide();
 
 function BCRprevSlide() {
@@ -310,7 +310,7 @@ function BCRprevSlide() {
   let allSlide = $(".bookClubRgt .bookClubSet");
   let currentIndex = 0;
 
-  $(".bookClubRgt .bookClubSet").each(function (index) {
+  allSlide.each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -332,10 +332,10 @@ function BCRprevSlide() {
 
 function BCRnextSlide() {
   $(".bookClubRgt .bookClubSet").hide();
-  let allSlide = $(".bookClub .bookClubSet");
+  let allSlide = $(".bookClubRgt .bookClubSet");
   let currentIndex = 0;
 
-  $(".bookClubRgt .bookClubSet").each(function (index) {
+  allSlide.each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -398,7 +398,7 @@ M6addHoverEffect(".sector04");
 
 // Main7
 
-// 이전, 다음 버튼 클릭 시 해당 유튜브 컨텐츠 보이기
+// 이전, 다음 버튼 클릭 시 해당 유튜브, 관련상품 컨텐츠 보이고 해당 썸네일 호버CSS 변경 (TV)
 $(".TvArea").not(".active").hide();
 
 function TVprevSlide() {
@@ -406,7 +406,7 @@ function TVprevSlide() {
   let allSlide = $(".TvArea");
   let currentIndex = 0;
 
-  $(".TvArea").each(function (index) {
+  allSlide.each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -423,6 +423,12 @@ function TVprevSlide() {
   $(".TvArea").removeClass("active");
   $(".TvArea").eq(newIndex).addClass("active");
   $(".TvArea").eq(newIndex).show();
+
+  $(".TvSubGrp").hide();
+  $(".TvSubGrp:eq(" + newIndex + ")").show();
+
+  $(".TvThumb").removeClass("hover");
+  $(".TvThumb:eq(" + newIndex + ")").addClass("hover");
 }
 
 function TVnextSlide() {
@@ -430,7 +436,7 @@ function TVnextSlide() {
   let allSlide = $(".TvArea");
   let currentIndex = 0;
 
-  $(".TvArea").each(function (index) {
+  allSlide.each(function (index) {
     if ($(this).hasClass("active")) {
       currentIndex = index;
     }
@@ -447,60 +453,9 @@ function TVnextSlide() {
   $(".TvArea").removeClass("active");
   $(".TvArea").eq(newIndex).addClass("active");
   $(".TvArea").eq(newIndex).show();
-}
 
-// 이전, 다음 버튼 클릭 시 해당 관련상품 컨텐츠 보이고, 해당 썸네일 호버CSS 변경
-$(".TvSubGrp").not(".active").hide();
-
-function TVRprevSlide() {
   $(".TvSubGrp").hide();
-  let allSlide = $(".TvSubGrp");
-  let currentIndex = 0;
-
-  $(".TvSubGrp").each(function (index) {
-    if ($(this).hasClass("active")) {
-      currentIndex = index;
-    }
-  });
-
-  let newIndex = 0;
-
-  if (currentIndex <= 0) {
-    newIndex = allSlide.length - 1;
-  } else {
-    newIndex = currentIndex - 1;
-  }
-
-  $(".TvSubGrp").removeClass("active");
-  $(".TvSubGrp").eq(newIndex).addClass("active");
-  $(".TvSubGrp").eq(newIndex).show();
-
-  $(".TvThumb").removeClass("hover");
-  $(".TvThumb:eq(" + newIndex + ")").addClass("hover");
-}
-
-function TVRnextSlide() {
-  $(".TvSubGrp").hide();
-  let allSlide = $(".TvSubGrp");
-  let currentIndex = 0;
-
-  $(".TvSubGrp").each(function (index) {
-    if ($(this).hasClass("active")) {
-      currentIndex = index;
-    }
-  });
-
-  let newIndex = 0;
-
-  if (currentIndex >= allSlide.length - 1) {
-    newIndex = 0;
-  } else {
-    newIndex = currentIndex + 1;
-  }
-
-  $(".TvSubGrp").removeClass("active");
-  $(".TvSubGrp").eq(newIndex).addClass("active");
-  $(".TvSubGrp").eq(newIndex).show();
+  $(".TvSubGrp:eq(" + newIndex + ")").show();
 
   $(".TvThumb").removeClass("hover");
   $(".TvThumb:eq(" + newIndex + ")").addClass("hover");
@@ -518,3 +473,111 @@ $(".TvThumb").mouseenter(function () {
 });
 
 // Main8
+
+// 이전, 다음 버튼 클릭 시 해당 컨텐츠 보이기 (CardBookLeftTop)
+$(".cardBookUnit").not(".active").hide();
+
+function CBLTprevSlide() {
+  $(".cardBookUnit").hide();
+  let allSlide = $(".cardBookUnit");
+  let currentIndex = 0;
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  $(".cardBookUnit").removeClass("active");
+  $(".cardBookUnit").eq(newIndex).addClass("active");
+  $(".cardBookUnit").eq(newIndex).show();
+  $(".cLTop .pageNum strong").text(newIndex + 1);
+  $(".cardNews").hide();
+  $(".cardNews:eq(" + newIndex + ")").show();
+}
+
+function CBLTnextSlide() {
+  $(".cardBookUnit").hide();
+  let allSlide = $(".cardBookUnit");
+  let currentIndex = 0;
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  $(".cardBookUnit").removeClass("active");
+  $(".cardBookUnit").eq(newIndex).addClass("active");
+  $(".cardBookUnit").eq(newIndex).show();
+  $(".cLTop .pageNum strong").text(newIndex + 1);
+  $(".cardNews").hide();
+  $(".cardNews:eq(" + newIndex + ")").show();
+}
+
+// 이전, 다음 버튼 클릭 시 해당 컨텐츠 보이기 (CardBookLeftBottom)
+$(".cardNews img").not(".active").hide();
+
+function CBLBprevSlide() {
+  $(".cardNews img").hide();
+  let allSlide = $(".cardNews img");
+  let currentIndex = 0;
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  $(".cardNews img").removeClass("active");
+  $(".cardNews img").eq(newIndex).addClass("active");
+  $(".cardNews img").eq(newIndex).show();
+}
+
+function CBLBnextSlide() {
+  $(".cardNews img").hide();
+  let allSlide = $(".cardNews img");
+  let currentIndex = 0;
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  $(".cardNews img").removeClass("active");
+  $(".cardNews img").eq(newIndex).addClass("active");
+  $(".cardNews img").eq(newIndex).show();
+}
