@@ -30,17 +30,6 @@ $(".tabs").mouseenter(function () {
 
 // 메인배너 슬라이드
 
-// $(".mbnRoll_yNow")
-//   .not(".slick-initialized")
-//   .slick({
-//     slidesToShow: 1, // 표시할 슬라이드 수
-//     slidesToScroll: 1, // 스크롤할 슬라이드 수
-//     autoplay: true, // 자동 슬라이드
-//     autoplaySpeed: 3000, // 슬라이드 간격 (밀리초)
-//     prevArrow: $(".mbnBtn.prev"), // 이전 버튼
-//     nextArrow: $(".mbnBtn.next"), // 다음 버튼
-//   });
-
 // 슬라이드 이미지의 해당 탭 CSS 변경
 function YesNowSlide() {
   if ($(".mbnContImg").hasClass("active")) {
