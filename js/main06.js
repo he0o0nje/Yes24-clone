@@ -366,3 +366,170 @@ function MTS4BnextSlide() {
 
   $(".sector04 .pageNum strong").text(newIndex + 1);
 }
+
+// CD/LP Slide
+$("#MTS5 .bookBigCon ul").not(".active").hide();
+
+function MTS5prevSlide() {
+  let allSlide = $("#MTS5 .bookBigCon ul");
+  let currentIndex = 0;
+  allSlide.hide();
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  allSlide.removeClass("active");
+  allSlide.eq(newIndex).addClass("active");
+  allSlide.eq(newIndex).show();
+
+  $("#MTS5 .pageNum strong").text(newIndex + 1);
+}
+
+function MTS5nextSlide() {
+  let allSlide = $("#MTS5 .bookBigCon ul");
+  let currentIndex = 0;
+  allSlide.hide();
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  allSlide.removeClass("active");
+  allSlide.eq(newIndex).addClass("active");
+  allSlide.eq(newIndex).show();
+
+  $("#MTS5 .pageNum strong").text(newIndex + 1);
+}
+
+// DVD/BD Slide
+$("#MTS6 .bookBigCon ul").not(".active").hide();
+
+function MTS6prevSlide() {
+  let allSlide = $("#MTS6 .bookBigCon ul");
+  let currentIndex = 0;
+  allSlide.hide();
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  allSlide.removeClass("active");
+  allSlide.eq(newIndex).addClass("active");
+  allSlide.eq(newIndex).show();
+
+  $("#MTS6 .pageNum strong").text(newIndex + 1);
+}
+
+function MTS6nextSlide() {
+  let allSlide = $("#MTS6 .bookBigCon ul");
+  let currentIndex = 0;
+  allSlide.hide();
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  allSlide.removeClass("active");
+  allSlide.eq(newIndex).addClass("active");
+  allSlide.eq(newIndex).show();
+
+  $("#MTS6 .pageNum strong").text(newIndex + 1);
+}
+
+// 문구/GIFT Slide
+
+// 티켓 Slide
+$("#MTS8 .bookBigCon .Tsec").not(".active").hide();
+
+function MTS8prevSlide() {
+  let allSlide = $("#MTS8 .bookBigCon .Tsec");
+  let currentIndex = 0;
+  allSlide.hide();
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex <= 0) {
+    newIndex = allSlide.length - 1;
+  } else {
+    newIndex = currentIndex - 1;
+  }
+
+  allSlide.removeClass("active");
+  allSlide.eq(newIndex).addClass("active");
+  allSlide.eq(newIndex).show();
+
+  $("#MTS8 .pageNum strong").text(newIndex + 1);
+}
+
+function MTS8nextSlide() {
+  let allSlide = $("#MTS8 .bookBigCon .Tsec");
+  let currentIndex = 0;
+  allSlide.hide();
+
+  allSlide.each(function (index) {
+    if ($(this).hasClass("active")) {
+      currentIndex = index;
+    }
+  });
+
+  let newIndex = 0;
+
+  if (currentIndex >= allSlide.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex = currentIndex + 1;
+  }
+
+  allSlide.removeClass("active");
+  allSlide.eq(newIndex).addClass("active");
+  allSlide.eq(newIndex).show();
+
+  $("#MTS8 .pageNum strong").text(newIndex + 1);
+}
