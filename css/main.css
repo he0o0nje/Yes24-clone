@@ -1343,9 +1343,8 @@
   top: 18px;
 }
 .bookBigCon {
-}
-.bookBigCon ul {
-  padding-left: 55px;
+  display: flex;
+  justify-content: center;
 }
 .bookBigCon ul li {
   width: 362px;
@@ -1840,9 +1839,6 @@
   float: left;
   border-right: 1px solid #ebebeb;
 }
-.m3sector02 .bookBigCon {
-  margin-left: -35px;
-}
 .m3sector02 li {
   clear: both;
   padding: 0;
@@ -2006,6 +2002,7 @@
   margin: 0;
   padding-top: 62px;
   width: auto;
+  display: block;
 }
 .m6s1 .book_img {
   border: none;
@@ -2165,8 +2162,6 @@
 }
 .weekTicket {
   margin-top: 1px;
-  margin-right: 20px;
-  padding-left: 55px;
   text-align: center;
 }
 .weekTicket a {
