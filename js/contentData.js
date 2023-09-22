@@ -96,7 +96,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "웹개발", size: "15" },
+  data: { query: "블록체인", size: "15" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
   $("#MTS1 .bookLi").each(function (i) {
