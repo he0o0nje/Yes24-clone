@@ -214,11 +214,11 @@ function CBLB3nextSlide() {
 }
 
 // 이전, 다음 버튼 클릭 시 해당 컨텐츠 보이기 (CardBookRightTop)
-$(".cRTop .rowGrp").not(".active").hide();
+$(".cRTop .rowGrp ul").not(".active").hide();
 
 function CBRTprevSlide() {
-  $(".cRTop .rowGrp").hide();
-  let allSlide = $(".cRTop .rowGrp");
+  $(".cRTop .rowGrp ul").hide();
+  let allSlide = $(".cRTop .rowGrp ul");
   let currentIndex = 0;
 
   allSlide.each(function (index) {
@@ -235,16 +235,16 @@ function CBRTprevSlide() {
     newIndex = currentIndex - 1;
   }
 
-  $(".cRTop .rowGrp").removeClass("active");
-  $(".cRTop .rowGrp").eq(newIndex).addClass("active");
-  $(".cRTop .rowGrp").eq(newIndex).show();
+  $(".cRTop .rowGrp ul").removeClass("active");
+  $(".cRTop .rowGrp ul").eq(newIndex).addClass("active");
+  $(".cRTop .rowGrp ul").eq(newIndex).show();
 
   $(".cRTop .pageNum strong").text(newIndex + 1);
 }
 
 function CBRTnextSlide() {
-  $(".cRTop .rowGrp").hide();
-  let allSlide = $(".cRTop .rowGrp");
+  $(".cRTop .rowGrp ul").hide();
+  let allSlide = $(".cRTop .rowGrp ul");
   let currentIndex = 0;
 
   allSlide.each(function (index) {
@@ -261,19 +261,19 @@ function CBRTnextSlide() {
     newIndex = currentIndex + 1;
   }
 
-  $(".cRTop .rowGrp").removeClass("active");
-  $(".cRTop .rowGrp").eq(newIndex).addClass("active");
-  $(".cRTop .rowGrp").eq(newIndex).show();
+  $(".cRTop .rowGrp ul").removeClass("active");
+  $(".cRTop .rowGrp ul").eq(newIndex).addClass("active");
+  $(".cRTop .rowGrp ul").eq(newIndex).show();
 
   $(".cRTop .pageNum strong").text(newIndex + 1);
 }
 
 // 이전, 다음 버튼 클릭 시 해당 컨텐츠 보이기 (CardBookRightBottom)
-$(".cRBot .rowGrp").not(".active").hide();
+$(".cRBot .rowGrp ul").not(".active").hide();
 
 function CBRBprevSlide() {
-  $(".cRBot .rowGrp").hide();
-  let allSlide = $(".cRBot .rowGrp");
+  $(".cRBot .rowGrp ul").hide();
+  let allSlide = $(".cRBot .rowGrp ul");
   let currentIndex = 0;
 
   allSlide.each(function (index) {
@@ -290,16 +290,16 @@ function CBRBprevSlide() {
     newIndex = currentIndex - 1;
   }
 
-  $(".cRBot .rowGrp").removeClass("active");
-  $(".cRBot .rowGrp").eq(newIndex).addClass("active");
-  $(".cRBot .rowGrp").eq(newIndex).show();
+  $(".cRBot .rowGrp ul").removeClass("active");
+  $(".cRBot .rowGrp ul").eq(newIndex).addClass("active");
+  $(".cRBot .rowGrp ul").eq(newIndex).show();
 
   $(".cRBot .pageNum strong").text(newIndex + 1);
 }
 
 function CBRBnextSlide() {
-  $(".cRBot .rowGrp").hide();
-  let allSlide = $(".cRBot .rowGrp");
+  $(".cRBot .rowGrp ul").hide();
+  let allSlide = $(".cRBot .rowGrp ul");
   let currentIndex = 0;
 
   allSlide.each(function (index) {
@@ -316,9 +316,9 @@ function CBRBnextSlide() {
     newIndex = currentIndex + 1;
   }
 
-  $(".cRBot .rowGrp").removeClass("active");
-  $(".cRBot .rowGrp").eq(newIndex).addClass("active");
-  $(".cRBot .rowGrp").eq(newIndex).show();
+  $(".cRBot .rowGrp ul").removeClass("active");
+  $(".cRBot .rowGrp ul").eq(newIndex).addClass("active");
+  $(".cRBot .rowGrp ul").eq(newIndex).show();
 
   $(".cRBot .pageNum strong").text(newIndex + 1);
 }
