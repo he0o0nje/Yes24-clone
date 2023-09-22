@@ -43,6 +43,10 @@ function YesNowSlide() {
       .css({ "background-color": "", color: "" });
   }
 }
+YesNowSlide();
+$(document).on("DOMSubtreeModified", ".mbnContImg", function () {
+  YesNowSlide();
+});
 
 // Yes Now Slide
 $(".mbnRoll_yNow .mbnContImg").not(".active").hide();

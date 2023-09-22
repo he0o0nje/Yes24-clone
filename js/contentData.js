@@ -96,7 +96,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "웹개발" },
+  data: { query: "웹개발", size: "15" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
   $("#MTS1 .bookLi").each(function (i) {
@@ -131,7 +131,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "GPT" },
+  data: { query: "GPT", size: "18" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
   $("#MTS2 .bookLi").each(function (i) {
@@ -163,7 +163,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "시장" },
+  data: { query: "시장", size: "30" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
   $("#MTS3 .bookLi").each(function (i) {
@@ -217,7 +217,8 @@ $.ajax({
   data: { query: "집착광공" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
-  $("#MTS4 .bookBigCon").each(function (i) {
+  console.log(data);
+  $("#MTS4 .bookBigCon .WCsec").each(function (i) {
     const MultiData = data.documents[i];
     let imageUrl = MultiData.thumbnail;
     let temp_html = `${MultiData.authors}
