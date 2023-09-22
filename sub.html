@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sub</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0233e52394.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/common.js"></script>
+    <script defer src="./js/sub.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <div id="header_wrap">
+          <div id="header_top">
+            <ul id="header_top_left">
+              <li><a href="#">국내도서</a></li>
+              <li><a href="#">외국도서</a></li>
+              <li><a href="#">중고샵</a></li>
+              <li><a href="#" class="eng">eBook</a></li>
+              <li>
+                <a href="#">크레마클럽<i class="new"></i></a>
+              </li>
+              <li><a href="#" class="eng">CD/LP</a></li>
+              <li><a href="#" class="eng">DVD/BD</a></li>
+              <li>
+                <a href="#"
+                  >문구<span style="color: #fff; letter-spacing: 0"
+                    >/GIFT</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#" style="letter-spacing: 0"
+                  >티켓<i class="arrow"></i
+                ></a>
+              </li>
+            </ul>
+            <ul id="header_top_right">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li>
+                <a href="#">마이페이지<i class="dropdown"></i></a>
+                <dl id="mypage" style="display: none">
+                  <dt>
+                    <a href="#">마이페이지<i class="dropup"></i></a>
+                  </dt>
+                  <dd>
+                    <ul>
+                      <li><a href="#">주문내역</a></li>
+                      <li><a href="#">마이리스트</a></li>
+                      <li><a href="#">YES포인트</a></li>
+                      <li><a href="#">YES머니</a></li>
+                      <li><a href="#">YES상품권</a></li>
+                      <li><a href="#">쿠폰</a></li>
+                      <li><a href="#">회원정보</a></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </li>
+              <li><a href="#" style="margin-left: 10px">카트</a></li>
+              <li><a href="#">주문/배송</a></li>
+              <li><a href="#" style="padding: 1px 0 0 5px">고객센터</a></li>
+            </ul>
+          </div>
+
+          <div id="header_middle">
+            <div id="header_middle_logo">
+              <a href="./index.html"><img src="./img/header/logo.svg" /></a>
+            </div>
+            <div id="header_middle_search">
+              <input
+                type="text"
+                placeholder="다 괜찮아! <그럴 수 있어> 양희은 에세이"
+                onfocus="this.placeholder = ''"
+              /><span class="searchbox"
+                ><button class="searchbtn"></button
+              ></span>
+            </div>
+            <div id="header_middle_list">
+              <div id="ad">
+                <div class="listbox">
+                  <a href="#"><img src="./img/header/ad1.jpg" /></a>
+                </div>
+                <div class="listbox">
+                  <a href="#"><img src="./img/header/ad2.jpg" /></a>
+                </div>
+                <div class="listbox">
+                  <a href="#"><img src="./img/header/ad3.jpg" /></a>
+                </div>
+                <div class="listbox">
+                  <a href="#"><img src="./img/header/ad4.jpg" /></a>
+                </div>
+                <div class="listbox">
+                  <a href="#"><img src="./img/header/ad5.jpg" /></a>
+                </div>
+                <div id="header_middle_button">
+                  <span class="prev"><</span>
+                  <span class="next">></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="header_bottom">
+            <div id="quick_cate_btn">
+              <h2>
+                <a href="#">빠른분야찾기</a>
+              </h2>
+              <div class="quick_cate_wrap" style="display: none">
+                <div class="quick_cate_li_wrap">
+                  <ul class="quick_cate_header">
+                    <li class="quick_cate_li">
+                      <a href="#" class="qtit">국내도서</a>
+                      <div class="quick_cate_tb">
+                        <div class="quick_cate">
+                          <dl>
+                            <dt>
+                              <a href="#">국내도서<i class="more"></i></a>
+                            </dt>
+                            <dd class="qcate1">
+                              <ul>
+                                <li><a href="#">소설/시/희곡</a></li>
+                                <li><a href="#">에세이</a></li>
+                                <li><a href="#">인문</a></li>
+                                <li><a href="#">역사</a></li>
+                                <li><a href="#">예술</a></li>
+                                <li><a href="#">종교</a></li>
+                                <li><a href="#">사회 정치</a></li>
+                                <li><a href="#">자연과학</a></li>
+                                <li><a href="#">경제 경영</a></li>
+                                <li><a href="#">자기계발</a></li>
+                                <li><a href="#">인물</a></li>
+                                <li><a href="#">유아</a></li>
+                                <li><a href="#">어린이</a></li>
+                                <li><a href="#">청소년</a></li>
+                                <li><a href="#">전집</a></li>
+                              </ul>
+                            </dd>
+                            <dd class="qcate2">
+                              <ul>
+                                <li><a href="#">만화</a></li>
+                                <li><a href="#">라이트노벨</a></li>
+                                <li><a href="#">여행</a></li>
+                                <li><a href="#">요리</a></li>
+                                <li><a href="#">육아</a></li>
+                                <li><a href="#">가정 살림</a></li>
+                                <li><a href="#">건강 취미</a></li>
+                                <li><a href="#">잡지</a></li>
+                                <li><a href="#">대학교재</a></li>
+                                <li><a href="#">국어 외국어 사전</a></li>
+                                <li><a href="#">IT 모바일</a></li>
+                                <li><a href="#">공무원</a></li>
+                                <li><a href="#">수험서 자격증</a></li>
+                                <li><a href="#">초등참고서</a></li>
+                                <li><a href="#">중고등참고서</a></li>
+                                <li><a href="#">EBS교재</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                          <div class="bnimg">
+                            <img src="./img/header/qbn1.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="quick_cate_li">
+                      <a href="#" class="qtit">외국도서</a>
+                      <div class="quick_cate_tb">
+                        <div class="quick_cate">
+                          <dl>
+                            <dt>
+                              <a href="#">외국도서<i class="more"></i></a>
+                            </dt>
+                            <dd class="qcate1">
+                              <ul>
+                                <li><a href="#">ELT 사전</a></li>
+                                <li><a href="#">문학 소설</a></li>
+                                <li><a href="#">경제 경영</a></li>
+                                <li><a href="#">인문 사회</a></li>
+                                <li><a href="#">예술 대중문화</a></li>
+                                <li><a href="#">취미 라이프스타일</a></li>
+                                <li><a href="#">컴퓨터</a></li>
+                                <li><a href="#">자연과학</a></li>
+                                <li><a href="#">대학교재 전문서</a></li>
+                                <li><a href="#">해외잡지</a></li>
+                                <li><a href="#">일본도서</a></li>
+                                <li><a href="#">중국도서</a></li>
+                                <li><a href="#">프랑스도서</a></li>
+                              </ul>
+                            </dd>
+                            <dd class="qcate2">
+                              <ul>
+                                <li><a href="#">유아 어린이 청소년</a></li>
+                                <li><a href="#">캐릭터북</a></li>
+                                <li><a href="#">초등코스북</a></li>
+                                <li><a href="#">학습서</a></li>
+                                <li><a href="#">Lexile®</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                          <div class="bnimg">
+                            <img src="./img/header/qbn2.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="quick_cate_li">
+                      <a href="#" class="qtit">중고샵</a>
+                      <div class="quick_cate_tb">
+                        <div class="quick_cate">
+                          <dl>
+                            <dt>
+                              <a href="#">중고샵<i class="more"></i></a>
+                            </dt>
+                            <dd class="qcate1" style="border: 0">
+                              <ul>
+                                <li><a href="#">중고 국내도서</a></li>
+                                <li><a href="#">중고 외국도서</a></li>
+                                <li><a href="#">직배송 중고도서</a></li>
+                                <li><a href="#">중고 음반</a></li>
+                                <li><a href="#">중고 DVD</a></li>
+                                <li><a href="#">바이백(중고팔기)</a></li>
+                                <li><a href="#">중고매장</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                          <div class="bnimg">
+                            <img src="./img/header/qbn3.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="quick_cate_li">
+                      <a href="#" class="qtit">eBook</a>
+                      <div class="quick_cate_tb">
+                        <div class="quick_cate">
+                          <dl>
+                            <dt>
+                              <a href="#">eBook<i class="more"></i></a>
+                            </dt>
+                            <dd class="qcate1">
+                              <ul>
+                                <li><a href="#">로맨스</a></li>
+                                <li><a href="#">BL</a></li>
+                                <li><a href="#">만화</a></li>
+                                <li><a href="#">소설</a></li>
+                                <li><a href="#">경제 경영</a></li>
+                                <li><a href="#">라이트노벨</a></li>
+                                <li><a href="#">판타지/무협</a></li>
+                                <li><a href="#">에세이 시</a></li>
+                                <li><a href="#">인문</a></li>
+                                <li><a href="#">사회 정치</a></li>
+                                <li><a href="#">자기계발</a></li>
+                                <li><a href="#">역사</a></li>
+                                <li><a href="#">종교</a></li>
+                                <li><a href="#">예술 대중문화</a></li>
+                                <li><a href="#">자연과학</a></li>
+                              </ul>
+                            </dd>
+                            <dd class="qcate2">
+                              <ul>
+                                <li><a href="#">가정 살림</a></li>
+                                <li><a href="#">건강 취미 여행</a></li>
+                                <li><a href="#">어린이 유아</a></li>
+                                <li><a href="#">청소년</a></li>
+                                <li><a href="#">국어 외국어</a></li>
+                                <li><a href="#">IT 모바일</a></li>
+                                <li><a href="#">대학교재</a></li>
+                                <li><a href="#">수험서 자격증</a></li>
+                                <li><a href="#">잡지</a></li>
+                                <li><a href="#">해외원서</a></li>
+                                <li><a href="#">오디오북</a></li>
+                                <li><a href="#">무료eBook</a></li>
+                                <li><a href="#">eBook 리더기</a></li>
+                                <li><a href="#">19+</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                          <div class="bnimg">
+                            <img src="./img/header/qbn4.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="quick_cate_li">
+                      <a href="#" class="qtit">크레마클럽</a>
+                      <div class="quick_cate_tb">
+                        <div class="quick_cate">
+                          <dl>
+                            <dt>
+                              <a href="#">크레마클럽<i class="more"></i></a>
+                            </dt>
+                            <dd class="qcate1" style="border: 0">
+                              <ul>
+                                <li><a href="#">YES24 ORIGINAL</a></li>
+                                <li><a href="#">소설 | 에세이 시</a></li>
+                                <li><a href="#">경제 경영</a></li>
+                                <li><a href="#">자기계발</a></li>
+                                <li><a href="#">인문 | 사회 정치</a></li>
+                                <li><a href="#">역사 | 종교</a></li>
+                                <li><a href="#">예술 대중문화</a></li>
+                                <li><a href="#">자연과학</a></li>
+                                <li><a href="#">가정 살림</a></li>
+                                <li><a href="#">건강 취미 여행</a></li>
+                                <li><a href="#">어린이 유아 | 청소년</a></li>
+                                <li><a href="#">국어 외국어</a></li>
+                                <li><a href="#">IT 모바일</a></li>
+                                <li><a href="#">대학교재</a></li>
+                                <li><a href="#">잡지 | 만화</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                          <div class="bnimg">
+                            <img src="./img/header/qbn5.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="quick_cate_li">
+                      <a href="#" class="qtit">CD/LP</a>
+                      <div class="quick_cate_tb">
+                        <div class="quick_cate">
+                          <dl>
+                            <dt>
+                              <a href="#">CD/LP<i class="more"></i></a>
+                            </dt>
+                            <dd class="qcate1">
+                              <ul>
+                                <li><a href="#">가요</a></li>
+                                <li><a href="#">클래식</a></li>
+                                <li><a href="#">POP</a></li>
+                                <li><a href="#">ROCK</a></li>
+                                <li><a href="#">재즈</a></li>
+                                <li><a href="#">OST</a></li>
+                                <li><a href="#">뮤직 DVD</a></li>
+                                <li><a href="#">뮤직 블루레이</a></li>
+                                <li><a href="#">유아/어린이/명상</a></li>
+                                <li><a href="#">뉴에이지</a></li>
+                                <li><a href="#">종교음악</a></li>
+                                <li><a href="#">국악</a></li>
+                                <li><a href="#">일본음악</a></li>
+                                <li><a href="#">월드뮤직</a></li>
+                                <li><a href="#">예약음반</a></li>
+                              </ul>
+                            </dd>
+                            <dd class="qcate2">
+                              <ul>
+                                <li><a href="#">중고음반</a></li>
+                                <li><a href="#">스타샵</a></li>
+                                <li><a href="#">해외 구매</a></li>
+                                <li><a href="#">LP(Vinyl)샵</a></li>
+                                <li><a href="#">스페셜샵</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                          <div class="bnimg">
+                            <img src="./img/header/qbn6.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="quick_cate_li">
+                      <a href="#" class="qtit">DVD/BD</a>
+                      <div class="quick_cate_tb">
+                        <div class="quick_cate">
+                          <dl>
+                            <dt>
+                              <a href="#">DVD/BD<i class="more"></i></a>
+                            </dt>
+                            <dd class="qcate1">
+                              <ul>
+                                <li><a href="#">예약판매</a></li>
+                                <li><a href="#">할인행사</a></li>
+                                <li><a href="#">블루레이</a></li>
+                                <li><a href="#">애니메이션</a></li>
+                                <li><a href="#">액션/SF</a></li>
+                                <li><a href="#">드라마/코미디</a></li>
+                                <li><a href="#">고전/명화</a></li>
+                                <li><a href="#">3D 블루레이</a></li>
+                                <li><a href="#">다큐/교육</a></li>
+                                <li><a href="#">성인(19)</a></li>
+                                <li><a href="#">뮤직 DVD</a></li>
+                                <li><a href="#">국내외 TV드라마</a></li>
+                                <li><a href="#">닌텐도/게임</a></li>
+                                <li><a href="#">비디오/VCD</a></li>
+                                <li><a href="#">독립/인디영화</a></li>
+                              </ul>
+                            </dd>
+                            <dd class="qcate2">
+                              <ul>
+                                <li><a href="#">블루레이 해외구매</a></li>
+                                <li><a href="#">UEK Zone</a></li>
+                                <li><a href="#">스틸북샵</a></li>
+                                <li><a href="#">예스24 단독판매</a></li>
+                                <li><a href="#">교육(아동/성인)</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                          <div class="bnimg">
+                            <img src="./img/header/qbn7.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="quick_cate_li">
+                      <a href="#" class="qtit">문구/GIFT</a>
+                      <div class="quick_cate_tb">
+                        <div class="quick_cate">
+                          <dl>
+                            <dt>
+                              <a href="#">문구/GIFT<i class="more"></i></a>
+                            </dt>
+                            <dd class="qcate1" style="border: 0">
+                              <ul>
+                                <li><a href="#">예스굿즈</a></li>
+                                <li><a href="#">디자인문구</a></li>
+                                <li><a href="#">학습/독서</a></li>
+                                <li><a href="#">디지털</a></li>
+                                <li><a href="#">리빙</a></li>
+                                <li><a href="#">취미/여행</a></li>
+                                <li><a href="#">유아동</a></li>
+                                <li><a href="#">패션잡화</a></li>
+                                <li><a href="#">반려동물</a></li>
+                                <li><a href="#">건강 취미 여행</a></li>
+                                <li><a href="#">1인샵</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                          <div class="bnimg">
+                            <img src="./img/header/qbn8.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="quick_cate_li">
+                      <a href="#" class="qtit">티켓</a>
+                      <div class="quick_cate_tb">
+                        <div class="quick_cate">
+                          <dl>
+                            <dt>
+                              <a href="#">티켓<i class="more"></i></a>
+                            </dt>
+                            <dd class="qcate1" style="border: 0">
+                              <ul>
+                                <li><a href="#">콘서트</a></li>
+                                <li><a href="#">뮤지컬</a></li>
+                                <li><a href="#">연극</a></li>
+                                <li><a href="#">클래식/무용/국악</a></li>
+                                <li><a href="#">전시/행사</a></li>
+                                <li><a href="#">가족/아동</a></li>
+                              </ul>
+                            </dd>
+                          </dl>
+                          <div class="bnimg">
+                            <img src="./img/header/qbn9.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="header_Bottom_Left">
+              <ul class="Bottom_left_blue">
+                <li><a href="./sub.html">베스트</a></li>
+                <li><a href="./sub.html">신상품</a></li>
+                <li><a href="./sub.html">이벤트</a></li>
+                <li><a href="./sub.html">바이백</a></li>
+                <li><a href="./sub.html">매장안내</a></li>
+              </ul>
+              <ul class="Bottom_left_black">
+                <li><a href="#">채널예스</a></li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">예스펀딩</a></li>
+                <li>
+                  <a href="#"
+                    >브랜드스토리<i class="new" style="margin-left: -2px"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div id="header_Bottom_Right">
+              <ul>
+                <li><a href="#">예사단독판매</a></li>
+                <li><a href="#">이달의사은품</a></li>
+                <li><a href="#">특가할인</a></li>
+                <li><a href="#">추천도서</a></li>
+                <li><a href="#">대량/법인</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header -->
+    </div>
+  </body>
+</html>
