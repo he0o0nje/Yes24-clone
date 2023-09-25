@@ -37,3 +37,16 @@ addHoverEffect(".cLBot", ".btnCN");
 addHoverEffect(".cRTop", ".CRT");
 addHoverEffect(".cRBot", ".CRB");
 addHoverEffect("#main9", ".btnBn");
+
+// $(document).on("click", function (e) {
+//   if (e.target.className !== "bestOpt") {
+//     $(".bestOpt dd").hide();
+//   }
+// });
+
+// $(document).ready(function () {
+//   $(".bestOpt").click(function (e) {
+//     e.stopPropagation();
+//     $(".bestOpt dd").toggle();
+//   });
+// });

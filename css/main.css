@@ -2699,9 +2699,14 @@
   height: 180px;
   margin-left: 40px;
 }
-.rowGrp .titles_thumb img {
+.rowGrp .titles_thumb {
   width: 160px;
   height: 113px;
+  overflow: hidden;
+}
+.rowGrp .titles_thumb img {
+  width: 99%;
+  transform: translateY(-30%);
   border: 1px solid #ebebeb;
 }
 .rowGrp .titles_info {
