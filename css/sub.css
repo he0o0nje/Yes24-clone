@@ -1,1 +1,15 @@
 @charset "UTF-8";
+
+.topBn {
+  border-bottom: 1px solid #ebebeb;
+  background-color: #eee;
+  margin-top: -20px;
+  text-align: center;
+}
+.topBn a {
+  display: block;
+}
+.topBn a img {
+  vertical-align: top;
+  width: 958px;
+}
