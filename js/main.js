@@ -4,6 +4,11 @@ $(document).ready(function () {
   $("#tabs01").trigger("mouseenter");
   $("#todayBook01").trigger("mouseenter");
   $("#Multi01").trigger("click");
+  $(".sec2 .clipBnSet:first").trigger("mouseenter");
+  $(".sec4 .clipBnSet:first").trigger("mouseenter");
+  $(".sec5 .clipBnSet:first").trigger("mouseenter");
+  $(".sec6 .clipBnSet:first").trigger("mouseenter");
+  $(".sec7 .clipBnSet:first").trigger("mouseenter");
   $("#TV1").trigger("mouseenter");
   $(".mbnBtn").css("display", "none");
   $(".btnTB").css("display", "none");

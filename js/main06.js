@@ -204,6 +204,39 @@ function MTS3nextSlide() {
   $("#MTS3 .pageNum strong").text(newIndex + 1);
 }
 
+// 하단 메뉴 hover
+$(".M3BotBook").not(":first").hide();
+
+$(".sec2 .clipBnSet").mouseenter(function () {
+  $(".sec2  .clipBnSet .bnTxt").css({
+    "background-color": "",
+    "border-right": "",
+  });
+  $(this)
+    .find(".bnTxt")
+    .css({ "background-color": "#fff", "border-right": "none" });
+  $(".sec2 .clipBnSet").find(".arrow").hide();
+  $(this).find(".arrow").show();
+  let index = $(this).index();
+  $(".M3BotBook").hide().eq(index).stop().show();
+});
+
+// $(".clipBnSet").find(".arrow").hide();
+// $(".clipBnSet").hover(
+//   function () {
+//     $(this)
+//       .find(".bnTxt")
+//       .css({ "background-color": "#fff", "border-right": "none" });
+//     $(this).find(".arrow").show();
+//     let index = $(this).index();
+//     $(".M3BotBook").hide().eq(index).stop().show();
+//   },
+//   function () {
+//     $(this).find(".bnTxt").css({ "background-color": "", "border-right": "" });
+//     $(this).find(".arrow").hide();
+//   }
+// ); 다른방법 참고
+
 // 웹소설/코믹 Slide
 $("#MTS4 .bookBigCon .WCsec").not(".active").hide();
 
@@ -422,6 +455,23 @@ function MTS5nextSlide() {
   $("#MTS5 .pageNum strong").text(newIndex + 1);
 }
 
+// 하단 메뉴 hover
+$(".M5BotBook").not(":first").hide();
+
+$(".sec4 .clipBnSet").mouseenter(function () {
+  $(".sec4  .clipBnSet .bnTxt").css({
+    "background-color": "",
+    "border-right": "",
+  });
+  $(this)
+    .find(".bnTxt")
+    .css({ "background-color": "#fff", "border-right": "none" });
+  $(".sec4 .clipBnSet").find(".arrow").hide();
+  $(this).find(".arrow").show();
+  let index = $(this).index();
+  $(".M5BotBook").hide().eq(index).stop().show();
+});
+
 // DVD/BD Slide
 $("#MTS6 .bookBigCon ul").not(".active").hide();
 
@@ -477,7 +527,41 @@ function MTS6nextSlide() {
   $("#MTS6 .pageNum strong").text(newIndex + 1);
 }
 
+// 하단 메뉴 hover
+$(".M6BotBook").not(":first").hide();
+
+$(".sec5 .clipBnSet").mouseenter(function () {
+  $(".sec5  .clipBnSet .bnTxt").css({
+    "background-color": "",
+    "border-right": "",
+  });
+  $(this)
+    .find(".bnTxt")
+    .css({ "background-color": "#fff", "border-right": "none" });
+  $(".sec5 .clipBnSet").find(".arrow").hide();
+  $(this).find(".arrow").show();
+  let index = $(this).index();
+  $(".M6BotBook").hide().eq(index).stop().show();
+});
+
 // 문구/GIFT Slide
+
+// 하단 메뉴 hover
+$(".M7BotBook").not(":first").hide();
+
+$(".sec6 .clipBnSet").mouseenter(function () {
+  $(".sec6  .clipBnSet .bnTxt").css({
+    "background-color": "",
+    "border-right": "",
+  });
+  $(this)
+    .find(".bnTxt")
+    .css({ "background-color": "#fff", "border-right": "none" });
+  $(".sec6 .clipBnSet").find(".arrow").hide();
+  $(this).find(".arrow").show();
+  let index = $(this).index();
+  $(".M7BotBook").hide().eq(index).stop().show();
+});
 
 // 티켓 Slide
 $("#MTS8 .bookBigCon .Tsec").not(".active").hide();
@@ -533,3 +617,20 @@ function MTS8nextSlide() {
 
   $("#MTS8 .pageNum strong").text(newIndex + 1);
 }
+
+// 하단 메뉴 hover
+$(".M8BotBook").not(":first").hide();
+
+$(".sec7 .clipBnSet").mouseenter(function () {
+  $(".sec7  .clipBnSet .bnTxt").css({
+    "background-color": "",
+    "border-right": "",
+  });
+  $(this)
+    .find(".bnTxt")
+    .css({ "background-color": "#fff", "border-right": "none" });
+  $(".sec7 .clipBnSet").find(".arrow").hide();
+  $(this).find(".arrow").show();
+  let index = $(this).index();
+  $(".M8BotBook").hide().eq(index).stop().show();
+});
