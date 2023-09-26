@@ -1,10 +1,20 @@
 @charset "UTF-8";
 
+#header_top_left li:first-child a {
+  background-color: #fff;
+  color: #000;
+}
+#wrap {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic,
+    "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+}
 .topBn {
   border-bottom: 1px solid #ebebeb;
   background-color: #eee;
   margin-top: -20px;
-  text-align: center;
 }
 .topBn a {
   display: block;
@@ -12,4 +22,122 @@
 .topBn a img {
   vertical-align: top;
   width: 958px;
+}
+.location {
+  background-color: #f8f8f8;
+  height: 28px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 12px;
+}
+.locaCon {
+  text-align: left;
+  margin: 0 auto;
+  width: 1200px;
+}
+.locaCon a {
+  float: left;
+  padding: 2px 0 0 9px;
+  color: #666;
+}
+.locaSet {
+  float: left;
+  position: relative;
+  padding-left: 16px;
+}
+.bgLoca {
+  display: inline-block;
+  background: url(../img/sub/bgLoca.png) no-repeat left top;
+  vertical-align: top;
+}
+.locaSet .bgLoca.ico_arr {
+  position: absolute;
+  left: 9px;
+  top: 3px;
+  width: 8px;
+  height: 13px;
+}
+.locaSet .locaDepth {
+  position: relative;
+  margin-top: -5px;
+  padding: 0 21px 0 8px;
+  width: auto;
+  height: 26px;
+  line-height: 26px;
+  color: #666;
+  text-align: left;
+  outline: none;
+  text-decoration: none;
+  vertical-align: top;
+}
+.locaSet .locaDepth .bgLoca.ico_squareArr {
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 17px;
+  height: 16px;
+  background-position: -20px 0;
+}
+.locaSet .locaSubDepth {
+  position: absolute;
+  top: 21px;
+  left: 16px;
+  padding: 10px 0 12px;
+  border: 1px solid #196ab3;
+  background-color: #fff;
+}
+.locaSet .locaSubDepth.locaLi_1col {
+  width: 140px;
+  display: none;
+}
+.locaSet ul {
+  float: left;
+  width: 139px;
+  border-right: 1px solid #e5e5e5;
+}
+.locaSet ul.lastCol {
+  border: none;
+}
+.locaSet ul li {
+  padding: 0 0 0 5px;
+  line-height: 16px;
+}
+.locaSet ul li a {
+  display: block;
+  width: 120px;
+  height: 18px;
+  overflow: hidden;
+  line-height: 16px;
+  color: #666;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.locaSet ul li.on a {
+  font-weight: bold;
+  color: #333;
+}
+.locaSet .locaSubDepth.locaLi_4col {
+  width: 560px;
+  display: none;
+}
+.locaSet .locaSubDepth.locaLi_2col {
+  width: 280px;
+  display: none;
+}
+
+.detailTopWrap {
+  width: 1200px;
+  margin: 40px auto 0;
+  text-align: left;
+  background-color: #fff;
+  height: 100px;
+}
+
+.detailBnWrap {
+  width: 1200px;
+  margin: 40px auto 30px;
+  position: relative;
+  z-index: 0;
+  clear: both;
+  text-align: center;
 }
