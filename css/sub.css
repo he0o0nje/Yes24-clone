@@ -244,6 +244,98 @@
   background: #f44643 url(../img/sub/ico_new.svg) no-repeat left top;
 }
 
+.topColRight {
+  width: 760px;
+  float: right;
+}
+.topColRight .gd_infoTop {
+  position: relative;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.topColRight .gd_infoTop .gd_keyNote {
+  display: block;
+  padding-bottom: 5px;
+  line-height: 18px;
+}
+.topColRight .gd_infoTop .gd_keyNote .iconC {
+  margin-right: 1px;
+}
+.topColRight .gd_infoTop .gd_titArea {
+  display: block;
+  padding-bottom: 10px;
+  line-height: 1.7em;
+  font-weight: normal;
+}
+.topColRight .gd_infoTop .gd_titArea h2.gd_name {
+  display: inline;
+  font-size: 25px;
+  margin-right: 2px;
+  line-height: 1.2em;
+  color: #333;
+  letter-spacing: -1.2px;
+  font-family: "Noto Sans KR", "Malgun Gothic", Dotum, "돋움", AppleGothic,
+    Lucida Grande, Verdana, Arial, Tahoma, sans-serif;
+}
+.topColRight .gd_infoTop .gd_titArea h3.gd_nameE {
+  display: inline;
+  margin-right: 1px;
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+  vertical-align: 2px;
+}
+.topColRight .gd_infoTop .gd_pubArea {
+  display: block;
+  line-height: 20px;
+  color: #666;
+}
+.topColRight .gd_infoTop .gd_pubArea .gd_auth {
+  vertical-align: top;
+}
+.topColRight .gd_infoTop .gd_pubArea a {
+  color: #333;
+  vertical-align: top;
+}
+.topColRight .gd_infoTop .gd_pubArea .divi {
+  display: inline-block;
+  margin: 4px 4px 0 4px;
+  width: 1px;
+  height: 12px;
+  text-indent: -999em;
+  border-right: solid 1px #ccc;
+}
+.topColRight .gd_infoTop .gd_pubArea .gd_date {
+  vertical-align: top;
+  white-space: nowrap;
+}
+.iconC {
+  display: inline-block;
+  padding: 0;
+  height: 18px;
+  border: solid 1px #d8d8d8;
+  text-indent: 0;
+  background-color: #fff;
+}
+.iconC em.txt {
+  display: inline-block;
+  padding: 0 4px;
+  line-height: 17px;
+  font-size: 11px;
+  color: #666;
+  font-weight: normal;
+  cursor: default;
+  text-indent: 0;
+}
+.topColRight .gd_infoTop .gd_ratingArea {
+  display: block;
+  line-height: 20px;
+  color: #666;
+}
+.topColRgt .gd_infoBot {
+  display: flex;
+}
+
 /* Sub Detail Banner */
 .detailBnWrap {
   width: 1200px;
