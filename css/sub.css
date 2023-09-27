@@ -1023,3 +1023,48 @@
   clear: both;
   text-align: center;
 }
+
+/* Sub Detail Bottom */
+.detailBotWrap {
+  padding: 33px 0;
+}
+.detailBotWrap .gd_detailBotCont {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+.gd_infoSet {
+  margin-top: 35px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d8d8d8;
+  clear: both;
+  position: relative;
+  border-top: 3px solid red;
+}
+.gd_infoSet .tm_infoSet {
+  position: relative;
+  padding-bottom: 15px;
+}
+.gd_infoSet .tm_infoSet .tit_txt {
+  height: 31px;
+  line-height: 31px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  font-family: "Noto Sans KR";
+}
+.gd_infoSet .infoWrap_txt {
+  clear: both;
+  font-size: 15px;
+  line-height: 1.74em;
+  font-weight: normal;
+  color: #666;
+  overflow: hidden !important;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.gd_infoSet .infoWrap_txt img {
+  max-width: 940px;
+  vertical-align: top;
+}
