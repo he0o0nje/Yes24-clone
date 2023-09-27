@@ -1024,6 +1024,7 @@
   z-index: 0;
   clear: both;
   text-align: center;
+  display: inline-block;
 }
 .detailBnWrap .topBotBnArea {
   position: relative;
@@ -1093,6 +1094,28 @@
 .detailBnWrap .topBotBnArea .bnLeft .bnLeft_img img {
   width: 753px;
   height: 100px;
+}
+.detailBnWrap .topBotBnArea .bnRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: 218px;
+  height: 100px;
+  border-left: solid 1px #ebebeb;
+  background-color: #fff;
+}
+.detailBnWrap .topBotBnArea .bnRight .tagAd {
+  position: absolute;
+  right: 9px;
+  bottom: 5px;
+  z-index: 2;
+  line-height: 1.2em;
+  overflow: hidden;
+  font-size: 11px;
+  color: #999;
+  font-family: "돋움", Dotum, Helvetica, AppleSDGothicNeo, sans-serif;
+  vertical-align: -1px;
 }
 
 /* Sub Detail Bottom */
