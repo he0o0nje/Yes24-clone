@@ -415,7 +415,6 @@
   display: inline-block;
   overflow: hidden;
 }
-
 .bgGD {
   display: inline-block;
   text-indent: -999em;
@@ -429,9 +428,100 @@
 .txC_blue {
   color: #6699cc;
 }
+.ico_help {
+  width: 17px;
+  height: 16px;
+  background-position: -80px -240px;
+  vertical-align: bottom;
+}
 
-.topColRgt .gd_infoBot {
+.topColRight .gd_infoBot {
   display: flex;
+}
+.topColRight .gd_infoBot .gd_infoTbArea {
+  width: 500px;
+  padding-top: 19px;
+}
+.topColRight .gd_infoBot .gd_infoTbArea .gd_infoTb {
+  margin-bottom: 20px;
+}
+.topColRight .gd_infoBot .gd_infoTbArea table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.topColRight .gd_infoBot .gd_infoTbArea table th {
+  padding: 6px 0 6px;
+  line-height: 18px;
+  color: #666;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+  width: 110px;
+}
+.topColRight .gd_infoBot .gd_infoTbArea table td {
+  padding: 5px 0 6px;
+  min-height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #666;
+  text-align: left;
+}
+.topColRight .gd_infoBot .gd_infoTbArea table tr.accentRow th {
+  font-weight: bold;
+  color: #333;
+}
+.topColRight .gd_infoBot .gd_infoTbArea table tr.accentRow td {
+  color: #ff6666;
+}
+.topColRight .gd_infoBot .gd_infoTbArea table tr.accentRow td .sell_price {
+  font-weight: bold;
+  font-size: 14px;
+  color: #ff6666;
+}
+.topColRight
+  .gd_infoBot
+  .gd_infoTbArea
+  table
+  tr.accentRow
+  td
+  .sell_price
+  .yes_m {
+  font-size: 24px;
+  vertical-align: -4px;
+  color: #ff6666;
+}
+.topColRight .gd_infoBot .gd_infoTbArea table tr.accentRow td .crama_price {
+  color: #333;
+  line-height: 35px;
+}
+.topColRight
+  .gd_infoBot
+  .gd_infoTbArea
+  table
+  tr.accentRow
+  td
+  .crama_price
+  .yes_m {
+  color: #333;
+}
+.topColRight .gd_infoBot .gd_infoTbArea table td .gd_infoLi {
+  margin-top: -3px;
+}
+.topColRight .gd_infoBot .gd_infoTbArea table td .gd_infoLi li {
+  padding: 5px 0 5px 0 !important;
+  line-height: 16px !important;
+  color: #666;
+  border: none !important;
+  text-align: left;
+  font-size: 12px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.topColRight .gd_infoBot .gd_infoTbArea .gd_infoTb.bdr_top {
+  padding-top: 19px;
+  border-top: 1px solid #ebebeb;
 }
 
 /* Sub Detail Banner */
