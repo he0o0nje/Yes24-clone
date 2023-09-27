@@ -327,11 +327,109 @@
   cursor: default;
   text-indent: 0;
 }
+
 .topColRight .gd_infoTop .gd_ratingArea {
-  display: block;
+  display: flex;
+  margin-top: -8px;
+  align-items: center;
   line-height: 20px;
   color: #666;
 }
+.topColRight .gd_infoTop .gd_ratingArea .gd_rating {
+  position: relative;
+  margin: 10px 8px 0 0;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_rating .total_rating {
+  background-position: 0 -200px;
+  margin-top: 1px;
+  width: 78px;
+  height: 16px;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_rating .yes_b {
+  margin-right: 1px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  color: #000;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_rating .moreRating .bgYUI {
+  margin-top: 1px;
+  width: 17px;
+  height: 16px;
+  background-position: -20px -240px;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_reviewCount {
+  margin: 9px 0 0 0;
+  min-height: 20px;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_reviewCount a {
+  color: #333;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_sellNum {
+  margin: 9px 10px 0 5px;
+  line-height: 20px;
+  color: #666;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_sellNum .divi {
+  display: inline-block;
+  overflow: hidden;
+  margin: 3px 4px 0 4px;
+  width: 1px;
+  height: 12px;
+  text-indent: -999em;
+  border-right: solid 1px #ccc;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_sellNum .ico_help {
+  vertical-align: -3px;
+  width: 17px;
+  height: 16px;
+  background-position: -80px -240px;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_best {
+  margin-top: 9px;
+  text-align: left;
+  display: inline-block;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_best dl {
+  display: flex;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_best dt {
+  margin: 0 2px 0 0;
+  width: 48px;
+  height: 20px;
+  line-height: 19px;
+  font-size: 11px;
+  color: #fff;
+  text-indent: 4px;
+  background: url(../img/sub/bgDetail.png) no-repeat -622px -250px;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_best dd {
+  margin-left: 5px;
+}
+.topColRight .gd_infoTop .gd_ratingArea .gd_best .divi {
+  margin: 3px 4px 0 4px;
+  width: 1px;
+  height: 12px;
+  text-indent: -999em;
+  border-right: solid 1px #ccc;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.bgGD {
+  display: inline-block;
+  text-indent: -999em;
+  background: url(../img/sub/bgDetail.png);
+}
+.bgYUI {
+  background: url(../img/sub/bgYUI.png);
+  display: inline-block;
+  text-indent: -999em;
+}
+.txC_blue {
+  color: #6699cc;
+}
+
 .topColRgt .gd_infoBot {
   display: flex;
 }
