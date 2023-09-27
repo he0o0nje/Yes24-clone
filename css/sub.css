@@ -425,6 +425,11 @@
   display: inline-block;
   text-indent: -999em;
 }
+.ico_toggle {
+  width: 17px;
+  height: 16px;
+  background-position: -20px -240px;
+}
 .txC_blue {
   color: #6699cc;
 }
@@ -433,6 +438,17 @@
   height: 16px;
   background-position: -80px -240px;
   vertical-align: bottom;
+}
+.ico_go {
+  width: 17px;
+  height: 16px;
+  background-position: -60px -240px;
+}
+.ico_arr {
+  width: 10px;
+  height: 8px;
+  vertical-align: 1px;
+  background-position: -160px -280px;
 }
 
 .topColRight .gd_infoBot {
@@ -443,7 +459,7 @@
   padding-top: 19px;
 }
 .topColRight .gd_infoBot .gd_infoTbArea .gd_infoTb {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 .topColRight .gd_infoBot .gd_infoTbArea table {
   width: 100%;
@@ -522,6 +538,16 @@
 .topColRight .gd_infoBot .gd_infoTbArea .gd_infoTb.bdr_top {
   padding-top: 19px;
   border-top: 1px solid #ebebeb;
+  margin-bottom: 20px;
+}
+.topColRight .gd_infoBot .gd_infoTbArea .gd_infoTb.bdr_top .ico_toggle {
+  vertical-align: bottom;
+}
+.topColRight .gd_infoBot .gd_infoTbArea .gd_infoTb.bdr_top .ico_go {
+  vertical-align: bottom;
+}
+.topColRight .gd_infoBot .gd_infoTbArea .gd_infoTb.bdr_top .ico_arr {
+  margin-left: -2px;
 }
 
 /* Sub Detail Banner */
