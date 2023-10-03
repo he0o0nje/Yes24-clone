@@ -1054,7 +1054,7 @@
   border-right: solid 1px #ebebeb;
   background-color: #fff;
 }
-.detailBnWrap .topBotBnArea .bnLeft .bnLeft_thumb:first-child a {
+.detailBnWrap .topBotBnArea .bnLeft .bnLeftUnit:first-child .bnLeft_thumb a {
   height: 25px;
   border-top: none;
 }

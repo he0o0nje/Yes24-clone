@@ -1,3 +1,4 @@
+// 책 3D 만들기
 $(function () {
   var isRotated = false;
 
@@ -23,4 +24,14 @@ $(function () {
       }
     }
   );
+});
+
+// 광고배너 호버
+$(".bnLeft_img").not(":first").hide();
+
+$(".detailBnWrap .bnLeftUnit").mouseenter(function () {
+  $(".bnLeft_thumb").removeClass("on");
+  $(this).find(".bnLeft_thumb").addClass("on");
+  let index = $(this).index();
+  $(".bnLeft_img").hide().eq(index).stop().show();
 });
