@@ -1118,6 +1118,38 @@
   vertical-align: -1px;
 }
 
+/* 이 책 구입한 사람들이 산 책 */
+.peopleGoodsRow {
+  width: 1200px;
+  margin: 0 auto;
+}
+.peopleGoodsRow .pGR_tab_2col {
+  display: flex;
+  width: 100%;
+}
+.peopleGoodsRow .pGR_tab_2col div {
+  width: 50%;
+  border: 1px solid #d8d8d8;
+  background-color: #f8f8f8;
+}
+.peopleGoodsRow .pGR_tab_2col .lastCol {
+  border-left: none;
+}
+.peopleGoodsRow .pGR_tab_2col div.on {
+  background-color: #fff;
+  border-bottom: none;
+}
+.peopleGoodsRow .pGR_tab_2col div a {
+  height: 48px;
+  display: block;
+}
+.peopleGoodsRow .pGR_tab_2col div a .txt {
+  height: 48px;
+  line-height: 48px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
 /* Sub Detail Bottom */
 .detailBotWrap {
   padding: 33px 0;
