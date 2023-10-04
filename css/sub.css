@@ -1437,27 +1437,76 @@ button {
   margin: 0 auto;
   text-align: left;
 }
-.gd_infoSet {
-  margin-top: 35px;
+
+.detailBotWrap .gd_detailBotCont .gd_dContRgt {
+  float: right;
+  padding-top: 7px;
+  width: 220px;
+}
+.detailBotWrap .gd_detailBotCont .gd_dContRgt * {
+  max-width: 218px;
+}
+.detailBotWrap .gd_detailBotCont .gd_dContRgt .gd_dContBox {
+  position: relative;
+  border: solid 1px #d8d8d8;
+  background-color: #fff;
+}
+.detailBotWrap .gd_detailBotCont .gd_dContRgt .gd_dContBox .ts_dContR {
+  display: block;
+  margin: 0 14px;
+  padding: 12px 0;
+}
+.detailBotWrap .gd_detailBotCont .gd_dContRgt .gd_dContBox .ts_dContR .txt {
+  min-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  word-break: break-all;
+  color: #333;
+}
+.detailBotWrap .gd_detailBotCont .gd_dContRgt .gd_dContBox .dCont_innerArea {
+  margin: 0 15px;
+}
+.detailBotWrap .gd_detailBotCont .gd_dContRgt .more_dContRgt {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.detailBotWrap .gd_detailBotCont .gd_dContLft {
+  width: 960px;
+  float: left;
+}
+.detailBotWrap .gd_detailBotCont .gd_dContLft * {
+  max-width: 940px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.detailBotWrap .gd_detailBotCont .gd_dContLft .gd_infoSet {
   padding-bottom: 40px;
   border-bottom: 1px solid #d8d8d8;
   clear: both;
   position: relative;
-  border-top: 3px solid red;
 }
-.gd_infoSet .tm_infoSet {
+.detailBotWrap .gd_detailBotCont .gd_dContLft .gd_infoSet.infoSet_noLine {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.detailBotWrap .gd_detailBotCont .gd_dContLft .gd_infoSet .tm_infoSet {
   position: relative;
   padding-bottom: 15px;
 }
-.gd_infoSet .tm_infoSet .tit_txt {
+.detailBotWrap .gd_detailBotCont .gd_dContLft .gd_infoSet .tm_infoSet .tit_txt {
   height: 31px;
-  line-height: 31px;
-  font-size: 20px;
-  font-weight: 500;
+  line-height: 30px;
+  font-size: 19px;
+  font-weight: bold;
   color: #000;
   font-family: "Noto Sans KR";
 }
-.gd_infoSet .infoWrap_txt {
+.detailBotWrap .gd_detailBotCont .gd_dContLft .gd_infoSet .infoWrap_txt {
   clear: both;
   font-size: 15px;
   line-height: 1.74em;
@@ -1468,7 +1517,43 @@ button {
   word-wrap: break-word;
   word-break: keep-all;
 }
-.gd_infoSet .infoWrap_txt img {
+.detailBotWrap .gd_detailBotCont .gd_dContLft .gd_infoSet .infoWrap_txt img {
   max-width: 940px;
   vertical-align: top;
+}
+.yesTb table {
+  border-collapse: collapse !important;
+  table-layout: fixed;
+  border-top: solid 1px #d8d8d8;
+  border-bottom: solid 1px #d8d8d8;
+  width: 100%;
+}
+.yesTb table tbody th {
+  padding: 6px 0;
+  line-height: 16px;
+  font-size: 13px;
+  text-align: center;
+  color: #333;
+  text-indent: 0;
+  border-top: solid 1px #ebebeb;
+  border-right: solid 1px #ebebeb;
+  background-color: #f8f8f8;
+  width: 170px;
+}
+.yesTb table tbody tr:first-child > th {
+  border-top: none;
+}
+.yesTb table tbody td {
+  padding: 12px 14px;
+  line-height: 16px;
+  color: #666;
+  text-indent: 0;
+  border-top: solid 1px #ebebeb;
+  border-right: solid 1px #ebebeb;
+}
+.yesTb table tbody tr:first-child > td {
+  border-top: none;
+}
+.yesTb table .lastCol {
+  border-right: none;
 }
