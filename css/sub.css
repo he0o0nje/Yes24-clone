@@ -1274,11 +1274,21 @@ button {
   width: 34px;
   height: 38px;
 }
+.pgBtn.prev .bgYUI:hover {
+  background-position: -380px -340px;
+  width: 34px;
+  height: 38px;
+}
 .pgBtn.next {
   right: 6px;
 }
 .pgBtn.next .bgYUI {
   background-position: -340px -340px;
+  width: 34px;
+  height: 38px;
+}
+.pgBtn.next .bgYUI:hover {
+  background-position: -420px -340px;
   width: 34px;
   height: 38px;
 }
