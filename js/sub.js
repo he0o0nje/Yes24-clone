@@ -2,6 +2,7 @@
 $(document).ready(function () {
   $(".detailBnWrap .bnLeftUnit:first").trigger("mouseenter");
   $(".pGR_tab_2col div:first").trigger("click");
+  $(".gd_tabNav li:first").trigger("click");
 });
 
 // 슬라이드 컨테이너 호버 시 prev, next 버튼 보여주기
@@ -172,3 +173,29 @@ function pGR02nextSlide() {
 
   $("#pGR02 strong").text(newIndex + 1);
 }
+
+// 상세페이지 네비게이션 탭
+
+// 멀티페이지 리스트 클릭 시 css변경, 해당 내용 보이기
+$(".gd_tabNav li").click(function () {
+  $(".gd_tabNav li").removeClass("on");
+  $(this).addClass("on");
+  // let index = $(this).index();
+  // $(".pGR_goodsWrap").hide().eq(index).stop().show();
+});
+
+// 스크롤 시 position:fixed
+$(document).ready(function () {
+  // 스크롤 이벤트 리스너 추가
+  $(window).scroll(function () {
+    var scrollPos = $(window).scrollTop();
+    var contentOffset = $(".detailNav").offset().top;
+
+    // 스크롤 위치가 content 요소의 상단을 지나면 클래스 추가
+    if (scrollPos > contentOffset) {
+      $(".detailNav").addClass("fixedOn");
+    } else {
+      $(".detailNav").removeClass("fixedOn");
+    }
+  });
+});

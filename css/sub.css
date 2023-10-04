@@ -1293,6 +1293,141 @@ button {
   height: 38px;
 }
 
+/* 상세페이지 네비게이션 탭 */
+.detailNav {
+  position: relative;
+  margin-top: 40px;
+  height: 60px;
+  text-align: center;
+}
+.detailNav.fixedOn {
+  margin-bottom: 40px;
+}
+.detailNav .gd_tabNav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  min-height: 59px;
+  border-bottom: solid 1px #333;
+  background-color: #f8f8f8;
+}
+.detailNav.fixedOn .gd_tabNav {
+  position: fixed;
+  z-index: 99999;
+}
+.detailNav .gd_tabNav .gd_tabName {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+.detailNav.fixedOn .gd_tabNav .gd_tabName {
+  position: static;
+  height: 40px;
+  border-bottom: 1px solid #ebebeb;
+}
+.detailNav .gd_tabNav .gd_tabName .gd_name {
+  margin: 0 auto;
+  width: 1200px;
+  height: 40px;
+  overflow: hidden;
+  line-height: 40px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.detailNav .gd_tabNav .gd_tabBar {
+  width: 1200px;
+  height: 59px;
+  margin: 0 auto;
+  position: relative;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarLi li {
+  position: relative;
+  float: left;
+  width: 170px;
+  height: 59px;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarLi li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  border-right: solid 1px #ebebeb;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarLi li:last-child:after {
+  border: none;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarLi li.on {
+  background-color: #333;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarLi li a {
+  display: table-cell;
+  padding: 0 8px;
+  width: 154px;
+  height: 59px;
+  line-height: 1.3em;
+  vertical-align: middle;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarLi li a .txt_menu {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarLi li.on a .txt_menu {
+  color: #fff;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarLi li a .txt_num {
+  font-size: 11px;
+  color: #666;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarLi li.on a .txt_num {
+  color: #999;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarBtn {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  text-align: right;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarBtn .tabBarBtnRow {
+  line-height: 30px;
+  display: flex;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarBtn .tabBarBtnRow .tot_price {
+  color: #ff6666;
+  font-size: 13px;
+  font-weight: bold;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarBtn .tabBarBtnRow .tot_price .yes_b {
+  color: #ff6666;
+  font-size: 24px;
+  vertical-align: -1px;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarBtn .tabBarBtnRow .gd_btn {
+  margin-left: 4px;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarBtn .tabBarBtnRow .gd_btn .bWrap {
+  width: 78px;
+  display: block;
+  margin-left: 1px;
+  padding: 0;
+}
+.detailNav .gd_tabNav .gd_tabBar .tabBarBtn .tabBarBtnRow .gd_btn .bWrap .txt {
+  vertical-align: top;
+}
+
 /* Sub Detail Bottom */
 .detailBotWrap {
   padding: 33px 0;
