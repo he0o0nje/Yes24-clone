@@ -1149,6 +1149,105 @@
   font-weight: bold;
   font-size: 16px;
 }
+.peopleGoodsRow .pGR_goodsWrap {
+  border: 1px solid #d8d8d8;
+  border-top: none;
+  position: relative;
+  padding: 30px 0 20px 38px;
+  height: 302px;
+}
+.peopleGoodsRow .pGR_goodsWrap ul li {
+  width: 187px;
+  float: left;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .pGR_img {
+  position: relative;
+  width: 125px;
+  height: 185px;
+  vertical-align: bottom;
+  display: inline-block;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .pGR_img img {
+  display: inline;
+  width: 125px;
+  max-height: 185px;
+  border: 1px solid #ebebeb;
+  margin: -1px;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .goods_info {
+  width: 155px;
+  text-align: left;
+  margin: 17px 0 0 31px;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .goods_info .goods_name {
+  max-height: 34px;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 17px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .goods_info .goods_name a {
+  color: #333;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .goods_info .goods_pubGrp {
+  display: block;
+  margin-top: 6px;
+  height: 16px;
+  line-height: 16px;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .goods_info .goods_pubGrp span {
+  color: #999;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .goods_info .goods_pubGrp .divi {
+  color: #ccc;
+  vertical-align: -1px;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .goods_info .goods_rating {
+  margin-top: 5px;
+  padding-top: 3px;
+  line-height: 1.2em;
+  color: #333;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .goods_info .goods_rating .rating {
+  background-position: 0 -860px;
+  width: 80px;
+  height: 15px;
+  vertical-align: -3px;
+}
+.peopleGoodsRow
+  .pGR_goodsWrap
+  .pGR_goods
+  .goods_info
+  .goods_rating
+  .rating_txt {
+  color: #333;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .goods_info .goods_price {
+  margin-top: 8px;
+  color: #333;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+.peopleGoodsRow .pGR_goodsWrap .pGR_goods .goods_info .goods_price .yes_b {
+  color: #000;
+  font-size: 14px;
+  vertical-align: -1px;
+}
+.peopleGoodsRow
+  .pGR_goodsWrap
+  .pGR_goods
+  .goods_info
+  .goods_price
+  .goods_benefit {
+  font-weight: normal;
+  line-height: 1.2em;
+}
 
 /* Sub Detail Bottom */
 .detailBotWrap {
