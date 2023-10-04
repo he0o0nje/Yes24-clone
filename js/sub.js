@@ -35,3 +35,5 @@ $(".detailBnWrap .bnLeftUnit").mouseenter(function () {
   let index = $(this).index();
   $(".bnLeft_img").hide().eq(index).stop().show();
 });
+
+// 이 책 구입한 사람들이 산 책

@@ -1248,6 +1248,40 @@
   font-weight: normal;
   line-height: 1.2em;
 }
+.pageNum {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  font-size: 11px;
+  color: #999;
+}
+button {
+  border: 0;
+  background: transparent;
+}
+.pgBtn {
+  position: absolute;
+  top: 156px;
+  margin-top: 0;
+  width: 34px;
+  height: 38px;
+}
+.pgBtn.prev {
+  left: -6px;
+}
+.pgBtn.prev .bgYUI {
+  background-position: -300px -340px;
+  width: 34px;
+  height: 38px;
+}
+.pgBtn.next {
+  right: 6px;
+}
+.pgBtn.next .bgYUI {
+  background-position: -340px -340px;
+  width: 34px;
+  height: 38px;
+}
 
 /* Sub Detail Bottom */
 .detailBotWrap {
