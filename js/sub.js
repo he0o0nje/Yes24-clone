@@ -3,6 +3,7 @@ $(document).ready(function () {
   $(".detailBnWrap .bnLeftUnit:first").trigger("mouseenter");
   $(".pGR_tab_2col div:first").trigger("click");
   $(".gd_tabNav li:first").trigger("click");
+  $(".gd_tagArea .tag:first").trigger("click");
 });
 
 // 슬라이드 컨테이너 호버 시 prev, next 버튼 보여주기
@@ -198,4 +199,12 @@ $(document).ready(function () {
       $(".detailNav").removeClass("fixedOn");
     }
   });
+});
+
+// Sub Detail Bottom
+$(".gd_tagArea .tag").click(function () {
+  $(".gd_tagArea .tag").removeClass("on");
+  $(this).addClass("on");
+  // let index = $(this).index();
+  // $(".pGR_goodsWrap").hide().eq(index).stop().show();
 });

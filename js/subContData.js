@@ -34,3 +34,21 @@ $.ajax({
     $(this).find(".yes_b").text(bookData.sale_price);
   });
 });
+
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "세상" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".tp_book ul li").each(function (i) {
+    const bookData = data.documents[i];
+    let imageUrl = bookData.thumbnail;
+
+    $(this).find("img").attr("src", imageUrl);
+    $(this).find(".goods_name a").text(bookData.title);
+    $(this).find(".goods_auth").text(bookData.authors);
+    $(this).find(".goods_pub").text(bookData.publisher);
+    $(this).find(".yes_b").text(bookData.sale_price);
+  });
+});

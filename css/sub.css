@@ -1557,3 +1557,243 @@ button {
 .yesTb table .lastCol {
   border-right: none;
 }
+
+.gd_infoSet + .gd_infoSet {
+  margin-top: 35px;
+}
+.detailBotWrap .gd_detailBotCont .gd_dContLft .gd_infoSet.infoSet_txtCont {
+  padding-bottom: 36px;
+}
+.alertDl {
+  text-align: left;
+}
+.alertDl dt {
+  padding-bottom: 2px;
+  line-height: 1.6em;
+  font-size: 13px;
+  color: #333;
+  font-weight: bold;
+}
+.alertDl dd {
+  line-height: 16px;
+  color: #666;
+}
+.gd_infoSet .alertLi li .bl_dot {
+  margin-right: 0.5px;
+}
+.gd_infoSet .alertLi li a {
+  color: #666;
+}
+.bgYUI.divi_cate {
+  margin: 0 2px;
+  width: 6px;
+  height: 12px;
+  vertical-align: -2px;
+  background-position: -120px -242px;
+}
+.alertDl + .alertDl {
+  margin-top: 13px;
+}
+.gd_detailBotCont .gd_dContLft .gd_infoSet .infoSetCont_wrap .gd_tagArea {
+  padding-bottom: 15px;
+}
+.gd_detailBotCont .gd_dContLft .gd_infoSet .infoSetCont_wrap .gd_tagArea .tag {
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  vertical-align: top;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .gd_tagArea
+  .tag
+  a {
+  margin-bottom: 5px;
+  padding: 0 9px;
+  height: 28px;
+  line-height: 28px;
+  border: solid 1px #ebebeb;
+  border-radius: 15px;
+  color: #666;
+  font-size: 12px;
+  background-color: #f8f8f8;
+  display: inline-block;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .gd_tagArea
+  .tag
+  a:hover {
+  background-color: #fff;
+  border: solid 1px #d8d8d8;
+  color: #333;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .gd_tagArea
+  .tag.on
+  a {
+  border-color: #333;
+  color: #fff;
+  background-color: #333;
+}
+.gd_infoSet .infoSetCont_wrap .gd_tagArea.tp_book ul li {
+  float: left;
+  width: 200px;
+}
+.gd_infoSet .infoSetCont_wrap .gd_tagArea.tp_book ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gd_infoSet .infoSetCont_wrap .gd_tagArea.tp_book ul li:last-child {
+  width: auto;
+}
+.gd_infoSet .infoSetCont_wrap .gd_tagArea.tp_book ul li .goods_img {
+  width: 130px;
+  height: auto;
+  border: 1px solid #ebebeb;
+  display: block;
+}
+.gd_infoSet .infoSetCont_wrap .gd_tagArea.tp_book ul li .goods_img img {
+  width: 130px;
+  max-height: 194px;
+}
+.gd_infoSet .infoSetCont_wrap .gd_tagArea.tp_book ul li .goods_info {
+  width: 140px;
+  height: 80px;
+  margin-top: 17px;
+  text-align: left;
+}
+.gd_infoSet
+  .infoSetCont_wrap
+  .gd_tagArea.tp_book
+  ul
+  li
+  .goods_info
+  .goods_name {
+  max-height: 34px;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 17px;
+  font-weight: normal;
+  font-size: 13px;
+  color: #333;
+}
+.gd_infoSet
+  .infoSetCont_wrap
+  .gd_tagArea.tp_book
+  ul
+  li
+  .goods_info
+  .goods_name
+  a {
+  color: #333;
+}
+.gd_infoSet
+  .infoSetCont_wrap
+  .gd_tagArea.tp_book
+  ul
+  li
+  .goods_info
+  .goods_pubGrp {
+  display: block;
+  margin-top: 6px;
+  height: 16px;
+  line-height: 16px;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.gd_infoSet
+  .infoSetCont_wrap
+  .gd_tagArea.tp_book
+  ul
+  li
+  .goods_info
+  .goods_pubGrp
+  span {
+  color: #999;
+}
+.gd_infoSet
+  .infoSetCont_wrap
+  .gd_tagArea.tp_book
+  ul
+  li
+  .goods_info
+  .goods_pubGrp
+  .divi {
+  color: #ccc;
+  vertical-align: -1px;
+}
+.gd_infoSet
+  .infoSetCont_wrap
+  .gd_tagArea.tp_book
+  ul
+  li
+  .goods_info
+  .goods_price {
+  margin-top: 8px;
+  color: #333;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+.gd_infoSet
+  .infoSetCont_wrap
+  .gd_tagArea.tp_book
+  ul
+  li
+  .goods_info
+  .goods_price
+  em.yes_b {
+  color: #000;
+  font-size: 14px;
+  vertical-align: -1px;
+}
+.gd_infoSet
+  .infoSetCont_wrap
+  .gd_tagArea.tp_book
+  ul
+  li
+  .goods_info
+  .goods_price
+  .goods_benefit {
+  font-weight: normal;
+  line-height: 1.2em;
+}
+.alertLi li .bgYUI {
+  vertical-align: 2px;
+}
+.btnC.s_size .bWrap {
+  padding: 0 4px;
+  height: 18px;
+  text-align: center;
+}
+.btnC.s_size .bWrap em.txt {
+  padding: 0;
+  height: 18px;
+  line-height: 17px;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 0;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic,
+    "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif !important;
+  vertical-align: top;
+}
+.btnC .bgYUI.ico_goS {
+  margin: 6px 0 0 3px;
+  width: 6px;
+  height: 16px;
+  vertical-align: top;
+  background-position: -130px -240px;
+}
+.btnC.s_size .bgYUI.ico_goS {
+  margin: 1px 0 0 3px;
+}
