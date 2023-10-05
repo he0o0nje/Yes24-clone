@@ -1876,3 +1876,95 @@ button {
 .gd_infoSet.infoMoreOn .infoSetCont_wrap .btn_halfMore a .ico_arr {
   background-position: -130px -290px;
 }
+
+.gd_detailBotCont .gd_dContLft .gd_infoSet .tm_infoSet .tit_txt .txt_des {
+  font-weight: normal;
+  color: #666;
+  font-size: 15px;
+  vertical-align: 1px;
+  font-family: "Malgun Gothic", Dotum, "돋움", AppleGothic, Lucida Grande,
+    Verdana, Arial, Tahoma, sans-serif;
+}
+.gd_detailBotCont .gd_dContLft .gd_infoSet .infoSetCont_wrap.wrapBox {
+  border: 1px solid #d8d8d8;
+  background-color: #fff;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .authorInfoGrp
+  .authorTit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  background-color: #f8f8f8;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .authorInfoGrp
+  .authorTit
+  .author_name {
+  padding: 13px 10px 13px 20px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .authorInfoGrp
+  .authorTit
+  .author_name
+  a {
+  color: #333;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .authorInfoGrp
+  .authorTit
+  .author_btn {
+  padding: 10px 9px 10px 0;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .authorInfoGrp
+  .authorTit
+  .author_btn
+  .btnC {
+  margin-right: 1px;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .authorInfoGrp
+  .authorTit
+  .author_btn
+  .btnC
+  .bWrap {
+  display: block;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .authorInfoGrp
+  .authorTit
+  .author_btn
+  .ico_arr {
+  width: 8px;
+  height: 11px;
+  background-position: -130px -240px;
+}
