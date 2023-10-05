@@ -2121,3 +2121,131 @@ button {
   height: 11px;
   background-position: -130px -240px;
 }
+
+.gd_detailBotCont .gd_dContLft .gd_infoSet.infoSet_review .gd_reviewTop {
+  position: relative;
+  padding: 31px 0 0 0;
+  text-align: center;
+  border: solid 1px #ebebeb;
+  background-color: #f8f8f8;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_starWrap
+  .gd_reviewTot {
+  height: 40px;
+  line-height: 40px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #333;
+  font-family: "Noto Sans KR";
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_starWrap
+  .gd_rating {
+  margin-top: -3px;
+  height: 64px;
+  line-height: 64px;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_starWrap
+  .gd_rating
+  .total_rating {
+  margin: 12px 12px 0 0;
+  width: 218px;
+  height: 38px;
+  background-position: 0 -600px;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_starWrap
+  .gd_rating
+  .total_rating.total_rating_10 {
+  width: 218px;
+  height: 38px;
+  background-position: 0 -1000px;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_starWrap
+  .gd_rating
+  .yes_b {
+  color: #333;
+  font-size: 48px;
+  font-weight: bold;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_starWrap
+  .gd_rating
+  .yes_m {
+  margin-left: 6px;
+  color: #999;
+  font-size: 30px;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_starWrap
+  .gd_ratingDetail {
+  padding-bottom: 36px;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_starWrap
+  .gd_ratingDetail
+  .ratingDetail_txt {
+  line-height: 20px;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_starWrap
+  .gd_ratingDetail
+  .rating {
+  width: 78px;
+  height: 16px;
+  color: #666;
+  vertical-align: -3px;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_starWrap
+  .gd_ratingDetail
+  .rating.rating_5_0 {
+  background-position: 0 -200px;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_starWrap
+  .gd_ratingDetail
+  .moreRatingArea
+  .moreRatingBtn
+  .bgYUI {
+  margin-top: 2px;
+  width: 17px;
+  height: 16px;
+  background-position: -20px -240px;
+}
