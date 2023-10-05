@@ -1797,3 +1797,41 @@ button {
 .btnC.s_size .bgYUI.ico_goS {
   margin: 1px 0 0 3px;
 }
+
+.infoSetCont_wrap .wrapTb {
+  width: 100%;
+}
+.infoSetCont_wrap .wrapTb .infoWrap_mdBox {
+  margin: 0 0 26px;
+  padding: 27px 0 25px;
+  border: solid 1px #ebebeb;
+  text-align: left;
+  background-color: #f8f8f8;
+}
+.infoSetCont_wrap .wrapTb .infoWrap_mdBox dl {
+  margin: 0 29px;
+}
+.infoSetCont_wrap .wrapTb .infoWrap_mdBox dl dt {
+  padding-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+  font-size: 13px;
+}
+.infoSetCont_wrap .wrapTb .infoWrap_mdBox dl dd {
+  line-height: 22px;
+  color: #666;
+  font-size: 13px;
+}
+.infoSetCont_wrap .wrapTb .infoWrap_txt * {
+  font-size: 15px;
+  line-height: 1.74em;
+  color: #666;
+  font-family: "Malgun Gothic", Dotum, "돋움", AppleGothic, Lucida Grande,
+    Verdana, Arial, Tahoma, sans-serif;
+}
+.infoSetCont_wrap .infoWrap_privew {
+  margin-top: 20px;
+  line-height: 30px;
+  color: #6699cc;
+  font-size: 13px;
+}
