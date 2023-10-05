@@ -2108,3 +2108,16 @@ button {
   color: #6699cc;
   text-decoration: none;
 }
+
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSet_topBtn
+  .btnC
+  .bWrap
+  .ico_arr {
+  margin-left: 2px;
+  width: 6px;
+  height: 11px;
+  background-position: -130px -240px;
+}
