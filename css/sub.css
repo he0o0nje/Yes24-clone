@@ -2087,3 +2087,24 @@ button {
   font-size: 13px;
   color: #999;
 }
+
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .infoWrap_txt
+  + .infoWrap_txt {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: dashed 1px #ddd;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .infoWrap_txt
+  a.lnk_gd {
+  font-weight: bold;
+  color: #6699cc;
+  text-decoration: none;
+}
