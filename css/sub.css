@@ -1861,11 +1861,13 @@ button {
   right: 0;
   bottom: 0;
   z-index: 100;
-  padding: 10px 0 9px 0;
   line-height: 16px;
   text-align: right;
   font-size: 12px;
   color: #6699cc;
+}
+.gd_infoSetCrop.infoMoreOn .infoSetCont_wrap .btn_halfMore a {
+  padding-top: 10px;
 }
 .infoSetCont_wrap .btn_halfMore a .txt_open {
   color: #6699cc;
@@ -2036,4 +2038,52 @@ button {
   a.lnk_txt
   .txt_cate {
   color: #666;
+}
+
+.gd_detailBotCont .gd_dContLft .gd_infoSet .tm_infoSet .tit_cmt {
+  display: block;
+  min-height: 20px;
+  padding-bottom: 3px;
+  line-height: 20px;
+  font-size: 13px;
+  color: #666;
+  font-weight: normal;
+}
+.gd_detailBotCont .gd_dContLft .gd_infoSet .tm_infoSet .tit_txt + .tit_cmt {
+  margin-top: 5px;
+}
+.gd_detailBotCont .gd_dContLft .gd_infoSet .infoSet_topBtn {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+.gd_detailBotCont .gd_dContLft .gd_infoSet .infoSet_topBtn .btnC .bWrap {
+  padding: 0;
+  width: 113px;
+}
+.gd_detailBotCont .gd_dContLft .gd_infoSet .infoSetCont_wrap.wrapTxtBox {
+  padding: 24px 0;
+  border: solid 1px #d8d8d8;
+  background-color: #f8f8f8;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap.wrapTxtBox
+  .infoWrap_txt {
+  margin-left: 29px;
+  margin-right: 29px;
+  font-size: 13px;
+}
+
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet
+  .infoSetCont_wrap
+  .infoWrap_txt
+  .infoSetCont_quote {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 13px;
+  color: #999;
 }

@@ -48,6 +48,25 @@ $(function () {
   );
 });
 
+// 펼쳐보기, 접어보기 동작
+$(".gd_infoSetCrop").each(function () {
+  let container = $(this);
+  let toggleButton = container.find(".btn_halfMore .txt");
+
+  container.find(".txt_close").hide();
+
+  toggleButton.click(function () {
+    container.toggleClass("infoMoreOn");
+    if (container.hasClass("infoMoreOn")) {
+      container.find(".txt_open").hide();
+      container.find(".txt_close").show();
+    } else {
+      container.find(".txt_open").show();
+      container.find(".txt_close").hide();
+    }
+  });
+});
+
 // 광고배너 호버
 $(".bnLeft_img").not(":first").hide();
 
@@ -211,24 +230,12 @@ $(".gd_tagArea .tag").click(function () {
   $(".tp_book ul").hide().eq(index).stop().show();
 });
 
-// 목차
-$(".txt_close").hide();
-let textContainer = $(".gd_infoSetCrop");
-let toggleButton = $(".gd_infoSetCrop .btn_halfMore .txt");
-
-toggleButton.click(function () {
-  textContainer.toggleClass("infoMoreOn");
-  if (textContainer.hasClass("infoMoreOn")) {
-    $(".gd_infoSetCrop .txt_open").hide();
-    $(".gd_infoSetCrop .txt_close").show();
-  } else {
-    $(".gd_infoSetCrop .txt_open").show();
-    $(".gd_infoSetCrop .txt_close").hide();
-  }
-});
-
 // 저자 소개
+$(".txt_close").hide();
 $(".row_basicInfo .info_origin").hide();
+$(".row_basicInfo .btn_halfMore a").css({
+  "padding-top": "10px",
+});
 
 $(".row_basicInfo .txt_open").click(function () {
   $(".row_basicInfo .txt_open").hide();
