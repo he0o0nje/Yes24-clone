@@ -1801,28 +1801,28 @@ button {
 .infoSetCont_wrap .wrapTb {
   width: 100%;
 }
-.infoSetCont_wrap .wrapTb .infoWrap_mdBox {
+.infoSetCont_wrap .infoWrap_mdBox {
   margin: 0 0 26px;
   padding: 27px 0 25px;
   border: solid 1px #ebebeb;
   text-align: left;
   background-color: #f8f8f8;
 }
-.infoSetCont_wrap .wrapTb .infoWrap_mdBox dl {
+.infoSetCont_wrap .infoWrap_mdBox dl {
   margin: 0 29px;
 }
-.infoSetCont_wrap .wrapTb .infoWrap_mdBox dl dt {
+.infoSetCont_wrap .infoWrap_mdBox dl dt {
   padding-bottom: 6px;
   font-weight: bold;
   color: #333;
   font-size: 13px;
 }
-.infoSetCont_wrap .wrapTb .infoWrap_mdBox dl dd {
+.infoSetCont_wrap .infoWrap_mdBox dl dd {
   line-height: 22px;
   color: #666;
   font-size: 13px;
 }
-.infoSetCont_wrap .wrapTb .infoWrap_txt * {
+.infoSetCont_wrap .infoWrap_txt * {
   font-size: 15px;
   line-height: 1.74em;
   color: #666;
@@ -1834,4 +1834,45 @@ button {
   line-height: 30px;
   color: #6699cc;
   font-size: 13px;
+}
+
+.gd_detailBotCont .gd_dContLft .gd_infoSet.gd_infoSetCrop {
+  padding-bottom: 0;
+}
+.gd_detailBotCont .gd_dContLft .gd_infoSet.gd_infoSetCrop.infoMoreOn {
+  padding-bottom: 40px;
+}
+.gd_detailBotCont .gd_dContLft .gd_infoSet.gd_infoSetCrop .infoSetCont_wrap {
+  height: 350px;
+  overflow: hidden;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.gd_infoSetCrop.infoMoreOn
+  .infoSetCont_wrap {
+  height: auto;
+}
+.infoSetCont_wrap .btn_halfMore a {
+  padding: 55px 0 9px 0;
+  background: url(../img/sub/mask_corp.png) repeat-x center top;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: 10px 0 9px 0;
+  line-height: 16px;
+  text-align: right;
+  font-size: 12px;
+  color: #6699cc;
+}
+.infoSetCont_wrap .btn_halfMore a .txt_open {
+  color: #6699cc;
+}
+.infoSetCont_wrap .btn_halfMore a .txt_close {
+  color: #6699cc;
+}
+.gd_infoSet.infoMoreOn .infoSetCont_wrap .btn_halfMore a .ico_arr {
+  background-position: -130px -290px;
 }

@@ -210,3 +210,19 @@ $(".gd_tagArea .tag").click(function () {
   let index = $(this).index();
   $(".tp_book ul").hide().eq(index).stop().show();
 });
+
+// 목차
+let textContainer = $(".gd_infoSetCrop");
+let toggleButton = $(".btn_halfMore .txt");
+$(".txt_close").hide();
+
+toggleButton.click(function () {
+  textContainer.toggleClass("infoMoreOn");
+  if (textContainer.hasClass("infoMoreOn")) {
+    $(".txt_open").hide();
+    $(".txt_close").show();
+  } else {
+    $(".txt_open").show();
+    $(".txt_close").hide();
+  }
+});
