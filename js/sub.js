@@ -202,9 +202,11 @@ $(document).ready(function () {
 });
 
 // Sub Detail Bottom
+
+// 상품 태그
 $(".gd_tagArea .tag").click(function () {
   $(".gd_tagArea .tag").removeClass("on");
   $(this).addClass("on");
-  // let index = $(this).index();
-  // $(".pGR_goodsWrap").hide().eq(index).stop().show();
+  let index = $(this).index();
+  $(".tp_book ul").hide().eq(index).stop().show();
 });

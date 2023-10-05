@@ -38,7 +38,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "세상" },
+  data: { query: "세상", size: "40" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
   $(".tp_book ul li").each(function (i) {
