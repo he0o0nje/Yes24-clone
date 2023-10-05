@@ -1968,3 +1968,72 @@ button {
   height: 11px;
   background-position: -130px -240px;
 }
+.authorInfoGrp .authorCont {
+  padding-top: 30px;
+  border-top: 1px solid #ebebeb;
+}
+.authorInfoGrp .authorCont .author_row {
+  position: relative;
+  clear: both;
+  padding-bottom: 34px;
+}
+.authorInfoGrp .authorCont .author_row + .author_row {
+  position: relative;
+  padding-top: 29px;
+}
+.authorInfoGrp .authorCont .author_row + .author_row:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  border-top: solid 1px #ebebeb;
+}
+.authorInfoGrp .authorCont .author_row.row_basicInfo {
+  margin: 0 30px;
+}
+.authorInfoGrp .authorCont .author_row.row_basicInfo .author_info {
+  font-size: 15px;
+  line-height: 1.74em;
+  color: #666;
+  font-family: "Malgun Gothic", Dotum, "돋움", AppleGothic, Lucida Grande,
+    Verdana, Arial, Tahoma, sans-serif;
+}
+.authorInfoGrp .authorCont .author_row.row_news {
+  margin: 0 30px;
+}
+.authorInfoGrp .authorCont .author_row .authorRow_tit {
+  margin-top: -7px;
+  height: 35px;
+  line-height: 32px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.authorInfoGrp .authorCont .author_row .authorRow_tit .txt_des {
+  margin: 0 0 0 4px;
+  font-size: 15px;
+  font-weight: normal;
+  color: #666;
+}
+.authorInfoGrp .authorCont .author_row.row_news .authorRow_news {
+  padding-top: 2px;
+}
+.alertLi.m_size li {
+  padding: 3px 0 2px 7px !important;
+  line-height: 19px !important;
+  font-size: 13px !important;
+}
+.authorInfoGrp .authorCont .author_row.row_news .authorRow_news li a.lnk_txt {
+  color: #333;
+  text-indent: 0;
+}
+.authorInfoGrp
+  .authorCont
+  .author_row.row_news
+  .authorRow_news
+  li
+  a.lnk_txt
+  .txt_cate {
+  color: #666;
+}

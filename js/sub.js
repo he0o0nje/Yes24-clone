@@ -212,17 +212,41 @@ $(".gd_tagArea .tag").click(function () {
 });
 
 // 목차
-let textContainer = $(".gd_infoSetCrop");
-let toggleButton = $(".btn_halfMore .txt");
 $(".txt_close").hide();
+let textContainer = $(".gd_infoSetCrop");
+let toggleButton = $(".gd_infoSetCrop .btn_halfMore .txt");
 
 toggleButton.click(function () {
   textContainer.toggleClass("infoMoreOn");
   if (textContainer.hasClass("infoMoreOn")) {
-    $(".txt_open").hide();
-    $(".txt_close").show();
+    $(".gd_infoSetCrop .txt_open").hide();
+    $(".gd_infoSetCrop .txt_close").show();
   } else {
-    $(".txt_open").show();
-    $(".txt_close").hide();
+    $(".gd_infoSetCrop .txt_open").show();
+    $(".gd_infoSetCrop .txt_close").hide();
   }
+});
+
+// 저자 소개
+$(".row_basicInfo .info_origin").hide();
+
+$(".row_basicInfo .txt_open").click(function () {
+  $(".row_basicInfo .txt_open").hide();
+  $(".row_basicInfo .txt_close").show();
+  $(".row_basicInfo .ico_arr").css({
+    "background-position": "-130px -290px",
+  });
+
+  $(".row_basicInfo .info_crop").hide();
+  $(".row_basicInfo .info_origin").show();
+});
+$(".row_basicInfo .txt_close").click(function () {
+  $(".row_basicInfo .txt_open").show();
+  $(".row_basicInfo .txt_close").hide();
+  $(".row_basicInfo .ico_arr").css({
+    "background-position": "-130px -280px",
+  });
+
+  $(".row_basicInfo .info_crop").show();
+  $(".row_basicInfo .info_origin").hide();
 });
