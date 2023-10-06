@@ -2249,3 +2249,421 @@ button {
   height: 16px;
   background-position: -20px -240px;
 }
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot {
+  padding-bottom: 40px;
+}
+.gd_infoSet.infoSet_review .gd_reviewTop .review_graphTot .review_graphWrap {
+  margin: 0 7px;
+  width: 318px;
+  height: 210px;
+  border: solid 1px #ebebeb;
+  background-color: #fff;
+  display: inline-table;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap.graphLft {
+  width: 428px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .graph_tit {
+  display: block;
+  padding: 16px 0 16px 0;
+  text-align: center;
+  line-height: 22px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_starChart {
+  margin: 0 19px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_starChart
+  li {
+  padding-bottom: 4px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_starChart
+  li
+  a {
+  display: block;
+  position: relative;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_starChart
+  li
+  a
+  .bgGD.total_rating {
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .total_rating {
+  margin: 1px 5px 0 0;
+  width: 78px;
+  height: 16px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .total_rating.total_rating_10 {
+  background-position: 0 -200px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_starChart
+  li
+  a
+  .barGraphBase {
+  position: relative;
+  display: block;
+  margin: 0 0 0 90px;
+  height: 24px;
+  overflow: hidden;
+  background-color: #eee;
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_starChart
+  li
+  a
+  .barGraphBase
+  .barGraph {
+  position: relative;
+  display: block;
+  width: 0%;
+  height: 24px;
+  font-size: 1px;
+  line-height: 1em;
+  background-color: #99ccff;
+  box-shadow: inset 0px 0px 1px 0 rgba(102, 155, 204, 1);
+  transition: width 0.3s ease-in-out;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_starChart
+  li
+  a
+  .barGraphBase
+  .barGraph
+  .barTxt {
+  position: absolute;
+  right: -40px;
+  width: 40px;
+  height: 24px;
+  line-height: 24px;
+  color: #999;
+  text-align: center;
+  font-size: 13px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_starChart
+  li
+  a
+  .barGraphBase
+  .barGraph.innerTxt
+  .barTxt {
+  right: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .total_rating.total_rating_8 {
+  background-position: 0 -160px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .total_rating.total_rating_6 {
+  background-position: 0 -120px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .total_rating.total_rating_4 {
+  background-position: 0 -80px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .total_rating.total_rating_2 {
+  background-position: 0 -40px;
+}
+.gd_detailBotCont
+  .gd_dContLft
+  .gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap.graphRgt {
+  width: 428px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea {
+  position: relative;
+  margin: 0 19px 0 19px;
+  height: 120px;
+  text-align: center;
+  border-top: solid 1px #d8d8d8;
+  border-bottom: solid 1px #d8d8d8;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 24px;
+  right: 0;
+  z-index: 0;
+  border-top: solid 1px #ebebeb;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 48px;
+  right: 0;
+  z-index: 0;
+  border-top: solid 1px #ebebeb;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 72px;
+  right: 0;
+  z-index: 0;
+  border-top: solid 1px #ebebeb;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 96px;
+  right: 0;
+  z-index: 0;
+  border-top: solid 1px #ebebeb;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  .rvCmt_ageChart {
+  margin: 0 5px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  ul {
+  margin: 0 auto;
+  max-width: 480px;
+  height: 120px;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  ul
+  li {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 20%;
+  height: 120px;
+  vertical-align: top;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  ul
+  li
+  .ageTxt {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -19px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #999;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  ul
+  li
+  .barGraph.barGraph01 {
+  background-color: #ff9933;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  ul
+  li
+  .barGraph {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 0;
+  font-size: 1px;
+  line-height: 1em;
+  margin-left: -25px;
+  width: 50px;
+  transition: height 0.3s ease-in-out;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  ul
+  li
+  .barGraph
+  .barTxt {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  ul
+  li
+  .barGraph.barGraph02 {
+  background-color: #ff6633;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  ul
+  li
+  .barGraph.innerTxt
+  .barTxt {
+  top: 0;
+  color: #fff;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  ul
+  li
+  .barGraph.barGraph03 {
+  background-color: #66cc99;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  ul
+  li
+  .barGraph.barGraph04 {
+  background-color: #0099cc;
+}
+.gd_infoSet.infoSet_review
+  .gd_reviewTop
+  .review_graphTot
+  .review_graphWrap
+  .rvCmt_ageChartArea
+  .rvCmt_ageChartGrp
+  ul
+  li
+  .barGraph.barGraph05 {
+  background-color: #003366;
+}
