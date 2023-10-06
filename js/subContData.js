@@ -69,3 +69,17 @@ $.ajax({
     $(this).find(".yes_b").text(bookData.sale_price);
   });
 });
+
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "자신" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".yesList_gList li").each(function (i) {
+    const bookData = data.documents[i];
+    let imageUrl = bookData.thumbnail;
+
+    $(this).find("img").attr("src", imageUrl);
+  });
+});

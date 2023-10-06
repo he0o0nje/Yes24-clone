@@ -1653,6 +1653,68 @@ button {
 .gd_detailBotCont .gd_dContRgt .gd_dContBox + .gd_dContBox {
   margin-top: 20px;
 }
+.gd_detailBotCont .gd_dContRgt .gd_dContBox .dCont_yesList {
+  position: relative;
+  margin: 0 0 0 15px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+.gd_detailBotCont .gd_dContRgt .gd_dContBox .dCont_yesList dt {
+  position: relative;
+  margin-right: 15px;
+  padding: 7px 7px 7px 26px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #999;
+  background-color: #f8f8f8;
+}
+.gd_detailBotCont .gd_dContRgt .gd_dContBox .dCont_yesList.gradeNo dt {
+  padding: 7px;
+  word-break: break-all;
+}
+.gd_detailBotCont .gd_dContRgt .gd_dContBox .dCont_yesList dt a {
+  color: #6699cc;
+}
+.gd_detailBotCont .gd_dContRgt .gd_dContBox .dCont_yesList dd .yesList_name {
+  margin-right: 12px;
+  padding: 6px 0;
+}
+.gd_detailBotCont .gd_dContRgt .gd_dContBox .dCont_yesList dd .yesList_name p {
+  display: block;
+  height: 20px;
+  overflow: hidden;
+  line-height: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.gd_detailBotCont
+  .gd_dContRgt
+  .gd_dContBox
+  .dCont_yesList
+  dd
+  .yesList_name
+  p
+  a {
+  line-height: 20px;
+  color: #333;
+  font-size: 13px;
+}
+.gd_dContRgt .gd_dContBox .dCont_yesList dd .yesList_gList {
+  position: relative;
+}
+.gd_dContRgt .gd_dContBox .dCont_yesList dd .yesList_gList li {
+  display: inline-block;
+}
+.gd_dContRgt .gd_dContBox .dCont_yesList dd .yesList_gList li a.gList_img {
+  border: solid 1px #ebebeb;
+  overflow: hidden;
+  display: inline-block;
+}
+.gd_dContRgt .gd_dContBox .dCont_yesList dd .yesList_gList li a.gList_img img {
+  margin: -1px;
+  width: 60px;
+}
 
 .detailBotWrap .gd_detailBotCont .gd_dContLft {
   width: 960px;
