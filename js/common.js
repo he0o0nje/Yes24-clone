@@ -101,3 +101,8 @@ $("#fam_btn").click(function (e) {
 
   $("#fam_dl dd").toggle();
 });
+
+// 푸터 맨위로
+$("#yesSclTop").bind("click", function () {
+  $("html, body").animate({ scrollTop: "0" }, 300);
+});

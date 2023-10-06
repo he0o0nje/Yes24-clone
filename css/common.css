@@ -765,3 +765,29 @@ body {
   height: 16px;
   top: 0;
 }
+
+#yesSclTop {
+  position: relative;
+}
+#yesSclTop a.sclTopBtn {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  z-index: 110001;
+}
+#yesSclTop.fixed a.sclTopBtn {
+  position: fixed;
+}
+#yesSclTop a.sclTopBtn .ico {
+  display: block;
+  padding: 15px;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+#yesSclTop a.sclTopBtn .ico img {
+  width: 20px;
+  height: 20px;
+}
