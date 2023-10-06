@@ -1469,10 +1469,189 @@ button {
 .detailBotWrap .gd_detailBotCont .gd_dContRgt .gd_dContBox .dCont_innerArea {
   margin: 0 15px;
 }
-.detailBotWrap .gd_detailBotCont .gd_dContRgt .more_dContRgt {
+.gd_dContBox .dCont_innerArea .dCont_tp_list li {
+  padding-bottom: 15px;
+}
+.gd_dContRgt .gd_dContBox .dCont_innerArea .dCont_tp_list li .dCont_goodsSet {
+  margin: 0;
+  text-align: left;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet
+  .goods_img {
+  float: left;
+  position: relative;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet
+  .goods_img
+  a {
+  border: solid 1px #ebebeb;
+  overflow: hidden;
+  display: inline-block;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet
+  .goods_img
+  a
+  img {
+  margin: -1px;
+  width: 64px;
+  display: inline;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet
+  .goods_info {
+  margin-left: 73px;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet
+  .goods_info
+  .goods_name {
+  overflow: hidden;
+  min-height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #333;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list.tp_list01
+  li
+  .dCont_goodsSet
+  .goods_info
+  .goods_name {
+  max-height: 48px;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet
+  .goods_info
+  .goods_name
+  a {
+  font-size: 12px;
+  color: #333;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet
+  .goods_info
+  .goods_pubGrp {
+  margin-top: 3px;
+  overflow: hidden;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet
+  .goods_info
+  .goods_pubGrp
+  .goods_auth {
+  color: #999;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet
+  .goods_info
+  .goods_price {
+  margin-top: 6px;
+  color: #333;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet
+  .goods_info
+  .goods_price
+  em.yes_b {
+  color: #000;
+}
+.gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet
+  .goods_info
+  .goods_price
+  .goods_benefit {
+  font-weight: normal;
+  line-height: 1.2em;
+}
+.gd_detailBotCont
+  .gd_dContRgt
+  .gd_dContBox
+  .dCont_innerArea
+  .dCont_tp_list
+  li
+  .dCont_goodsSet:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.gd_detailBotCont .gd_dContRgt .gd_dContBox .more_dContR {
   position: absolute;
-  top: 0;
   right: 0;
+  top: 0;
+}
+.gd_dContRgt .gd_dContBox .more_dContR a {
+  padding: 12px 14px 0 5px;
+  height: 21px;
+  line-height: 21px;
+  font-size: 12px;
+  color: #999;
+  display: inline-flex;
+}
+.gd_dContRgt .gd_dContBox .more_dContR a .ico_arr {
+  margin: 3px 0 0 3px;
+  width: 6px;
+  height: 16px;
+  background-position: -130px -240px;
+}
+.gd_detailBotCont .gd_dContRgt .gd_dContBox + .gd_dContBox {
+  margin-top: 20px;
 }
 
 .detailBotWrap .gd_detailBotCont .gd_dContLft {

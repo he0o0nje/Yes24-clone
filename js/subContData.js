@@ -52,3 +52,20 @@ $.ajax({
     $(this).find(".yes_b").text(bookData.sale_price);
   });
 });
+
+$.ajax({
+  method: "GET",
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "생각" },
+  headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
+}).done(function (data) {
+  $(".dCont_tp_list li").each(function (i) {
+    const bookData = data.documents[i];
+    let imageUrl = bookData.thumbnail;
+
+    $(this).find("img").attr("src", imageUrl);
+    $(this).find(".goods_name a").text(bookData.title);
+    $(this).find(".goods_auth").text(bookData.authors);
+    $(this).find(".yes_b").text(bookData.sale_price);
+  });
+});
