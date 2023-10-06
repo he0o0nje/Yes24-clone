@@ -432,7 +432,7 @@
   background-position: -20px -240px;
 }
 .txC_blue {
-  color: #6699cc;
+  color: #6699cc !important;
 }
 .ico_help {
   width: 17px;
@@ -1768,9 +1768,6 @@ button {
   font-weight: normal;
   line-height: 1.2em;
 }
-.alertLi li .bgYUI {
-  vertical-align: 2px;
-}
 .btnC.s_size .bWrap {
   padding: 0 4px;
   height: 18px;
@@ -2929,4 +2926,53 @@ button {
   height: 14px;
   vertical-align: -1px;
   background-position: -350px -380px;
+}
+
+.gd_detailBotCont .gd_dContLft .infoSet_titSub {
+  position: relative;
+  margin-top: -7px;
+  padding-bottom: 14px;
+}
+.gd_detailBotCont .gd_dContLft .infoSet_titSub .titSub_txt {
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #6699cc;
+}
+.yesTb table tbody.b_size th {
+  vertical-align: middle;
+}
+.mgt5 {
+  margin-top: 5px;
+}
+.fwB {
+  font-weight: bold !important;
+}
+.mgt10 {
+  margin-top: 10px;
+}
+.gd_detailBotCont .gd_dContLft .detail_deliInfoLi li {
+  float: left;
+  margin-right: 10px;
+  width: 175px;
+}
+.gd_detailBotCont .gd_dContLft .detail_deliInfoLi li img.deliPic {
+  width: 100%;
+}
+.gd_detailBotCont .gd_dContLft .yesTb + .infoSet_titSub {
+  margin-top: 23px;
+}
+.gd_detailBotCont .gd_dContLft .infoSet_titSub .titSub_des {
+  padding-bottom: 1px;
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #666;
+}
+.ws_n {
+  white-space: nowrap;
+}
+.gd_infoSet:last-child {
+  padding-bottom: 33px !important;
 }
