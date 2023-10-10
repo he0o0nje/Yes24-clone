@@ -7,6 +7,7 @@ $.ajax({
   data: { query: "삶" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
+  console.log(data);
   $(".todayBUnit").each(function (i) {
     const bookData = data.documents[i];
     let imageUrl = bookData.thumbnail;
@@ -217,7 +218,6 @@ $.ajax({
   data: { query: "집착광공" },
   headers: { Authorization: "KakaoAK 34c497c35774425c1c37314d61072948" },
 }).done(function (data) {
-  console.log(data);
   $("#MTS4 .bookBigCon .WCsec").each(function (i) {
     const MultiData = data.documents[i];
     let imageUrl = MultiData.thumbnail;
